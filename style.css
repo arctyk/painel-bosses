@@ -22,6 +22,7 @@
 }
 
 :root {
+  color-scheme: only light;
   --marrom: #5A2800;
   --link: #004294;
   --link-hover: #0063DC;
