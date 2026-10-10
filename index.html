@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de Bosses</title>
+  <script>
+    // Se as imagens do tema (tema/) não estiverem presentes, usa cores no lugar.
+    (function () {
+      var i = new Image();
+      i.onerror = function () { document.documentElement.classList.add("sem-tema"); };
+      i.src = "tema/border-1.gif";
+    })();
+  </script>
+  <!-- "?v=" com a hora atual: o navegador sempre carrega a versão mais nova dos arquivos -->
+  <script>document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
+</head>
+<body>
+  <div class="arte" aria-hidden="true"></div>
+
+  <div id="Pagina">
+    <!-- coluna do menu (como no tibia.com) -->
+    <div id="MenuColumn">
+      <div id="LeftArtwork">
+        <img id="TibiaLogoArtworkTop" src="tema/tibia-logo-artwork-top.gif" alt="">
+      </div>
+
+      <div class="SmallMenuBox" id="BuscaBox">
+        <div class="SmallBoxTop"></div>
+        <div class="SmallBoxBorder BorderLeft"></div>
+        <div class="SmallBoxBorder BorderRight"></div>
+        <div class="SmallBoxButtonContainer">
+          <label for="busca">Buscar boss</label>
+          <input id="busca" type="search" placeholder="Nome ou local..." autocomplete="off">
+        </div>
+        <div class="SmallBoxBottom"></div>
+      </div>
+
+      <div id="Menu">
+        <div id="MenuTop"></div>
+        <div id="MenuItens"></div>
+        <div id="MenuBottom"></div>
+      </div>
+    </div>
+
+    <!-- conteúdo -->
+    <div id="ContentColumn" class="Content">
+      <div id="secoes"></div>
+      <p id="vazio" class="vazio" hidden>Nenhum boss encontrado.</p>
+      <div id="Footer">Painel pessoal. Dados: TibiaWiki BR. Visual baseado em tibia.com (CipSoft GmbH).<br>
+        Atualize os dados com <code>python coletar.py</code>.</div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-caixa Content" role="dialog" aria-modal="true" aria-labelledby="m-nome" id="modal-caixa"></div>
+  </div>
+
+  <script>
+    var v = Date.now();
+    document.write('<script src="bosses.js?v=' + v + '"><\/script>');
+    document.write('<script src="app.js?v=' + v + '"><\/script>');
+  </script>
+</body>
+</html>

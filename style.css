@@ -1,0 +1,563 @@
+/* =========================================================================
+   Painel de Bosses: tema baseado no CSS do tibia.com (Site Oficial/).
+   As imagens do site ficam em tema/. Quando alguma não existir, a classe
+   html.sem-tema troca as imagens por cores parecidas.
+   Fontes: o site usa Verdana/Arial; os títulos dele são imagens, aqui
+   substituídas pela Uncial Antiqua (fontes/), de desenho bem próximo.
+   ========================================================================= */
+
+/* Fonte dos títulos: Martel, a mesma que o tibia.com usa para gerar as imagens de título
+   (vem do template "tibiacom" do MyAAC). Ela não tem "ç", números nem pontuação; esses
+   caracteres vêm da Uncial Antiqua, de desenho parecido. */
+@font-face {
+  font-family: "TituloTibia";
+  src: url("fontes/martel.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "TituloTibia";
+  src: url("fontes/uncial-antiqua.woff2") format("woff2");
+  unicode-range: U+0021-0040, U+00C7, U+00E7;
+  font-display: swap;
+}
+
+:root {
+  --marrom: #5A2800;
+  --link: #004294;
+  --link-hover: #0063DC;
+  --odd: #f1e0c6;
+  --even: #d5c0a1;
+  --caption: #5f4d41;
+  --titulo: "TituloTibia", "Palatino Linotype", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #051122;
+  color: var(--marrom);
+  font-family: Verdana, Arial, "Times New Roman", sans-serif;
+}
+
+/* Arte do topo (background-artwork do site); gradiente se a imagem faltar. */
+.arte {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1100px;
+  z-index: -1;
+  background:
+    linear-gradient(transparent 560px, #051122 800px) center top no-repeat,
+    url("tema/background-artwork.jpg") center top no-repeat,
+    radial-gradient(circle at 68% 70px, #f4f1ff 0 26px, rgba(214, 214, 255, .45) 30px, rgba(150, 150, 220, .12) 70px, transparent 120px),
+    radial-gradient(ellipse 60% 25% at 50% 300px, rgba(60, 50, 110, .45), transparent 75%),
+    linear-gradient(#3b3a6b, #232552 25%, #0d1834 50%, #051122 75%);
+}
+
+img.sprite, img.icone, .pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+
+#Pagina {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px 0 0;
+}
+
+/* =========================== MENU =========================== */
+/* A coluna tem 180px como no site, mais 10px de folga de cada lado para a logo (196px)
+   não ser cortada pela rolagem própria do menu. */
+#MenuColumn {
+  position: sticky;
+  top: 0;
+  flex: 0 0 200px;
+  width: 200px;
+  margin: 0 5px;
+  padding: 0 10px;
+  padding-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 12pt;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+#MenuColumn::-webkit-scrollbar { display: none; }
+
+/* A logo fica inteira dentro da coluna (que tem rolagem própria e cortaria o que passasse
+   do topo); a base dela encosta no topo da caixa de busca, como no site. */
+#LeftArtwork { position: relative; height: 162px; margin-top: 6px; }
+#TibiaLogoArtworkTop { position: absolute; top: 0; left: -8px; width: 196px; height: 158px; }
+
+/* Caixa pequena (Login/Download no site; aqui: busca). Medidas iguais às do tibia.com:
+   topo/base de 180px, correntes de 8px e conteúdo de 160px centralizado entre elas. */
+.SmallMenuBox { position: relative; width: 180px; margin: 12px 0 18px; }
+.SmallMenuBox .SmallBoxTop,
+.SmallMenuBox .SmallBoxBottom { position: absolute; left: 0; height: 12px; width: 180px; background: url("tema/box-top.gif") no-repeat; z-index: 11; }
+.SmallMenuBox .SmallBoxTop { top: -12px; }
+.SmallMenuBox .SmallBoxBottom { bottom: -12px; background-image: url("tema/box-bottom.gif"); }
+.SmallMenuBox .SmallBoxBorder { position: absolute; top: 0; bottom: 0; width: 8px; background: url("tema/chain.gif") repeat-y; z-index: 10; }
+.SmallMenuBox .BorderLeft { left: 5px; }
+.SmallMenuBox .BorderRight { right: 6px; }
+.SmallMenuBox .SmallBoxButtonContainer {
+  position: relative;
+  width: 160px;
+  margin-left: 10px;
+  padding: 6px 12px 8px;
+  background: url("tema/loginbox-textfield-background.gif") repeat-y;
+  background-color: #0d0d0d;
+}
+.SmallMenuBox label { display: block; margin-bottom: 4px; color: #d7d7d7; font: bold 10pt Arial, sans-serif; text-align: center; }
+#busca {
+  width: 100%;
+  padding: 3px 5px;
+  font: 9pt Verdana, Arial, sans-serif;
+  color: var(--marrom);
+  background: #fff2db;
+  border: 1px solid #000;
+  box-shadow: inset 1px 1px 0 #b39572;
+  outline: none;
+}
+#busca:focus { box-shadow: inset 1px 1px 0 #b39572, 0 0 0 1px #ffd18c; }
+
+/* Menu principal */
+#Menu { position: relative; left: 5px; width: 170px; }
+#MenuTop, #MenuBottom { position: relative; left: -5px; height: 12px; width: 180px; background: url("tema/box-top.gif") no-repeat; }
+#MenuBottom { background-image: url("tema/box-bottom.gif"); }
+
+.menuitem { position: relative; }
+.MenuButton {
+  position: relative;
+  display: block;
+  width: 170px;
+  height: 32px;
+  cursor: pointer;
+  background: url("tema/button-background.gif") no-repeat;
+  user-select: none;
+}
+.MenuButton .Button {
+  position: absolute;
+  inset: 0;
+  background: url("tema/button-background-over.gif") no-repeat;
+  visibility: hidden;
+}
+.MenuButton:hover .Button { visibility: visible; }
+.MenuButton .Icon { position: absolute; top: 0; left: 8px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; }
+.MenuButton .Label {
+  position: absolute;
+  top: 5px;
+  left: 42px;
+  width: 116px;
+  height: 22px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--titulo);
+  font-weight: normal;
+  font-size: 15.5px;
+  line-height: 22px;
+  color: #e3d3ad;
+  text-shadow: 1px 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.MenuButton:hover .Label { color: #fff; }
+/* nomes longos ("Heart of Destruction") em duas linhas, como os rótulos do site */
+.MenuButton .Label.longo { top: 3px; height: 27px; font-size: 13px; line-height: 13px; white-space: normal; }
+.MenuButton .Extend { position: absolute; top: 20px; right: -2px; width: 12px; height: 12px; background: url("tema/plus.gif") no-repeat; }
+.menuitem.aberto .Extend { background-image: url("tema/minus.gif"); }
+.Lights div { position: absolute; width: 8px; height: 8px; background: url("tema/green-light.gif") no-repeat; }
+.Lights { visibility: hidden; }
+.menuitem:not(.aberto) .Lights { visibility: visible; }
+.light_lu { top: 0; left: 0; }
+.light_ld { bottom: 0; left: 0; }
+.light_ru { top: 0; right: 0; }
+
+.Submenu { position: relative; display: none; margin: 0 5px; width: 160px; background-color: #0D2E2B; }
+.menuitem.aberto .Submenu { display: block; }
+.Submenuitem { position: relative; display: block; cursor: pointer; color: #d7d7d7; text-decoration: none; }
+.Submenuitem:hover, .Submenuitem.ativo { color: #fff; }
+.LeftChain, .RightChain { position: absolute; top: 0; height: 100%; width: 7px; background: url("tema/chain.gif") repeat-y; }
+.LeftChain { left: -5px; }
+.RightChain { right: -4px; }
+.ActiveSubmenuItemIcon { position: absolute; top: 5px; left: 3px; width: 10px; height: 10px; background: url("tema/icon-activesubmenu.gif") no-repeat; visibility: hidden; }
+.Submenuitem:hover .ActiveSubmenuItemIcon, .Submenuitem.ativo .ActiveSubmenuItemIcon { visibility: visible; }
+.SubmenuitemLabel { margin: 0; padding: 2px 4px 2px 15px; border-bottom: 1px solid #4b7874; overflow: hidden; font-size: 9pt; }
+.Submenuitem.oculto { display: none; }
+
+/* ========================= CONTEÚDO ========================= */
+#ContentColumn { flex: 1; min-width: 0; padding-top: 168px; }
+
+/* Box (moldura) */
+.Content .Box {
+  position: relative;
+  margin: 4px 5px 18px;
+  font-size: 0;
+  color: var(--marrom);
+  border-left: 2px solid #3a3738;
+  border-right: 2px solid #3a3738;
+  background-color: #debb9d;
+}
+.Content .Corner-tl, .Content .Corner-tr, .Content .Corner-bl, .Content .Corner-br { position: absolute; width: 17px; height: 17px; z-index: 50; background-repeat: no-repeat; }
+.Content .Corner-tl { top: -4px; left: -5px; background-image: url("tema/corner-tl.gif"); }
+.Content .Corner-tr { top: -4px; right: -5px; background-image: url("tema/corner-tr.gif"); }
+.Content .CornerWrapper-b { position: absolute; width: 100%; }
+.Content .Corner-bl { bottom: -4px; left: -6px; background-image: url("tema/corner-bl.gif"); }
+.Content .Corner-br { bottom: -4px; right: -6px; background-image: url("tema/corner-br.gif"); }
+.Content .Border_1 { position: relative; height: 6px; width: 100%; background: url("tema/border-1.gif") repeat-x; }
+.Content .BorderTitleText {
+  position: relative;
+  height: 24px;
+  background: url("tema/title-background-green.gif") repeat-x;
+}
+.Content .BorderTitleText .Title {
+  position: absolute;
+  top: 1px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--titulo);
+  font-size: 22px;
+  line-height: 24px;
+  color: #f0d1a4;
+  text-shadow: 1px 1px 1px #000;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.Content .BorderTitleText .Title small { font: 8pt Verdana, Arial, sans-serif; color: #d9cfb3; }
+/* Barra vermelha do topo: mesma textura das manchetes vermelhas */
+.Content .BorderTitleText.InfoTitle {
+  height: 28px;
+  background: url("tema/newsheadline_background.gif") repeat;
+  background-position-y: 1px;
+  background-color: #5c0d0d;
+}
+.Content .Border_2 { margin: 4px; padding: 0; background-color: #793d03; }
+.Content .Border_3 { margin: 1px; border-top: 1px solid #793d03; border-bottom: 1px solid #793d03; }
+.Content .BoxContent {
+  padding: 10px;
+  font-family: Verdana, Arial, "Times New Roman", sans-serif;
+  font-size: 9pt;
+  line-height: 1.4;
+  color: var(--marrom);
+  background: url("tema/scroll.gif");
+  background-color: #FFF2db;
+}
+
+/* Barra de informações (como a de Twitch/YouTube) */
+.InfoBar {
+  position: relative;
+  top: 7px;
+  margin: 0 8px;
+  font-size: 7.5pt;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.InfoBar b { font-size: 9pt; }
+.InfoBar span + span { margin-left: 14px; }
+
+/* Links */
+.Content a { font-weight: bold; color: var(--link); text-decoration: none; cursor: pointer; }
+.Content a:hover { text-decoration: underline; color: var(--link-hover); }
+
+/* Manchete de notícia (subgrupos) */
+.NewsHeadline { margin-top: 14px; }
+.NewsHeadline:first-child { margin-top: 0; }
+/* Igual ao news.css do tibia.com, com a imagem oficial (83x26) */
+.NewsHeadlineBackground {
+  position: relative;
+  min-height: 26px;
+  margin-bottom: 8px;
+  background: url("tema/newsheadline_background.gif") repeat;
+  background-position-y: 2px;
+  background-color: #5c0d0d;
+  border: 1px solid #000;
+}
+.NewsHeadlineIcon { position: absolute; top: -1px; left: 0; margin: 0 5px; float: left; }
+.NewsHeadlineDate { float: left; width: fit-content; margin: 10px 4px 0 40px; font-size: 7pt; color: #fff; }
+.NewsHeadlineText { margin: 2px 0 2px 7px; line-height: 26px; font-size: 10pt; font-weight: bold; color: #fff; }
+
+/* ============ TableContainer (tabelas do site) ============ */
+.TableContainer { position: relative; width: 100%; border: 1px solid #000; }
+.CaptionContainer { position: relative; background-color: var(--caption); }
+.CaptionInnerContainer { position: relative; padding: 3px 0 4px; background-color: var(--caption); }
+.CaptionContainer .Text {
+  margin: 0;
+  padding: 0 6px 0 10px;
+  font: bold 10pt Verdana, Arial, "Times New Roman", sans-serif;
+  color: #fff;
+  text-align: left;
+}
+.CaptionEdgeLeftTop, .CaptionEdgeRightTop, .CaptionEdgeLeftBottom, .CaptionEdgeRightBottom {
+  position: absolute; width: 5px; height: 5px; z-index: 50; background: url("tema/box-frame-edge.gif") no-repeat;
+}
+.CaptionEdgeLeftTop { top: -2px; left: -2px; }
+.CaptionEdgeRightTop { top: -2px; right: -2px; }
+.CaptionEdgeLeftBottom { bottom: -3px; left: -2px; }
+.CaptionEdgeRightBottom { bottom: -3px; right: -2px; }
+.CaptionBorderTop, .CaptionBorderBottom { position: absolute; left: 0; width: 100%; height: 4px; background: url("tema/table-headline-border.gif") repeat-x; }
+.CaptionBorderTop { top: -1px; }
+.CaptionBorderBottom { bottom: -2px; }
+.CaptionVerticalLeft, .CaptionVerticalRight { position: absolute; top: 0; height: 100%; width: 3px; background: url("tema/box-frame-vertical.gif") repeat-y; }
+.CaptionVerticalLeft { left: -1px; }
+.CaptionVerticalRight { right: -1px; }
+
+.Table1 { background-color: #d4c0a1; border: 2px solid #55636c; }
+.Table1 .InnerTableContainer { padding: 5px; }
+.TableContentContainer { box-shadow: 3px 3px 2px #875f3e; }
+.TableContent { width: 100%; border-collapse: collapse; }
+.TableContent td { padding: 3px 6px; border: 1px solid #faf0d7; font-size: 9pt; color: var(--marrom); vertical-align: middle; }
+.TableContent tr:nth-child(odd) td { background-color: var(--odd); }
+.TableContent tr:nth-child(even) td { background-color: var(--even); }
+.LabelV { font-weight: bold; white-space: nowrap; vertical-align: top; width: 150px; }
+.Odd { background-color: var(--odd); }
+.Even { background-color: var(--even); }
+
+.TableContainer + .TableContainer, .tabela-bloco + .tabela-bloco { margin-top: 14px; }
+
+/* ===================== Cards dos bosses ===================== */
+.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px 10px; padding: 2px; }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: center;
+  background: none;
+  cursor: pointer;
+}
+.card .Text { text-align: center; padding: 0 4px; font-size: 9pt; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .TableContainer { flex: 1; display: flex; flex-direction: column; }
+.card .Table1 { flex: 1; border-width: 2px; }
+.card .InnerTableContainer { padding: 4px; }
+.card .slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  padding: 2px;
+  background: var(--odd);
+  border: 1px solid #faf0d7;
+}
+.card .linha { padding: 1px 3px; font-size: 7.5pt; line-height: 1.3; color: var(--marrom); border: 1px solid #faf0d7; border-top: none; }
+.card .linha.Even { background: var(--even); }
+.card .linha b { color: var(--link); }
+.card:hover .CaptionContainer, .card:hover .CaptionInnerContainer,
+.card:focus-visible .CaptionContainer, .card:focus-visible .CaptionInnerContainer { background-color: #7b6352; }
+.card:hover .TableContainer, .card:focus-visible .TableContainer { box-shadow: 0 0 0 1px #ffd18c, 0 0 8px rgba(255, 209, 140, .7); }
+.card:focus-visible { outline: none; }
+.card.destaque .TableContainer { animation: piscar 1.2s ease-out; }
+@keyframes piscar { 0%, 60% { box-shadow: 0 0 0 2px #ffd18c, 0 0 14px #ffd18c; } 100% { box-shadow: none; } }
+
+.vazio { margin: 10px 5px; padding: 10px; text-align: center; font: 9pt Verdana, Arial, sans-serif; color: #fff; background: rgba(0, 0, 0, .5); }
+
+#Footer { padding: 6px 0 24px; font: 7pt Verdana, Arial, sans-serif; color: #fff; text-align: center; }
+#Footer code { color: #ffd18c; }
+
+/* ========================== BigButton ========================== */
+.BigButton {
+  position: relative;
+  display: inline-block;
+  width: 135px;
+  height: 25px;
+  margin: 0 6px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+  background: url("tema/button_blue.gif") no-repeat;
+  user-select: none;
+  text-decoration: none !important;
+}
+/* o "over" do site é só o brilho interno (borda transparente): vai por cima do botão normal */
+.BigButton:hover { background: url("tema/button_blue_over.gif") no-repeat, url("tema/button_blue.gif") no-repeat; }
+.BigButtonText {
+  display: block;
+  padding-top: 5px;
+  font: normal 12px Verdana, Arial, "Times New Roman", sans-serif;
+  color: #ffd18c;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+}
+.BigButton:hover .BigButtonText { transform: translate(1px, 1px); }
+.botoes { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* ============================ Modal ============================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 28px 16px;
+  background: rgba(2, 8, 18, .82);
+  overflow-y: auto;
+}
+.modal[hidden] { display: none; }
+.modal-caixa { width: 100%; max-width: 980px; }
+.modal-caixa .Box { margin: 4px 0 8px; }
+.modal-caixa .BoxContent { padding: 12px; }
+.fechar-x {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  z-index: 60;
+  width: 20px;
+  height: 18px;
+  padding: 0;
+  font: bold 12px/16px Verdana, Arial, sans-serif;
+  color: #ffd18c;
+  text-shadow: 1px 1px 0 #000;
+  background: #1c3e8f;
+  border: 1px solid #000;
+  box-shadow: inset 0 0 0 1px #b8954e;
+  cursor: pointer;
+}
+.fechar-x:hover { background: #2a56c2; }
+
+/* informações do boss */
+.info-boss { display: flex; gap: 0; }
+.info-boss .TableContent { flex: 1; }
+.info-sprite { display: flex; align-items: center; justify-content: center; min-width: 110px; background: var(--odd); border: 1px solid #faf0d7; border-left: none; }
+.tipo-boss { display: inline-flex; align-items: center; gap: 5px; }
+.bonus { color: #1d7a2c; font-weight: bold; }
+
+/* resistências */
+.elementos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+.elem { display: flex; border: 1px solid #a88a62; }
+.elem-ic { flex: 0 0 32%; display: flex; align-items: center; justify-content: center; background: #e4d3b4; border-right: 1px solid #a88a62; }
+.elem-v { flex: 1; padding: 2px 4px; text-align: center; font-size: 10pt; background: #fffaf0; }
+.elem-v.fraco { background: #65c073; color: #0d2b12; font-weight: bold; }
+.elem-v.forte { background: #fedb4c; color: #4a3500; font-weight: bold; }
+.elem-v.imune { background: #ff9c4c; color: #3d1700; font-weight: bold; }
+.elem-v.cura-se { background: #ff4c4c; color: #fff; font-weight: bold; }
+.caract { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; margin-top: 8px; }
+.caract > div > div { display: flex; align-items: center; gap: 6px; min-height: 20px; }
+
+/* loot */
+.tokens { display: flex; flex-wrap: wrap; gap: 6px; }
+.token { display: flex; align-items: center; gap: 8px; padding: 3px 12px 3px 5px; background: var(--even); border: 1px solid #faf0d7; }
+.token .qtd { font-size: 13pt; font-weight: bold; line-height: 1.1; }
+.token.gold .qtd { color: #a8700a; }
+.token.silver .qtd { color: #4f5660; }
+.token .info { font-size: 7.5pt; }
+.loot { display: grid; grid-template-columns: repeat(auto-fill, minmax(122px, 1fr)); gap: 4px; }
+.Content a.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px 3px 3px;
+  font-size: 7.5pt;
+  line-height: 1.2;
+  background: var(--even);
+  border: 1px solid #faf0d7;
+}
+.Content a.item:hover { background: #fff2db; text-decoration: none; }
+.slot-item { flex: none; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: #3f3f3f; border: 1px solid #111; }
+.aviso { margin: 0; font-size: 8.5pt; }
+.aviso.pendente { color: #b04a00; font-weight: bold; }
+
+/* mecânica */
+.mecanica { margin: 0; padding-left: 18px; font-size: 9pt; }
+.mecanica li { margin: 4px 0; line-height: 1.6; }
+.mecanica ul { margin: 2px 0 4px; padding-left: 18px; list-style: circle; }
+.ref { white-space: nowrap; font-weight: bold; }
+/* sem margem negativa: a linha cresce e nenhum sprite invade o outro */
+.ref-img { vertical-align: middle; margin: 1px 0; }
+
+.tabela-extra td:first-child { color: #a33a00; }
+
+.sem-img { display: inline-block; padding: 4px 8px; border: 1px dashed #a88a62; }
+
+/* ============ Sem as imagens do tema: cores parecidas ============ */
+html.sem-tema .SmallMenuBox .SmallBoxTop,
+html.sem-tema .SmallMenuBox .SmallBoxBottom,
+html.sem-tema #MenuTop,
+html.sem-tema #MenuBottom { background: linear-gradient(#8b7a54, #3c3324); height: 6px; border: 1px solid #000; }
+html.sem-tema .SmallMenuBox .SmallBoxTop { top: -6px; }
+html.sem-tema .SmallMenuBox .SmallBoxBottom { bottom: -6px; }
+html.sem-tema .SmallMenuBox .SmallBoxBorder,
+html.sem-tema .LeftChain, html.sem-tema .RightChain { background: repeating-linear-gradient(#9a9a9a 0 3px, #3b3b3b 3px 6px); width: 4px; }
+html.sem-tema .MenuButton { background: linear-gradient(#55524b, #2a2826); border: 1px solid #000; box-shadow: inset 0 1px 0 #77736a; }
+html.sem-tema .MenuButton:hover { background: linear-gradient(#66625a, #33302d); }
+html.sem-tema .MenuButton .Extend::after { content: "+"; display: block; width: 12px; height: 12px; font: bold 11px/11px Verdana; color: #ffd18c; text-align: center; background: #1c3e8f; border: 1px solid #000; }
+html.sem-tema .menuitem.aberto .MenuButton .Extend::after { content: "−"; }
+html.sem-tema .Lights { display: none; }
+html.sem-tema .ActiveSubmenuItemIcon { background: none; }
+html.sem-tema .ActiveSubmenuItemIcon::after { content: "›"; color: #ffd18c; font: bold 11px/8px Arial; }
+html.sem-tema .Content .Border_1 { background: linear-gradient(#77756f, #3a3738 50%, #1c1b1b); }
+html.sem-tema .Content .BorderTitleText { background: linear-gradient(#2c4421, #13210d); }
+html.sem-tema .Content .BorderTitleText.InfoTitle { background: repeating-linear-gradient(135deg, rgba(0, 0, 0, .14) 0 6px, transparent 6px 12px), linear-gradient(#8a1717, #520707); }
+html.sem-tema .NewsHeadlineBackground { background: repeating-linear-gradient(135deg, rgba(0, 0, 0, .14) 0 5px, transparent 5px 10px), linear-gradient(#7e1414, #4a0606); }
+html.sem-tema .BigButton { background: linear-gradient(#3e6cff, #0a2399); border: 1px solid #000; box-shadow: inset 0 0 0 1px #c9a75a; border-radius: 2px; }
+html.sem-tema .BigButton:hover { background: linear-gradient(#5a83ff, #1534c4); }
+
+/* ======================== Telas estreitas ======================== */
+@media (max-width: 820px) {
+  #Pagina { flex-direction: column; align-items: stretch; padding: 0 10px; }
+  #MenuColumn { position: static; flex: none; margin: 0 auto; max-height: none; overflow: visible; }
+  #ContentColumn { padding-top: 10px; }
+  .Content .Corner-tl, .Content .Corner-tr, .Content .Corner-bl, .Content .Corner-br { display: none; }
+  .elementos { grid-template-columns: repeat(2, 1fr); }
+  .info-boss { flex-direction: column-reverse; }
+  .info-sprite { border-left: 1px solid #faf0d7; border-bottom: none; padding: 6px; }
+  .ref { white-space: normal; }
+  .LabelV { width: auto; }
+}
+
+/* ===================== Rotação de ataque ===================== */
+.rotacao { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; background: var(--odd); }
+.voc { padding: 4px 4px 6px; border: 1px solid #faf0d7; min-width: 0; }
+.voc:nth-child(even) { background: var(--even); }
+.voc-titulo { margin: -4px -4px 4px; padding: 3px 6px; font: bold 9pt Verdana, Arial, sans-serif; color: #fff; background: #7b6352; border-bottom: 1px solid #000; }
+.passos { margin: 0; padding: 0; list-style: none; }
+.passo { display: flex; align-items: flex-start; gap: 4px; margin-bottom: 5px; }
+.passo .ordem { flex: none; width: 13px; font: bold 8pt Verdana, Arial, sans-serif; color: var(--marrom); padding-top: 2px; }
+.icone-magia { flex: none; width: 38px; height: 38px; image-rendering: pixelated; border: 1px solid #000; background: #222; }
+.icone-magia.vazio { display: inline-block; }
+.passo-txt { display: flex; flex-direction: column; min-width: 0; font-size: 7.5pt; line-height: 1.25; }
+.passo-txt b { font-size: 8pt; color: var(--texto-forte, #3a1a00); }
+.palavras { font-style: italic; color: #004294; font-weight: bold; }
+.obs { color: #7a5a3a; }
+.voc-nota { margin: 4px 0 0; font-size: 7.5pt; line-height: 1.3; color: var(--marrom); }
+.rot-nota, .rot-rodape { margin: 0; padding: 5px 8px; font-size: 8pt; border-top: 1px solid #faf0d7; }
+.rot-rodape { font-size: 7pt; color: #7a5a3a; }
+.qtd-item { font-weight: normal; color: var(--marrom); }
+@media (max-width: 820px) {
+  .rotacao { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ===================== Fases e alvos ===================== */
+.fases { background: var(--odd); }
+.fase { padding: 6px 8px; border-bottom: 1px solid #faf0d7; }
+.fase:nth-child(even) { background: var(--even); }
+.fase-topo { display: flex; gap: 10px; align-items: flex-start; }
+.fase-sprite { flex: none; min-width: 64px; display: flex; justify-content: center; }
+.fase-info { flex: 1; min-width: 0; font-size: 8.5pt; }
+.fase-nome { font-size: 9.5pt; color: #3a1a00; }
+.fase-hp { margin-left: 6px; font-size: 8pt; }
+.fase-dica { margin: 2px 0 3px; }
+.fase-el > div { margin-top: 2px; }
+.chip { display: inline-flex; align-items: center; gap: 3px; padding: 0 5px; margin: 1px 2px 1px 0; font-size: 7.5pt; border: 1px solid #a88a62; border-radius: 3px; background: #fffaf0; }
+.chip.fraco { background: #65c073; color: #0d2b12; }
+.chip.imune { background: #ff9c4c; color: #3d1700; }
+.chip.cura-se { background: #ff4c4c; color: #fff; }
+.fase-ataques { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; margin-top: 5px; }
+.fase-voc { display: flex; flex-direction: column; gap: 2px; padding: 3px; background: rgba(255, 255, 255, .35); border: 1px solid #faf0d7; min-width: 0; }
+.fase-voc-nome { font: bold 7.5pt Verdana, Arial, sans-serif; color: #fff; background: #7b6352; margin: -3px -3px 2px; padding: 1px 4px; }
+.fase-magia { display: flex; align-items: center; gap: 4px; font-size: 7.5pt; min-width: 0; }
+.fase-magia .palavras { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.icone-magia.peq { width: auto; height: auto; }
+.sem-dano { font-size: 7.5pt; color: #8a6a4a; font-style: italic; }
+@media (max-width: 820px) {
+  .fase-ataques { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.chip.forte { background: #fedb4c; color: #4a3500; }
