@@ -17,7 +17,7 @@
   <!-- "?v=" com a hora atual: o navegador sempre carrega a versão mais nova dos arquivos -->
   <script>document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
 </head>
-<body>
+<body data-pagina="bosses">
   <div class="arte" aria-hidden="true"></div>
 
   <div id="Pagina">
@@ -62,6 +62,7 @@
     var v = Date.now();
     document.write('<script src="bosses.js?v=' + v + '"><\/script>');
     document.write('<script src="app.js?v=' + v + '"><\/script>');
+    document.write('<script src="menu.js?v=' + v + '"><\/script>');
   </script>
 </body>
 </html>

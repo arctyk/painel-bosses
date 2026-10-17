@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <title>Outfits · Painel de Bosses</title>
+  <script>
+    (function () {
+      var i = new Image();
+      i.onerror = function () { document.documentElement.classList.add("sem-tema"); };
+      i.src = "tema/border-1.gif";
+    })();
+  </script>
+  <script>document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
+</head>
+<body data-pagina="outfits">
+  <div class="arte" aria-hidden="true"></div>
+
+  <div id="Pagina">
+    <div id="MenuColumn">
+      <div id="LeftArtwork">
+        <img id="TibiaLogoArtworkTop" src="tema/tibia-logo-artwork-top.gif" alt="">
+      </div>
+
+      <div class="SmallMenuBox" id="BuscaBox">
+        <div class="SmallBoxTop"></div>
+        <div class="SmallBoxBorder BorderLeft"></div>
+        <div class="SmallBoxBorder BorderRight"></div>
+        <div class="SmallBoxButtonContainer">
+          <label for="busca">Buscar</label>
+          <input id="busca" type="search" placeholder="Outfit, item ou monstro..." autocomplete="off">
+        </div>
+        <div class="SmallBoxBottom"></div>
+      </div>
+
+      <div id="Menu">
+        <div id="MenuTop"></div>
+        <div id="MenuItens"></div>
+        <div id="MenuBottom"></div>
+      </div>
+    </div>
+
+    <div id="ContentColumn" class="Content">
+      <div id="conteudo-outfits"></div>
+      <div id="Footer">Painel pessoal. Dados: TibiaWiki (tibia.fandom.com). Visual baseado em tibia.com (CipSoft GmbH).<br>
+        Atualize os dados com <code>python coletar_outfits.py</code>.</div>
+    </div>
+  </div>
+
+  <script>
+    var v = Date.now();
+    document.write('<script src="outfits-dados.js?v=' + v + '"><\/script>');
+    document.write('<script src="outfits.js?v=' + v + '"><\/script>');
+    document.write('<script src="menu.js?v=' + v + '"><\/script>');
+  </script>
+</body>
+</html>

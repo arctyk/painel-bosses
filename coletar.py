@@ -110,7 +110,7 @@ def salvar_bosses(bosses):
     ordem_campos = ["nome", "pagina", "local", "grupo", "subgrupo", "ordem", "quest", "level",
                     "hp", "xp", "tipo", "sprite",
                     "elementos", "imunidades", "podeSerPuxado", "empurraObjetos", "passaPor",
-                    "rotacaoAjustes", "rotacao", "tokens", "lootTiers", "lootStatus", "mecanica", "spritesMecanica",
+                    "rotacaoAjustes", "ataque", "defesa", "rotacao", "tokens", "lootTiers", "lootStatus", "mecanica", "spritesMecanica",
                     "fases", "tabela", "link", "pendencias"]
     saida = []
     for b in bosses:
@@ -471,6 +471,13 @@ def coletar(boss, forcar, baixadas):
     # Fases / minibosses / criaturas que importam na luta
     for fase in boss.get("fases") or []:
         coletar_fase(fase, forcar, baixadas, pend)
+        fase["elemento"] = rotacoes.elemento_fase(rotacoes._mods({"elementos": fase.get("elementos")}),
+                                                  fase.get("rotacaoAjustes"))
+
+    # Elemento de ataque de cada vocação considerando a luta inteira
+    boss["ataque"] = rotacoes.elementos_ataque(boss)
+    if not boss.get("defesa"):
+        pend.append("defesa não preenchida (campo 'defesa')")
 
     if not mec:
         pend.append("mecânica não escrita")

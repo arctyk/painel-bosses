@@ -248,3 +248,106 @@ def gerar(boss):
 
 def magias_usadas(rot):
     return sorted({p["magia"] for v in rot.values() if isinstance(v, dict) for p in v.get("passos", [])})
+
+
+# ---------------------------------------------------------------------------------------------
+# Elemento de ataque por vocação, olhando a LUTA INTEIRA (boss + fases + summons que importam).
+# Cada alvo tem um peso (boss = 1; fase com "peso" no bosses.js; padrão 0,5). Para cada opção
+# da vocação (ex.: sorcerer "energia + SD") soma-se, alvo a alvo, o melhor dos elementos da opção
+# (resistência em %, negativo conta como 0) x peso. Ganha a opção de maior soma.
+# ---------------------------------------------------------------------------------------------
+
+OPCOES = {
+    "sorcerer": [("fogo",), ("energia",), ("fogo", "morte"), ("energia", "morte")],
+    "druid": [("gelo",), ("terra",), ("gelo", "morte"), ("terra", "morte")],
+    "paladin": [("sagrado",), ("fisico",), ("sagrado", "fisico")],
+    "knight": [("fisico",)],
+    "monk": [("fisico",)],
+}
+# elementos que exigem algo além da magia principal (mostrado no painel)
+ROTULO_EXTRA = {"morte": "SD"}
+
+
+def _alvos(boss):
+    alvos = [(_mods(boss), 1.0)]
+    for f in boss.get("fases") or []:
+        peso = f.get("peso", 0.5)
+        if peso:
+            alvos.append((_mods({"elementos": f.get("elementos")}), float(peso)))
+    return alvos
+
+
+def _pontos(opcao, alvos, aj):
+    total = 0.0
+    for mods, peso in alvos:
+        melhor = 0
+        for el in opcao:
+            if el == "morte" and aj.get("semMorte"):
+                continue
+            if (el == "terra" and aj.get("semTerra")) or (el == "energia" and aj.get("semEnergia")):
+                continue
+            melhor = max(melhor, mods.get(el, 100))
+        total += peso * max(melhor, 0)
+    return total
+
+
+# desempate: magias de área mais fortes (sorcerer: beams de energia; druid: Strong Ice Wave)
+PREFERENCIA = {"sorcerer": ["energia", "fogo"], "druid": ["gelo", "terra"], "paladin": ["sagrado", "fisico"],
+               "knight": ["fisico"], "monk": ["fisico"]}
+
+
+def elementos_ataque(boss):
+    """{voc: {"elementos": [...], "alternativas": [...]}} para a luta inteira."""
+    aj = boss.get("rotacaoAjustes") or {}
+    alvos = _alvos(boss)
+    mods_boss = _mods(boss)
+    res = {}
+    for voc, opcoes in OPCOES.items():
+        if aj.get("ataque", {}).get(voc):  # escolha manual
+            res[voc] = {"elementos": aj["ataque"][voc], "alternativas": []}
+            continue
+        proibidos = {e for e, chave in (("morte", "semMorte"), ("terra", "semTerra"), ("energia", "semEnergia"))
+                     if aj.get(chave)}
+        opcoes = [o for o in opcoes if not proibidos.intersection(o)]
+        if aj.get("sdPrincipal") and voc in ("sorcerer", "druid"):
+            opcoes = [o for o in opcoes if "morte" in o] or opcoes
+        pts = {o: _pontos(o, alvos, aj) for o in opcoes}
+        topo = max(pts.values())
+        if topo <= 0:
+            res[voc] = {"elementos": [], "alternativas": []}
+            continue
+        escolhidas = []
+        for o in opcoes:
+            if pts[o] < topo - 1e-6:
+                continue
+            if len(o) > 1:
+                magia = [e for e in o if e != "morte"][0] if "morte" in o else None
+                if magia and not aj.get("sdPrincipal") and _pontos((magia,), alvos, aj) >= topo - 1e-6:
+                    o = (magia,)                                  # o SD não soma nada
+                elif magia and _pontos(("morte",), alvos, aj) >= topo - 1e-6:
+                    # empate com "só SD": mantém a magia se ela funciona bem no boss
+                    o = o if mods_boss.get(magia, 100) >= 90 else ("morte",)
+            if o not in escolhidas:
+                escolhidas.append(o)
+        pref = PREFERENCIA[voc]
+        escolhidas.sort(key=lambda o: min((pref.index(e) for e in o if e in pref), default=99))
+        principal = escolhidas[0]
+        alternativas = [e for o in escolhidas[1:] for e in o if e not in principal and e != "morte"]
+        res[voc] = {"elementos": list(principal), "alternativas": sorted(set(alternativas), key=lambda e: pref.index(e) if e in pref else 99)}
+    return res
+
+
+def elemento_fase(mods_fase, aj=None):
+    """Melhor elemento de cada vocação contra um alvo só."""
+    aj = aj or {}
+    res = {}
+    for voc, opcoes in OPCOES.items():
+        candidatos = sorted({e for o in opcoes for e in o})
+        val = {e: mods_fase.get(e, 100) for e in candidatos
+               if not aj.get({"morte": "semMorte", "terra": "semTerra", "energia": "semEnergia"}.get(e, "-"))}
+        if not val or max(val.values()) <= 0:
+            res[voc] = []
+            continue
+        top = max(val.values())
+        res[voc] = [e for e in candidatos if val.get(e) == top]
+    return res

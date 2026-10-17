@@ -41,6 +41,48 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "terra"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "fogo",
+        "gelo"
+      ],
+      "melee": true,
+      "nota": "Os jogadores viram Fire/Water Elemental e soltam fogo e gelo uns nos outros; os Soul Scourges batem forte no blocker."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -469,6 +511,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -513,6 +575,48 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "terra"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "gelo",
+        "terra"
+      ],
+      "melee": true,
+      "nota": "Os Frozen Souls batem gelo à distância (Glacier Amulet). O boss também usa terra."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -899,6 +1003,14 @@ window.BOSSES = [
           "sorcerer": [],
           "druid": [],
           "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [],
+          "knight": [],
+          "monk": []
         }
       },
       {
@@ -921,6 +1033,14 @@ window.BOSSES = [
           "paladin": [],
           "sorcerer": [],
           "druid": [],
+          "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [],
+          "knight": [],
           "monk": []
         }
       },
@@ -1000,6 +1120,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -1047,6 +1190,51 @@ window.BOSSES = [
     "rotacaoAjustes": {
       "sdPrincipal": true,
       "nota": "Enquanto os Darks estiverem vivos o boss fica invulnerável."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "fogo"
+      ],
+      "melee": true,
+      "nota": "O maior dano é o Fire Wave do boss: blocker na diagonal."
     },
     "rotacao": {
       "knight": {
@@ -1546,6 +1734,24 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -1623,6 +1829,26 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -1702,6 +1928,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -1779,6 +2028,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -1858,6 +2130,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -1936,6 +2229,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -1980,6 +2296,45 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [],
+      "melee": true,
+      "nota": "A wiki não registra o elemento do dano; o perigo é o Lesser Hex (menos cura). Proteção física no blocker."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -2415,6 +2770,25 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -2492,6 +2866,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -2571,6 +2968,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -2615,6 +3035,45 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [],
+      "melee": true,
+      "nota": "A wiki não registra o elemento do dano; o perigo é o Lesser Hex (menos cura). Proteção física no blocker."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -2890,6 +3349,25 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -2967,6 +3445,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -3046,6 +3547,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -3092,6 +3616,47 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "nota": "SD só no boss: os Condensed Sins refletem death."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "terra"
+      ],
+      "melee": true,
+      "nota": "O boss bate físico e terra; os Condensed Sins também machucam o time."
     },
     "rotacao": {
       "knight": {
@@ -3558,6 +4123,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -3580,6 +4168,14 @@ window.BOSSES = [
           "paladin": [],
           "sorcerer": [],
           "druid": [],
+          "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [],
+          "knight": [],
           "monk": []
         }
       },
@@ -3659,6 +4255,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -3705,6 +4322,47 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "nota": "A estratégia da wiki é fogo no rei (Fireball/GFB) e GFB/waves nos minibosses."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "morte"
+      ],
+      "melee": true,
+      "nota": "O rei bate físico forte (até ~2.700) e death; o ataque em reta aplica Greater Hex."
     },
     "rotacao": {
       "knight": {
@@ -4271,6 +4929,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -4348,6 +5027,25 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -4431,6 +5129,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -4513,6 +5231,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -4535,6 +5273,14 @@ window.BOSSES = [
           "paladin": [],
           "sorcerer": [],
           "druid": [],
+          "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [],
+          "knight": [],
           "monk": []
         }
       },
@@ -4613,6 +5359,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -4695,6 +5464,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -4772,6 +5562,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -4851,6 +5664,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -4929,6 +5765,25 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "energia"
+          ],
+          "druid": [
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -4974,6 +5829,48 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "nota": "Na forma Charged Anomaly o boss é imune: só o vortex vermelho causa dano."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "terra"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Sparks of Destruction (energia) o tempo todo; a Charged Anomaly bate bem mais forte."
     },
     "rotacao": {
       "knight": {
@@ -5435,6 +6332,14 @@ window.BOSSES = [
           "sorcerer": [],
           "druid": [],
           "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [],
+          "knight": [],
+          "monk": []
         }
       },
       {
@@ -5513,6 +6418,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -5563,6 +6488,51 @@ window.BOSSES = [
         "knight": "Use arma de death, se tiver.",
         "monk": "Use arma de death, se tiver."
       }
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo",
+          "morte"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Melee forte (até ~1.800) e Energy Wave/Beam."
     },
     "rotacao": {
       "knight": {
@@ -6066,6 +7036,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -6109,6 +7099,47 @@ window.BOSSES = [
     "passaPor": [],
     "rotacaoAjustes": {
       "nota": "Na forma Charging Outburst só físico funciona: mago usa Explosion Rune (adevo mas hur), paladin Ethereal Spear. 12s para matar."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado",
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "A explosão do Charging Outburst é de energia (Shockwave Amulet ajuda)."
     },
     "rotacao": {
       "knight": {
@@ -6618,6 +7649,20 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [
+            "fisico"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -6696,6 +7741,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -6740,6 +7805,49 @@ window.BOSSES = [
     "passaPor": [],
     "rotacaoAjustes": {
       "nota": "Quando surgir o Damage Resonance, pare tudo (cada golpe cura 4.000). Nada de utori (dano contínuo)."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Melee e Sparks (energia)."
     },
     "rotacao": {
       "knight": {
@@ -7234,6 +8342,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -7312,6 +8443,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -7361,6 +8512,48 @@ window.BOSSES = [
         "druid": "Foreshock: gelo. Aftershock: terra ou SD.",
         "monk": "Foreshock: arma de energia/físico. Aftershock: arma de terra (imune a físico)."
       }
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado",
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Sparks (energia) e as duas formas batem físico."
     },
     "rotacao": {
       "knight": {
@@ -7830,6 +9023,24 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia"
+          ],
+          "druid": [
+            "gelo"
+          ],
+          "paladin": [
+            "fisico"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -7885,6 +9096,22 @@ window.BOSSES = [
               "icone": "img/magias/sudden-death-rune.gif"
             }
           ],
+          "monk": []
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [],
           "monk": []
         }
       },
@@ -7964,6 +9191,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -8010,6 +9257,50 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Muitos Sparks (energia); Frenzy e Disruption batem forte de perto."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -8554,6 +9845,25 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -8637,6 +9947,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -8719,6 +10050,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -8752,6 +10104,19 @@ window.BOSSES = [
               "icone": "img/magias/terra-wave.gif"
             }
           ],
+          "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "morte",
+            "terra"
+          ],
+          "paladin": [],
+          "knight": [],
           "monk": []
         }
       },
@@ -8830,6 +10195,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -8918,6 +10306,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -8996,6 +10407,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -9039,6 +10470,48 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "terra",
+        "sagrado"
+      ],
+      "melee": true,
+      "nota": "Groundshaker (terra) e Holy Beam; melee até ~1.200."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -9440,6 +10913,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -9517,6 +11010,26 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       }
@@ -9601,6 +11114,49 @@ window.BOSSES = [
       "Fire",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "terra"
+      ],
+      "melee": true,
+      "nota": "Dano de terra (até ~1.000) e melee."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -10123,6 +11679,25 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "morte"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -10162,6 +11737,51 @@ window.BOSSES = [
     "podeSerPuxado": false,
     "empurraObjetos": true,
     "passaPor": [],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "fogo"
+      ],
+      "melee": true,
+      "nota": "Área de fogo e ataques em cadeia que pegam o time."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -10606,6 +12226,36 @@ window.BOSSES = [
     "rotacaoAjustes": {
       "nota": "Imune a tudo: o dano vem do reflexo dos espelhos. Um único golpe de qualquer vocação, na hora certa, tira 7.500. Atacar fora da hora cura 5.000."
     },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [],
+        "alternativas": []
+      },
+      "knight": {
+        "elementos": [],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "terra",
+        "sagrado"
+      ],
+      "melee": true,
+      "nota": "Ultimate Poison Explosion (7.500, terra) e Holy Beam."
+    },
     "rotacao": {
       "knight": {
         "passos": [],
@@ -10916,6 +12566,49 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "terra",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "UE de energia (~6.000): máximo de proteção de energia, Shockwave Amulet e Energy Ring."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -11339,6 +13032,25 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "morte"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -11416,6 +13128,25 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia"
+          ],
+          "druid": [
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -11495,6 +13226,24 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia"
+          ],
+          "druid": [
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -11542,6 +13291,49 @@ window.BOSSES = [
     "rotacaoAjustes": {
       "semTerra": true,
       "nota": "Não use terra: os summons curam o boss com terra."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "terra"
+      ],
+      "melee": true,
+      "nota": "O \"+\" depois do teleporte é de terra (2.000-3.000)."
     },
     "rotacao": {
       "knight": {
@@ -12068,6 +13860,28 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -12146,6 +13960,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -12190,6 +14027,49 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "fisico"
+      ],
+      "melee": true,
+      "nota": "O BOOM e as Whirling Blades: Stone Skin Amulet no blocker depois do 3º/4º BOOM."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -12664,6 +14544,14 @@ window.BOSSES = [
           "sorcerer": [],
           "druid": [],
           "monk": []
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [],
+          "druid": [],
+          "paladin": [],
+          "knight": [],
+          "monk": []
         }
       }
     ],
@@ -12711,6 +14599,49 @@ window.BOSSES = [
     "rotacaoAjustes": {
       "semEnergia": true,
       "nota": "Energia cura o boss (a wiki BR mostra energia neutra, mas a wiki em inglês e a mecânica confirmam a cura)."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "fogo"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Energy Beam/Wave e a explosão do jogador transformado são de energia."
     },
     "rotacao": {
       "knight": {
@@ -13223,6 +15154,28 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -13269,6 +15222,47 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "semMorte": true
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "morte"
+      ],
+      "melee": true,
+      "nota": "Lifesteal e summons; a wiki registra pouco do dano. Shooters espalhados."
     },
     "rotacao": {
       "knight": {
@@ -13788,6 +15782,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -13871,6 +15886,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -13952,6 +15987,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -14030,6 +16086,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -14076,6 +16155,48 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "nota": "Imune a fogo e gelo; os summons se curam com fogo/gelo. Use terra, energia, holy ou físico."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "terra"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "fogo",
+        "gelo"
+      ],
+      "melee": true,
+      "nota": "Fogo no lado do verão, gelo no lado do inverno (e os summons de cada lado)."
     },
     "rotacao": {
       "knight": {
@@ -14647,6 +16768,28 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -14724,6 +16867,28 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -14803,6 +16968,28 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -14881,6 +17068,28 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -14928,6 +17137,51 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "morte"
+      ],
+      "melee": true,
+      "nota": "Dano de death (até ~1.000)."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -15491,6 +17745,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -15534,6 +17811,52 @@ window.BOSSES = [
       "Fire",
       "Energy"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "morte",
+        "terra"
+      ],
+      "melee": true,
+      "nota": "Boss bate físico, terra e death; Blood Pools e Essences drenam vida."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -16053,6 +18376,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -16130,6 +18476,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -16209,6 +18578,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -16252,6 +18644,52 @@ window.BOSSES = [
       "Energy",
       "Poison"
     ],
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "terra",
+        "energia"
+      ],
+      "melee": true,
+      "nota": "Doctor Marrow: terra (Sacred Tree Amulet). The Monster: energia (Lightning Pendant)."
+    },
     "rotacao": {
       "knight": {
         "passos": [
@@ -16709,6 +19147,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -16788,6 +19249,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -16866,6 +19350,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -16909,6 +19416,50 @@ window.BOSSES = [
     "passaPor": [],
     "rotacaoAjustes": {
       "nota": "Use alvo único no boss na etapa 3; área nas End of Days."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": []
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "fogo"
+      ],
+      "melee": true,
+      "nota": "Unchained Fires e o próprio boss: fogo. Na etapa 1 o calor (agony) não tem proteção."
     },
     "rotacao": {
       "knight": {
@@ -17394,6 +19945,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -17477,6 +20049,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -17555,6 +20148,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -17600,6 +20216,52 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "nota": "Bata no A Weak Spot (andar de baixo): o dano passa para o boss. No boss em si o dano é mínimo (5%)."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia"
+        ],
+        "alternativas": [
+          "fogo"
+        ]
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [
+        "morte",
+        "terra"
+      ],
+      "melee": true,
+      "nota": "Embaixo, death que aumenta a cada turno; as Greed Worms explodem em terra (750)."
     },
     "rotacao": {
       "knight": {
@@ -18008,6 +20670,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -18085,6 +20770,29 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 0.5,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -18164,6 +20872,29 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "fogo",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       }
     ],
@@ -18209,6 +20940,48 @@ window.BOSSES = [
     ],
     "rotacaoAjustes": {
       "nota": "Todas as formas são imunes a fogo; a Wisdom também a death. A wiki BR mostra fogo neutro, mas a wiki em inglês mostra imunidade."
+    },
+    "ataque": {
+      "sorcerer": {
+        "elementos": [
+          "energia",
+          "morte"
+        ],
+        "alternativas": []
+      },
+      "druid": {
+        "elementos": [
+          "gelo"
+        ],
+        "alternativas": [
+          "terra"
+        ]
+      },
+      "paladin": {
+        "elementos": [
+          "sagrado"
+        ],
+        "alternativas": [
+          "fisico"
+        ]
+      },
+      "knight": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      },
+      "monk": {
+        "elementos": [
+          "fisico"
+        ],
+        "alternativas": []
+      }
+    },
+    "defesa": {
+      "elementos": [],
+      "melee": true,
+      "nota": "A wiki não registra o elemento do dano (boss corpo a corpo): proteção física no blocker."
     },
     "rotacao": {
       "knight": {
@@ -18755,6 +21528,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -18836,6 +21629,28 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia",
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       },
@@ -18920,6 +21735,27 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -19003,6 +21839,26 @@ window.BOSSES = [
               "icone": "img/magias/mystic-repulse.gif"
             }
           ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "energia"
+          ],
+          "druid": [
+            "gelo",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
+          ]
         }
       },
       {
@@ -19085,6 +21941,27 @@ window.BOSSES = [
               "palavras": "exori amp pug",
               "icone": "img/magias/mystic-repulse.gif"
             }
+          ]
+        },
+        "peso": 1,
+        "elemento": {
+          "sorcerer": [
+            "morte"
+          ],
+          "druid": [
+            "gelo",
+            "morte",
+            "terra"
+          ],
+          "paladin": [
+            "fisico",
+            "sagrado"
+          ],
+          "knight": [
+            "fisico"
+          ],
+          "monk": [
+            "fisico"
           ]
         }
       }

@@ -4,13 +4,6 @@
   // Ordem das seções. Grupos que não estiverem aqui aparecem no final.
   var ORDEM_GRUPOS = ["Grave Danger", "Heart of Destruction", "Dream Courts", "Avulsos"];
 
-  // Ícone (32x32) de cada grupo no menu lateral.
-  var ICONE_GRUPO = {
-    "Grave Danger": "img/itens/final-judgement.gif",
-    "Heart of Destruction": "img/itens/devourer-core.gif",
-    "Dream Courts": "img/itens/dream-shroud.gif",
-    "Avulsos": "img/itens/silver-token.gif"
-  };
 
   // Ícone da manchete de cada subgrupo (ícones de notícia do tibia.com).
   function iconeSubgrupo(s) {
@@ -37,7 +30,6 @@
 
   var bosses = (window.BOSSES || []).slice();
   var secoesEl = document.getElementById("secoes");
-  var menuEl = document.getElementById("MenuItens");
   var buscaEl = document.getElementById("busca");
   var vazioEl = document.getElementById("vazio");
   var modalEl = document.getElementById("modal");
@@ -179,45 +171,6 @@
     secoesEl.innerHTML = html;
   }
 
-  // ---------- menu lateral ----------
-  function renderMenu() {
-    var abertos = ler("menuAbertos", null);
-    var html = "";
-    grupos().forEach(function (g, n) {
-      var lista = bossesDoGrupo(g);
-      var aberto = abertos ? abertos.indexOf(g) !== -1 : n === 0;
-      var ic = ICONE_GRUPO[g] || (lista[0] && lista[0].b.sprite);
-      html += '<div class="menuitem' + (aberto ? " aberto" : "") + '" data-grupo="' + esc(g) + '">' +
-        '<div class="MenuButton" role="button" tabindex="0" aria-expanded="' + aberto + '">' +
-          '<div class="Button"></div>' +
-          '<span class="Lights"><div class="light_lu"></div><div class="light_ld"></div><div class="light_ru"></div></span>' +
-          '<div class="Icon">' + (ic ? '<img class="pixel" src="' + esc(ic) + '" alt="">' : "") + "</div>" +
-          '<div class="Label' + (g.length > 14 ? " longo" : "") + '">' + esc(g) + "</div>" +
-          '<div class="Extend"></div>' +
-        "</div>" +
-        '<div class="Submenu">' +
-        lista.map(function (x) {
-          return '<a class="Submenuitem" href="#card-' + x.i + '" data-i="' + x.i + '">' +
-            '<div class="LeftChain"></div><div class="ActiveSubmenuItemIcon"></div>' +
-            '<div class="SubmenuitemLabel">' + esc(x.b.nome) + "</div>" +
-            '<div class="RightChain"></div></a>';
-        }).join("") +
-        "</div></div>";
-    });
-    menuEl.innerHTML = html;
-  }
-
-  function alternarGrupo(item, rolar) {
-    var aberto = !item.classList.contains("aberto");
-    item.classList.toggle("aberto", aberto);
-    item.querySelector(".MenuButton").setAttribute("aria-expanded", aberto);
-    var abertos = [].map.call(menuEl.querySelectorAll(".menuitem.aberto"), function (m) { return m.getAttribute("data-grupo"); });
-    guardar("menuAbertos", abertos);
-    if (aberto && rolar) {
-      var sec = document.getElementById("g-" + slug(item.getAttribute("data-grupo")));
-      if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }
 
   // ---------- busca ----------
   function filtrar() {
@@ -242,15 +195,6 @@
       if (total) algum = true;
     });
     vazioEl.hidden = algum;
-    // menu acompanha a busca
-    menuEl.querySelectorAll(".Submenuitem").forEach(function (a) {
-      var c = document.getElementById("card-" + a.getAttribute("data-i"));
-      a.classList.toggle("oculto", !!(c && c.hidden));
-    });
-    if (termo) menuEl.querySelectorAll(".menuitem").forEach(function (m) {
-      var tem = m.querySelector(".Submenuitem:not(.oculto)");
-      m.classList.toggle("aberto", !!tem);
-    });
   }
 
   // ---------- popup ----------
@@ -342,26 +286,50 @@
   // Rotação de ataque por vocação (gerada por rotacoes.py)
   var VOCACOES = [["knight", "Knight"], ["paladin", "Paladin"], ["sorcerer", "Sorcerer"], ["druid", "Druid"], ["monk", "Monk"]];
 
-  function blocoRotacao(b) {
-    var r = b.rotacao;
-    if (!r) return "";
-    var colunas = VOCACOES.map(function (v) {
-      var dados = r[v[0]] || { passos: [] };
-      var passos = (dados.passos || []).map(function (p, n) {
-        return '<li class="passo"><span class="ordem">' + (n + 1) + "</span>" +
-          (p.icone ? '<img class="icone-magia" src="' + esc(p.icone) + '" alt="" title="' + esc(p.magia) + '">' : '<span class="icone-magia vazio"></span>') +
-          '<span class="passo-txt"><b>' + esc(p.magia) + '</b><span class="palavras">' + esc(p.palavras) + "</span>" +
-          (p.obs ? '<span class="obs">' + esc(p.obs) + "</span>" : "") + "</span></li>";
-      }).join("");
-      return '<div class="voc"><div class="voc-titulo">' + v[1] + "</div>" +
-        (passos ? '<ol class="passos">' + passos + "</ol>" : "") +
-        (dados.nota ? '<p class="voc-nota">' + esc(dados.nota) + "</p>" : "") + "</div>";
+  // Elemento de cada vocação (calculado por rotacoes.py considerando a luta inteira)
+  var NOME_ELEMENTO = { fisico: "Físico", terra: "Terra", fogo: "Fogo", morte: "Death", energia: "Energia",
+    sagrado: "Holy", gelo: "Gelo" };
+
+  function chipElemento(el, extra) {
+    var rotulo = NOME_ELEMENTO[el] || el;
+    if (el === "morte" && extra) rotulo = "SD";
+    return '<span class="el-chip el-' + el + '">' + icone(el, rotulo) + " " + rotulo + "</span>";
+  }
+
+  function listaElementos(lista, comSD) {
+    if (!lista || !lista.length) return '<span class="sem-dano">sem dano</span>';
+    return lista.map(function (e) { return chipElemento(e, comSD); }).join('<span class="el-mais">+</span>');
+  }
+
+  function blocoAtaque(b) {
+    var a = b.ataque;
+    if (!a) return "";
+    var mago = { sorcerer: 1, druid: 1 };
+    var cols = VOCACOES.map(function (v) {
+      var d = a[v[0]] || {};
+      var alt = (d.alternativas || []).length
+        ? '<div class="el-alt">ou ' + d.alternativas.map(function (e) { return chipElemento(e); }).join(" ") + "</div>" : "";
+      return '<div class="voc-el"><div class="voc-titulo">' + v[1] + '</div><div class="el-linha">' +
+        listaElementos(d.elementos, mago[v[0]] || v[0] === "paladin") + "</div>" + alt + "</div>";
     }).join("");
-    return tabela("Rotação de ataque",
-      '<div class="rotacao">' + colunas + "</div>" +
-      (r.nota ? '<p class="rot-nota Even"><b>Neste boss:</b> ' + esc(r.nota) + "</p>" : "") +
-      '<p class="rot-rodape Odd">Ordem de prioridade a cada 2s (magias e runas de ataque dividem a mesma recarga). ' +
-      "Calculada a partir das resistências do boss e dos dados das magias após o update de 16/06/2026 (TibiaWiki). Ajuste ao seu level e equipamento.</p>");
+    var nota = (b.rotacaoAjustes && b.rotacaoAjustes.nota) ? '<p class="rot-nota Even"><b>Neste boss:</b> ' + esc(b.rotacaoAjustes.nota) + "</p>" : "";
+    return tabela("Ataque", '<div class="elementos-voc">' + cols + "</div>" + nota +
+      '<p class="rot-rodape Odd">Elemento para a luta inteira: boss, formas e summons que precisam morrer. "SD" = Sudden Death Rune.</p>');
+  }
+
+  function blocoDefesa(b) {
+    var d = b.defesa;
+    if (!d) return "";
+    var cols = VOCACOES.map(function (v) {
+      var lista = (d.elementos || []).slice();
+      if (d.melee && (v[0] === "knight" || v[0] === "monk") && lista.indexOf("fisico") === -1) lista.unshift("fisico");
+      return '<div class="voc-el"><div class="voc-titulo">' + v[1] + '</div><div class="el-linha">' +
+        (lista.length ? lista.map(function (e) { return chipElemento(e); }).join(" ") : '<span class="sem-dano">sem dado</span>') +
+        "</div></div>";
+    }).join("");
+    return tabela("Defesa", '<div class="elementos-voc">' + cols + "</div>" +
+      (d.nota ? '<p class="rot-nota Even">' + esc(d.nota) + "</p>" : "") +
+      '<p class="rot-rodape Odd">Elemento de proteção do set. Knight e monk lutam colados no boss, então também precisam de proteção física.</p>');
   }
 
   // [[Nome]] ou [[Nome|texto]] vira "texto" + sprite.
@@ -444,13 +412,9 @@
     if (!fases.length) return "";
     var linhas = fases.map(function (f) {
       var ataques = VOCACOES.map(function (v) {
-        var a = (f.ataques && f.ataques[v[0]]) || [];
+        var els = (f.elemento && f.elemento[v[0]]) || [];
         return '<div class="fase-voc"><span class="fase-voc-nome">' + v[1] + "</span>" +
-          (a.length ? a.map(function (m) {
-            return '<span class="fase-magia" title="' + esc(m.magia + " (" + m.palavras + ")") + '">' +
-              (m.icone ? '<img class="icone-magia peq" src="' + esc(m.icone) + '" alt="">' : "") +
-              '<span class="palavras">' + esc(m.palavras) + "</span></span>";
-          }).join("") : '<span class="sem-dano">sem dano</span>') + "</div>";
+          '<div class="el-linha">' + (els.length ? els.map(function (e) { return chipElemento(e, v[0] !== "knight" && v[0] !== "monk"); }).join(" ") : '<span class="sem-dano">sem dano</span>') + "</div></div>";
       }).join("");
       return '<div class="fase">' +
         '<div class="fase-topo">' +
@@ -465,7 +429,7 @@
       "</div>";
     }).join("");
     return tabela("Fases e alvos", '<div class="fases">' + linhas + "</div>" +
-      '<p class="rot-rodape Odd">Melhor ataque de cada vocação contra cada fase (as 2 primeiras magias da rotação calculada para ela). ' +
+      '<p class="rot-rodape Odd">Melhor elemento de cada vocação contra cada fase. ' +
       "Resistências da TibiaWiki BR, corrigidas pela wiki em inglês quando a BR só tinha o valor padrão.</p>");
   }
 
@@ -477,7 +441,7 @@
     var b = bosses[i];
     if (!b) return;
     var corpo =
-      blocoInfo(b) + blocoResistencias(b) + blocoRotacao(b) + blocoFases(b) + blocoLoot(b) + blocoMecanica(b) + blocoTabela(b) +
+      blocoInfo(b) + blocoResistencias(b) + blocoAtaque(b) + blocoDefesa(b) + blocoFases(b) + blocoLoot(b) + blocoMecanica(b) + blocoTabela(b) +
       '<div class="botoes">' +
       (b.link ? botao("Ver na TibiaWiki", 'href="' + esc(b.link) + '" target="_blank" rel="noopener"') : "") +
       botao("Fechar", 'href="#" data-fechar="1"') + "</div>";
@@ -486,7 +450,6 @@
     });
     // separa as tabelas do popup
     modalCaixaEl.querySelectorAll(".BoxContent > .TableContainer").forEach(function (t, n) { if (n) t.style.marginTop = "14px"; });
-    menuEl.querySelectorAll(".Submenuitem").forEach(function (a) { a.classList.toggle("ativo", a.getAttribute("data-i") === String(i)); });
     ultimoFoco = document.activeElement;
     modalEl.hidden = false;
     modalEl.scrollTop = 0;
@@ -506,24 +469,6 @@
     var c = e.target.closest(".card");
     if (c) abrir(Number(c.getAttribute("data-i")));
   });
-  menuEl.addEventListener("click", function (e) {
-    var bt = e.target.closest(".MenuButton");
-    if (bt) { alternarGrupo(bt.parentNode, true); return; }
-    var sub = e.target.closest(".Submenuitem");
-    if (sub) {
-      e.preventDefault();
-      var c = document.getElementById("card-" + sub.getAttribute("data-i"));
-      if (c) {
-        c.scrollIntoView({ behavior: "smooth", block: "center" });
-        c.classList.remove("destaque"); void c.offsetWidth; c.classList.add("destaque");
-      }
-      abrir(Number(sub.getAttribute("data-i")));
-    }
-  });
-  menuEl.addEventListener("keydown", function (e) {
-    var bt = e.target.closest(".MenuButton");
-    if (bt && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); alternarGrupo(bt.parentNode, true); }
-  });
   modalEl.addEventListener("click", function (e) {
     if (e.target === modalEl || e.target.closest("[data-fechar]")) { e.preventDefault(); fechar(); }
   });
@@ -542,5 +487,4 @@
   });
 
   renderConteudo();
-  renderMenu();
 })();

@@ -26,6 +26,9 @@ Os ícones de notícia e o logo vieram da página salva em `../Site Oficial/`.
 Se alguma imagem de `tema/` faltar, o painel usa cores parecidas no lugar.
 | `coletar.py` | Script que busca os dados na wiki e atualiza `bosses.js` |
 | `servidor.py` | Servidor local sem cache (`python servidor.py` → http://127.0.0.1:8765), para ver as mudanças na hora |
+| `menu.js` | Menu lateral compartilhado (Bosses / Outfits) |
+| `outfits.html`, `outfits.js`, `outfits-dados.js` | Página de outfits (tabela por outfit e por item) |
+| `coletar_outfits.py` | Gera `outfits-dados.js` a partir da TibiaWiki em inglês |
 | `rotacoes.py` | Gera a rotação de ataque de cada vocação (usado pelo `coletar.py`) |
 | `img/magias/` | Ícones das magias (da tibia.fandom.com) |
 
@@ -138,3 +141,19 @@ vocação contra ela (as 2 primeiras magias da rotação). `elementosAjuste` e `
 wiki BR não tem (vários vieram da wiki em inglês). O boss também aceita `elementosAjuste`.
 
 Os Avulsos aparecem em ordem de level recomendado (`ORDENAR_POR_LEVEL` no topo de `app.js`).
+
+## Ataque e defesa por elemento
+
+- **Ataque**: `rotacoes.elementos_ataque` escolhe o elemento de cada vocação para a luta inteira. Cada alvo tem
+  peso: o boss vale 1; cada fase usa o campo `peso` (1 = forma/miniboss, 0,5 = summon que precisa morrer,
+  0 = imune/evitar). Para cada opção (ex.: sorcerer "energia + SD") soma-se o melhor elemento da opção em cada
+  alvo. Empates: sorcerer prefere energia, druid prefere gelo (magias de área mais fortes). Para forçar uma
+  escolha: `"rotacaoAjustes": {"ataque": {"sorcerer": ["fogo"]}}`.
+- **Defesa**: campo manual `defesa` no boss: `{"elementos": ["energia"], "melee": true, "nota": "..."}`.
+  Com `melee`, knight e monk também recebem proteção física.
+
+## Página de Outfits
+
+`python coletar_outfits.py` lê as seções "Required Equipment" das páginas "<Outfit> Outfits Quest/Spoiler"
+da TibiaWiki em inglês, aplica as correções da lista `CORRECOES` (no topo do script), descobre quem dropa
+cada item e baixa os sprites (outfit completo masculino/feminino e itens). Só entram outfits que pedem itens.
