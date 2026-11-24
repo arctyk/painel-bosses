@@ -662,3 +662,8 @@ html { scroll-behavior: smooth; }
 .tabela-bestiario tr.divisao td { background: #5f4d41; color: #fff; font-weight: bold; text-align: left; padding: 5px 8px; letter-spacing: .3px; opacity: 1; }
 .tabela-bestiario .rara { white-space: nowrap; }
 .tabela-bestiario .ocorr { flex-direction: column; align-items: flex-start; gap: 1px; }
+
+/* Telas com escala do Windows (125%, 150%...) ou zoom do navegador: mantém a pixel art nítida em vez de borrada.
+   A ilustração de fundo (.arte) continua com suavização normal. */
+html { image-rendering: pixelated; }
+.arte { image-rendering: auto; }
