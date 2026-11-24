@@ -625,3 +625,40 @@ html { scroll-behavior: smooth; }
 .col-drops { min-width: 180px; }
 .col-drops a.monstro { font-weight: normal; }
 .mais { color: #7a5a3a; cursor: help; border-bottom: 1px dotted #7a5a3a; }
+
+/* ===================== Página do Bestiário ===================== */
+.controles .ctrl { display: inline-flex; align-items: center; gap: 4px; }
+.controles select { font: 9pt Verdana, Arial, sans-serif; color: #3a1a00; background: #fff2db; border: 1px solid #5a2800; padding: 1px 3px; }
+.tabela-bestiario .col-check { width: 28px; text-align: center; vertical-align: middle; }
+.tabela-bestiario input.marca { width: 17px; height: 17px; cursor: pointer; accent-color: #1d7a2c; }
+.tabela-bestiario td { vertical-align: middle; }
+.tabela-bestiario tr.feito td { opacity: .55; }
+.tabela-bestiario tr.feito td.col-check { opacity: 1; }
+.tabela-bestiario tr.feito .col-nome b { text-decoration: line-through; }
+.tabela-bestiario .col-nome .outfit-cel { min-width: 170px; }
+.tabela-bestiario .col-nome img.sprite { max-height: 44px; max-width: 44px; }
+.tabela-bestiario td { padding-top: 2px; padding-bottom: 2px; }
+.tabela-bestiario .col-respawn { min-width: 200px; }
+.tabela-bestiario .tempo { white-space: nowrap; }
+.rara { font-size: 7pt; color: #a33a00; font-weight: bold; }
+.fonte { font-size: 6.5pt; padding: 0 3px; border: 1px solid #a88a62; border-radius: 2px; color: #7a5a3a; background: #fffaf0; cursor: help; }
+.dif { white-space: nowrap; font-weight: bold; }
+.dif-harmless { color: #607060; }
+.dif-trivial { color: #2f7a2f; }
+.dif-easy { color: #1d6a8a; }
+.dif-medium { color: #8a6a00; }
+.dif-hard { color: #b04a00; }
+.dif-challenging { color: #a01010; }
+.tabela-bestiario .nome-cel { display: flex; align-items: center; gap: 8px; min-width: 190px; }
+.tabela-bestiario .spr { flex: 0 0 46px; height: 46px; display: flex; align-items: center; justify-content: center; }
+.tabela-bestiario .spr-corte { overflow: hidden; flex: none; }
+.tabela-bestiario .spr img { display: block; max-width: none; image-rendering: pixelated; }
+.tabela-bestiario .ocorr { display: flex; align-items: center; gap: 5px; margin-top: 2px; }
+.tabela-bestiario .ocorr img { display: block; }
+.tabela-bestiario td.dif { text-align: center; }
+.tabela-bestiario td.dif img.estrelas { display: block; margin: 0 auto 2px; }
+.tabela-bestiario td.dif div { font-size: 7.5pt; }
+.tabela-bestiario .pts { display: inline-flex; align-items: center; gap: 4px; }
+.tabela-bestiario tr.divisao td { background: #5f4d41; color: #fff; font-weight: bold; text-align: left; padding: 5px 8px; letter-spacing: .3px; opacity: 1; }
+.tabela-bestiario .rara { white-space: nowrap; }
+.tabela-bestiario .ocorr { flex-direction: column; align-items: flex-start; gap: 1px; }

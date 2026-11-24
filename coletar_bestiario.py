@@ -1,0 +1,269 @@
+#!/usr/bin/env python3
+"""
+Coleta o bestiário completo e gera bestiario-dados.js para a página bestiario.html.
+
+Uso:  python coletar_bestiario.py            (baixa só as imagens que faltam)
+      python coletar_bestiario.py --forcar-img
+
+Fontes:
+  - TibiaWiki em inglês (tibia.fandom.com), categoria "Bestiary Creatures": nome, classe, dificuldade,
+    raridade, HP, XP e locais de cada criatura.
+  - TibiaPal (tibiapal.com/bestiary): respawn sugerido e tempo estimado (Easy < 2h, Medium, Hard > 5h)
+    para as criaturas que valem a pena completar.
+Pontos e kills seguem a tabela oficial (página Cyclopedia da TibiaWiki).
+"""
+import html
+import json
+import os
+import re
+import sys
+import time
+import urllib.parse
+import urllib.request
+
+API = "https://tibia.fandom.com/api.php"
+TIBIAPAL = "https://tibiapal.com/bestiary"
+USER_AGENT = "Mozilla/5.0 (compatible; PainelBossesPessoal/1.0; painel offline de uso pessoal)"
+PAUSA = 0.6
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+ARQ_SAIDA = os.path.join(BASE, "bestiario-dados.js")
+DIR_IMG = os.path.join(BASE, "img", "bestiario")
+
+# dificuldade -> (kills comum, pontos comum, pontos Very Rare). Very Rare sempre pede 5 kills.
+TABELA = {
+    "Harmless": (25, 1, 5),
+    "Trivial": (250, 5, 10),
+    "Easy": (500, 15, 30),
+    "Medium": (1000, 25, 50),
+    "Hard": (2500, 50, 100),
+    "Challenging": (5000, 100, 200),
+}
+
+# nomes do TibiaPal (com erro de digitação ou agrupados) -> nomes na wiki
+APELIDOS_TIBIAPAL = {
+    "fish": ["Fish (Creature)"],
+    "northern pike": ["Northern Pike (Creature)"],
+    "butterfly (purple/blue/red)": ["Butterfly (Purple)", "Butterfly (Blue)", "Butterfly (Red)"],
+    "minotaur cult propher": ["Minotaur Cult Prophet"],
+    "menancing carnivor": ["Menacing Carnivor"],
+    "brimstone bugs": ["Brimstone Bug"],
+    "nomad": ["Nomad (Basic)", "Nomad (Blue)", "Nomad (Female)"],
+    "barbarian headhunter": ["Barbarian Headsplitter"],
+    "monk": ["Monk (Creature)"],
+    "pirate bucaneer": ["Pirate Buccaneer"],
+    "dragon lord hatching": ["Dragon Lord Hatchling"],
+    "dragon hatching": ["Dragon Hatchling"],
+    "efreet/marid": ["Efreet", "Marid"],
+    "horse (gray/brown/taupe)": ["Horse (Grey)", "Horse (Brown)", "Horse (Taupe)"],
+}
+
+_ultima = [0.0]
+
+
+def _get(url, referer=False):
+    espera = PAUSA - (time.time() - _ultima[0])
+    if espera > 0:
+        time.sleep(espera)
+    h = {"User-Agent": USER_AGENT}
+    if referer or "nocookie.net" in url:
+        h["Referer"] = "https://tibia.fandom.com/"
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
+            return r.read()
+    finally:
+        _ultima[0] = time.time()
+
+
+def api(**p):
+    p["format"] = "json"
+    return json.loads(_get(API + "?" + urllib.parse.urlencode(p)))
+
+
+def slug(t):
+    return re.sub(r"[^a-z0-9]+", "-", t.lower().replace("'", "")).strip("-")
+
+
+def limpa(t):
+    t = re.sub(r"<br\s*/?>", ", ", t or "")
+    t = re.sub(r"\{\{[^{}]*\}\}", "", t)
+    t = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*)\]\]", r"\1", t)
+    t = re.sub(r"\[https?://\S+ ([^\]]*)\]", r"\1", t)
+    t = re.sub(r"'''?|<[^>]+>", "", t)
+    return re.sub(r"\s+", " ", t).strip(" .,;")
+
+
+def membros_categoria(cat):
+    nomes, cont = [], {}
+    while True:
+        d = api(action="query", list="categorymembers", cmtitle=cat, cmlimit=500, cmnamespace=0, **cont)
+        nomes += [x["title"] for x in d["query"]["categorymembers"]]
+        if "continue" not in d:
+            return nomes
+        cont = {"cmcontinue": d["continue"]["cmcontinue"]}
+
+
+def infoboxes(titulos):
+    res = {}
+    for i in range(0, len(titulos), 50):
+        d = api(action="query", prop="revisions", rvprop="content", rvslots="main", titles="|".join(titulos[i:i + 50]))
+        for p in d["query"]["pages"].values():
+            if "revisions" not in p:
+                continue
+            w = p["revisions"][0]["slots"]["main"]["*"]
+            campos, chave = {}, None
+            for linha in w.splitlines():
+                m = re.match(r"^\|\s*(\w+)\s*=(.*)$", linha)
+                if m:
+                    # setdefault: predefinições aninhadas (loot etc.) não sobrescrevem campos do infobox
+                    chave = m.group(1) if m.group(1) not in campos else None
+                    if chave:
+                        campos[chave] = m.group(2).strip()
+                elif linha.startswith("}}"):
+                    chave = None
+                elif chave:
+                    campos[chave] += " " + linha.strip()
+            res[p["title"]] = campos
+        print("  infobox %d/%d" % (min(i + 50, len(titulos)), len(titulos)))
+    return res
+
+
+def tibiapal():
+    """{nome: (pontos, tempo, respawn)}"""
+    try:
+        h = _get(TIBIAPAL).decode("utf-8", "replace")
+    except Exception as e:
+        print("  AVISO: não consegui ler o TibiaPal:", e)
+        return {}
+    res = {}
+    for nome, pts, dif, spawn in re.findall(
+            r"<tr>\s*<td>(.*?)</td>\s*<td>(.*?)</td>\s*<td>(.*?)</td>\s*<td>(.*?)</td>", h, re.S):
+        nome = html.unescape(re.sub(r"<[^>]+>", "", nome)).strip()
+        res[nome.lower()] = (pts.strip(), re.sub(r"<[^>]+>", "", dif).strip(),
+                             html.unescape(re.sub(r"<[^>]+>", "", spawn)).strip())
+    return res
+
+
+def baixar_imagens(nomes, forcar):
+    res, faltam = {}, []
+    for n in nomes:
+        destino = os.path.join(DIR_IMG, slug(n) + ".gif")
+        if os.path.exists(destino) and not forcar:
+            res[n] = os.path.relpath(destino, BASE).replace("\\", "/")
+        else:
+            faltam.append(n)
+    for i in range(0, len(faltam), 50):
+        lote = faltam[i:i + 50]
+        d = api(action="query", prop="imageinfo", iiprop="url", titles="|".join("File:" + n + ".gif" for n in lote))
+        q = d.get("query", {})
+        norm = {x["to"]: x["from"] for x in q.get("normalized", [])}
+        for p in q.get("pages", {}).values():
+            if not p.get("imageinfo"):
+                continue
+            nome = norm.get(p["title"], p["title"]).split(":", 1)[1][:-4]
+            destino = os.path.join(DIR_IMG, slug(nome) + ".gif")
+            with open(destino, "wb") as f:
+                f.write(_get(p["imageinfo"][0]["url"]))
+            res[nome] = os.path.relpath(destino, BASE).replace("\\", "/")
+        print("  imagens %d/%d" % (min(i + 50, len(faltam)), len(faltam)))
+    return res
+
+
+def medir_sprite(caminho):
+    """Área útil do sprite (sem a borda transparente), somando todos os quadros da animação:
+    [x, y, largura, altura, largura_total, altura_total]. Usado para centralizar na tabela."""
+    try:
+        from PIL import Image, ImageSequence
+    except ImportError:
+        return None
+    im = Image.open(os.path.join(BASE, caminho))
+    caixa = None
+    for q in ImageSequence.Iterator(im):
+        b = q.convert("RGBA").getchannel("A").getbbox()
+        if b:
+            caixa = b if not caixa else (min(caixa[0], b[0]), min(caixa[1], b[1]), max(caixa[2], b[2]), max(caixa[3], b[3]))
+    if not caixa:
+        return None
+    return [caixa[0], caixa[1], caixa[2] - caixa[0], caixa[3] - caixa[1], im.width, im.height]
+
+
+def main():
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except AttributeError:
+        pass
+    forcar = "--forcar-img" in sys.argv
+    os.makedirs(DIR_IMG, exist_ok=True)
+
+    print("Lista de criaturas do bestiário...")
+    nomes = [n for n in membros_categoria("Category:Bestiary Creatures") if n != "Free Account Bestiary"]
+    print(" ", len(nomes), "criaturas")
+    boxes = infoboxes(nomes)
+    print("TibiaPal...")
+    pal = tibiapal()
+    print(" ", len(pal), "criaturas no TibiaPal")
+    for apelido, alvos in APELIDOS_TIBIAPAL.items():
+        if apelido in pal:
+            for a in alvos:
+                pal.setdefault(a.lower(), pal[apelido])
+
+    criaturas, sem_dif = [], []
+    for n in nomes:
+        b = boxes.get(n, {})
+        dif = limpa(b.get("bestiarylevel")).title()
+        rar = limpa(b.get("occurrence")).title() or "Common"
+        if dif not in TABELA:
+            sem_dif.append(n)
+            continue
+        kills, pts, pts_vr = TABELA[dif]
+        muito_rara = rar == "Very Rare"
+        p = pal.get(n.lower())
+        locais = limpa(b.get("location"))
+        c = {
+            "nome": n,
+            "exibir": re.sub(r" \((?:Creature)\)$", "", n),
+            "classe": limpa(b.get("bestiaryclass")) or None,
+            "dificuldade": dif,
+            "raridade": rar,
+            "kills": 5 if muito_rara else kills,
+            "pontos": pts_vr if muito_rara else pts,
+            "hp": limpa(b.get("hp")) or None,
+            "xp": limpa(b.get("exp")) or None,
+            "locais": locais[:300] or None,
+        }
+        if p:
+            c["respawn"] = p[2]
+            c["tempo"] = p[1]  # Easy / Medium / Hard (TibiaPal)
+            c["fonteRespawn"] = "tibiapal"
+            if p[0].isdigit() and int(p[0]) != c["pontos"]:
+                c["pontosTibiapal"] = int(p[0])
+        elif locais:
+            # primeiros locais citados na wiki
+            partes = [x.strip() for x in re.split(r",|;| and ", locais) if x.strip()]
+            c["respawn"] = ", ".join(partes[:3])
+            c["fonteRespawn"] = "wiki"
+        criaturas.append(c)
+
+    print("Imagens...")
+    spr = baixar_imagens([c["nome"] for c in criaturas], forcar)
+    for c in criaturas:
+        c["sprite"] = spr.get(c["nome"])
+        if c["sprite"]:
+            c["recorte"] = medir_sprite(c["sprite"])
+
+    criaturas.sort(key=lambda c: c["nome"])
+    with open(ARQ_SAIDA, "w", encoding="utf-8") as f:
+        f.write("// Gerado por coletar_bestiario.py (TibiaWiki + TibiaPal). Não edite à mão: rode o script.\n")
+        f.write("window.BESTIARIO = " + json.dumps(criaturas, ensure_ascii=False, indent=0) + ";\n")
+    diverg = [c["nome"] for c in criaturas if "pontosTibiapal" in c]
+    print("\nPronto:", len(criaturas), "criaturas.")
+    print("Sem dificuldade na wiki (ficaram de fora):", sem_dif)
+    print("Sem imagem:", [c["nome"] for c in criaturas if not c["sprite"]])
+    print("Pontos diferentes entre wiki e TibiaPal:", diverg)
+    achados = {c["nome"].lower() for c in criaturas}
+    print("Do TibiaPal que não acharam par na wiki:",
+          [k for k in pal if k not in achados and not any(a.lower() in achados for a in APELIDOS_TIBIAPAL.get(k, []))])
+
+
+if __name__ == "__main__":
+    main()

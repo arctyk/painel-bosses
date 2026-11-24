@@ -157,3 +157,14 @@ Os Avulsos aparecem em ordem de level recomendado (`ORDENAR_POR_LEVEL` no topo d
 `python coletar_outfits.py` lê as seções "Required Equipment" das páginas "<Outfit> Outfits Quest/Spoiler"
 da TibiaWiki em inglês, aplica as correções da lista `CORRECOES` (no topo do script), descobre quem dropa
 cada item e baixa os sprites (outfit completo masculino/feminino e itens). Só entram outfits que pedem itens.
+
+## Bestiário (`bestiario.html`)
+
+Tabela com todas as criaturas do bestiário (833): nome, classe, dificuldade, pontos, kills necessárias,
+tempo estimado e respawn sugerido, com uma caixa para marcar as já completas (fica salvo no navegador,
+`localStorage`). Dá para ordenar pelo cabeçalho, buscar e filtrar por classe, dificuldade e situação.
+
+- Dados: `python coletar_bestiario.py` gera `bestiario-dados.js` e baixa as imagens em `img/bestiario/`.
+- Pontos e kills seguem a tabela oficial (TibiaWiki, página Cyclopedia); criaturas "Very Rare" pedem 5 kills.
+- Respawn e tempo vêm do TibiaPal (tibiapal.com/bestiary). Quando o TibiaPal não tem a criatura, aparecem
+  os primeiros locais citados na TibiaWiki, marcados com "wiki".

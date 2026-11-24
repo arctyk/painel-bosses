@@ -19,6 +19,12 @@
         ["Por outfit", "outfits.html#por-outfit"],
         ["Por item", "outfits.html#por-item"]
       ]
+    },
+    {
+      id: "bestiario", rotulo: "Bestiário", pagina: "bestiario.html", icone: "img/bestiario-icones/menu-rato.gif",
+      sub: [
+        ["Tabela", "bestiario.html#tabela"]
+      ]
     }
   ];
 
