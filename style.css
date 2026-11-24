@@ -721,3 +721,7 @@ html { image-rendering: pixelated; }
 @media (max-width: 900px) { .chips-best { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .chips-best { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .chip-best .bonus { display: block; }
+/* sprite dos quadrinhos: área fixa de 36x36 com a imagem centralizada */
+.chip-best .spr { flex: 0 0 36px !important; width: 36px; height: 36px !important; display: flex; align-items: center; justify-content: center; }
+.chip-best .spr-corte { overflow: hidden; flex: none; }
+.chip-best .spr img { display: block; max-width: none; }
