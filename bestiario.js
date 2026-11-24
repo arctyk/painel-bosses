@@ -18,7 +18,7 @@
   var completos = ler("bestiarioCompletos", {});
   var wardens = ler("bestiarioWardens", {});
   var cores = ler("bestiarioSoulCores", {});
-  var abertos = ler("bestiarioGruposAbertos", {});   // "criaturas:Classe" / "completas:Classe" -> true
+  var abertos = ler("bestiarioGruposAbertos", {});   // "criaturas:Classe" -> true
 
   var estado = {
     busca: "",
@@ -148,6 +148,16 @@
         : '<span class="sem-dano" title="Sem Soul Core">—</span>') + "</td></tr>";
   }
 
+  // charm points já conquistados na classe: bestiário das completas + Echo Wardens mortos (de qualquer criatura da classe)
+  function ptsDivisao(feitas, doGrupo) {
+    var b = soma(feitas, function (c) { return c.pontos; });
+    var w = soma(doGrupo.filter(function (c) { return wardens[c.nome]; }), function (c) { return c.pontosWarden || 0; });
+    var charm = ' <img class="pixel ico-inline" src="' + ICO_CHARM + '" alt="">';
+    return milhar(b) + " pontos do bestiário" +
+      (w ? ' + <img class="pixel ico-inline" src="' + ICO_WARDEN + '" alt=""> ' + milhar(w) + " pontos de Echo Warden" : "") +
+      " = <b>" + milhar(b + w) + " pontos</b>" + charm;
+  }
+
   function tabela(secao, lista, buscando) {
     var corpo = "";
     CLASSES.forEach(function (classe) {
@@ -156,15 +166,22 @@
       var chave = secao + ":" + classe;
       var aberto = buscando || !!abertos[chave];
       var pts = soma(doGrupo, function (c) { return c.pontos; });
+      var feitas = doGrupo.filter(function (c) { return completos[c.nome]; });
+      var faltam = doGrupo.filter(function (c) { return !completos[c.nome]; });
       var w = doGrupo.filter(function (c) { return wardens[c.nome]; }).length;
       var sc = doGrupo.filter(function (c) { return cores[c.nome]; }).length;
+      // completas vão para o fim da classe, depois de uma divisória
+      var linhas = ordenar(faltam).map(linha).join("") + (feitas.length
+        ? '<tr class="divisao"><td colspan="' + COLUNAS + '">✓ Completas (' + feitas.length + ") · " + ptsDivisao(feitas, doGrupo) + "</td></tr>" +
+          ordenar(feitas).map(function (c, i) { return linha(c, i + faltam.length); }).join("")
+        : "");
       corpo += '<tbody class="grupo' + (aberto ? " aberto" : "") + '" data-chave="' + esc(chave) + '">' +
         '<tr class="grupo-cab" tabindex="0" role="button" aria-expanded="' + aberto + '"><td colspan="' + COLUNAS + '">' +
         '<span class="grupo-seta">' + (aberto ? "▾" : "▸") + "</span> <b>" + esc(classe) + "</b>" +
-        '<span class="grupo-info">' + doGrupo.length + " criatura" + (doGrupo.length > 1 ? "s" : "") + " · " + milhar(pts) + " pontos" +
+        '<span class="grupo-info">✓ ' + feitas.length + "/" + doGrupo.length + " · " + milhar(soma(feitas, function (c) { return c.pontos; })) + "/" + milhar(pts) + " pontos" +
         ' · <img class="pixel ico-inline" src="' + ICO_WARDEN + '" alt="">' + w + "/" + doGrupo.length +
         ' · <img class="pixel ico-inline" src="' + ICO_ANIMUS + '" alt="">' + sc + "/" + doGrupo.length + "</span></td></tr>" +
-        (aberto ? ordenar(doGrupo).map(linha).join("") : "") + "</tbody>";
+        (aberto ? linhas : "") + "</tbody>";
     });
     return '<div class="tabela-rolagem"><table class="tabela-outfits tabela-bestiario"><thead><tr>' +
       '<th class="col-check" title="Bestiário completo">✓</th>' + cab("nome", "Criatura") + cab("dificuldade", "Dificuldade") +
@@ -209,17 +226,14 @@
     var filtradas = CRIATURAS.filter(passaFiltro);
     var buscando = !!estado.busca;
     var pendentes = filtradas.filter(function (c) { return !completos[c.nome]; });
-    var feitas = filtradas.filter(function (c) { return completos[c.nome]; });
     var nW = CRIATURAS.filter(function (c) { return wardens[c.nome]; }).length;
     var nC = CRIATURAS.filter(function (c) { return cores[c.nome]; }).length;
 
     raiz.innerHTML = barra() +
       caixa("criaturas", "Criaturas", controles() +
-        '<p class="intro-itens">' + pendentes.length + " criaturas faltando · " + milhar(soma(pendentes, function (c) { return c.pontos; })) + " pontos</p>" +
-        tabela("criaturas", pendentes, buscando)) +
-      caixa("completas", "Completas", feitas.length
-        ? '<p class="intro-itens">' + feitas.length + " criaturas completas · " + milhar(soma(feitas, function (c) { return c.pontos; })) + " pontos</p>" + tabela("completas", feitas, buscando)
-        : '<p class="vazio-cel">Nenhuma criatura completa ainda. Marque ✓ na lista acima.</p>', "secao-separada") +
+        '<p class="intro-itens">' + filtradas.length + " criaturas · " + pendentes.length + " faltando (" +
+        milhar(soma(pendentes, function (c) { return c.pontos; })) + " pontos). As completas ficam no fim de cada classe.</p>" +
+        tabela("criaturas", filtradas, buscando)) +
       caixa("echo-warden", "Echo Wardens mortos (" + nW + ")",
         '<p class="intro-itens">Matar o Echo Warden de uma criatura pela primeira vez dá charm points: ' +
         "Inofensivo 1, Trivial 2, Fácil 5, Médio 10, Difícil 15, Desafiador 30. O Warden aparece nas Echo Raids " +
@@ -261,7 +275,7 @@
     if (bt) {
       var abrir = bt.getAttribute("data-acao") === "abrir";
       CLASSES.forEach(function (cl) {
-        ["criaturas", "completas"].forEach(function (s) {
+        ["criaturas"].forEach(function (s) {
           if (abrir) abertos[s + ":" + cl] = true; else delete abertos[s + ":" + cl];
         });
       });

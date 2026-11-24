@@ -711,3 +711,4 @@ html { image-rendering: pixelated; }
 .cmp-nao { background: #f1ede6; border-color: #b0a090; color: #5a4c40; }
 @media (max-width: 640px) { .ext-grade { grid-template-columns: 1fr; } }
 .ext-dica { font-size: 7.5pt; color: #7a6450; margin-bottom: 2px; }
+.tabela-bestiario tr.divisao td { background: #d8c29c; color: #3c5a1e; font-size: 8pt; padding: 3px 10px; border-top: 1px solid #a88a62; border-bottom: 1px solid #a88a62; }
