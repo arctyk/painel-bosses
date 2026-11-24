@@ -23,7 +23,10 @@
     {
       id: "bestiario", rotulo: "Bestiário", pagina: "bestiario.html", icone: "img/bestiario-icones/menu-rato.gif",
       sub: [
-        ["Tabela", "bestiario.html#tabela"]
+        ["Criaturas", "bestiario.html#criaturas"],
+        ["Completas", "bestiario.html#completas"],
+        ["Echo Warden Killed", "bestiario.html#echo-warden"],
+        ["Soul Core Completed", "bestiario.html#soul-core"]
       ]
     }
   ];

@@ -166,5 +166,11 @@ tempo estimado e respawn sugerido, com uma caixa para marcar as já completas (f
 
 - Dados: `python coletar_bestiario.py` gera `bestiario-dados.js` e baixa as imagens em `img/bestiario/`.
 - Pontos e kills seguem a tabela oficial (TibiaWiki, página Cyclopedia); criaturas "Very Rare" pedem 5 kills.
+- A lista é dividida por classe (seções que abrem e fecham); as completas vão para a seção "Completas".
+- Também dá para marcar, por criatura, o **Echo Warden** morto (Echo Raids, Summer Update 2026: a primeira morte do
+  Warden dá charm points: 1/2/5/10/15/30 conforme a dificuldade, somados nas estatísticas) e o **Soul Core** feito no
+  Soulpit (Animus Mastery). Criaturas novas sem dificuldade na wiki aparecem como "A confirmar".
+- **Extrair lista em texto**: gera uma lista simples (não completas, completas, Wardens, Soul Cores feitos ou que faltam)
+  para copiar e mandar no WhatsApp/Discord, e compara com uma lista colada de outra pessoa (o que você já tem e o que falta).
 - Respawn e tempo vêm do TibiaPal (tibiapal.com/bestiary). Quando o TibiaPal não tem a criatura, aparecem
   os primeiros locais citados na TibiaWiki, marcados com "wiki".

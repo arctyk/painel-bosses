@@ -40,6 +40,14 @@ TABELA = {
     "Challenging": (5000, 100, 200),
 }
 
+# charm points por matar o Echo Warden da criatura pela primeira vez (Echo Raids, Summer Update 2026)
+WARDEN = {"Harmless": 1, "Trivial": 2, "Easy": 5, "Medium": 10, "Hard": 15, "Challenging": 30}
+
+ICONES = {  # arquivo na wiki -> img/bestiario-icones/
+    "Echo Warden Indicator Icon.png": "echo-warden.png",
+    "Animus Mastery Icon.png": "animus-mastery.png",
+}
+
 # nomes do TibiaPal (com erro de digitação ou agrupados) -> nomes na wiki
 APELIDOS_TIBIAPAL = {
     "fish": ["Fish (Creature)"],
@@ -197,11 +205,26 @@ def main():
 
     print("Lista de criaturas do bestiário...")
     nomes = [n for n in membros_categoria("Category:Bestiary Creatures") if n != "Free Account Bestiary"]
+    # criaturas novas às vezes só estão na categoria da classe (a wiki ainda não preencheu a dificuldade)
+    classes = api(action="query", list="allcategories", acprefix="Bestiary ", aclimit=500)["query"]["allcategories"]
+    for cat in classes:
+        t = cat["*"]
+        if t.endswith(" Creatures") and t not in ("Bestiary Creatures",) and                 not re.match(r"Bestiary (Harmless|Trivial|Easy|Medium|Hard|Challenging|Common|Uncommon|Rare|Very Rare) ", t):
+            for n in membros_categoria("Category:" + t):
+                if n not in nomes and n != "Free Account Bestiary":
+                    nomes.append(n)
     print(" ", len(nomes), "criaturas")
     boxes = infoboxes(nomes)
     print("TibiaPal...")
     pal = tibiapal()
     print(" ", len(pal), "criaturas no TibiaPal")
+    print("Soul Cores...")
+    cores = set()
+    for n in membros_categoria("Category:Soul Cores"):
+        m = re.match(r"^(.*) Soul Core(?: \((.*)\))?$", n)
+        if m:
+            cores.add((m.group(1) + (" (" + m.group(2) + ")" if m.group(2) else "")).lower())
+    print(" ", len(cores), "soul cores")
     for apelido, alvos in APELIDOS_TIBIAPAL.items():
         if apelido in pal:
             for a in alvos:
@@ -213,9 +236,11 @@ def main():
         dif = limpa(b.get("bestiarylevel")).title()
         rar = limpa(b.get("occurrence")).title() or "Common"
         if dif not in TABELA:
-            sem_dif.append(n)
-            continue
-        kills, pts, pts_vr = TABELA[dif]
+            if not limpa(b.get("bestiaryclass")):
+                sem_dif.append(n)
+                continue
+            dif = "Unknown"  # criatura nova: a wiki ainda não informou a dificuldade
+        kills, pts, pts_vr = TABELA.get(dif, (None, 0, 0))
         muito_rara = rar == "Very Rare"
         p = pal.get(n.lower())
         locais = limpa(b.get("location"))
@@ -225,11 +250,13 @@ def main():
             "classe": limpa(b.get("bestiaryclass")) or None,
             "dificuldade": dif,
             "raridade": rar,
-            "kills": 5 if muito_rara else kills,
+            "kills": 5 if (muito_rara and kills) else kills,
             "pontos": pts_vr if muito_rara else pts,
             "hp": limpa(b.get("hp")) or None,
             "xp": limpa(b.get("exp")) or None,
             "locais": locais[:300] or None,
+            "pontosWarden": WARDEN.get(dif, 0),
+            "soulCore": any(x.replace("grey", "gray") in cores for x in (n.lower(), re.sub(r" \(creature\)$", "", n.lower()))),
         }
         if p:
             c["respawn"] = p[2]
@@ -244,6 +271,14 @@ def main():
             c["fonteRespawn"] = "wiki"
         criaturas.append(c)
 
+    print("Ícones...")
+    d = api(action="query", prop="imageinfo", iiprop="url", titles="|".join("File:" + f for f in ICONES))
+    norm = {x["to"]: x["from"] for x in d["query"].get("normalized", [])}
+    for pg in d["query"]["pages"].values():
+        if pg.get("imageinfo"):
+            arq = ICONES[norm.get(pg["title"], pg["title"])[5:]]
+            with open(os.path.join(BASE, "img", "bestiario-icones", arq), "wb") as f:
+                f.write(_get(pg["imageinfo"][0]["url"]))
     print("Imagens...")
     spr = baixar_imagens([c["nome"] for c in criaturas], forcar)
     for c in criaturas:
@@ -257,7 +292,9 @@ def main():
         f.write("window.BESTIARIO = " + json.dumps(criaturas, ensure_ascii=False, indent=0) + ";\n")
     diverg = [c["nome"] for c in criaturas if "pontosTibiapal" in c]
     print("\nPronto:", len(criaturas), "criaturas.")
-    print("Sem dificuldade na wiki (ficaram de fora):", sem_dif)
+    print("Sem classe nem dificuldade na wiki (ficaram de fora):", sem_dif)
+    print("Dificuldade a confirmar:", [c["nome"] for c in criaturas if c["dificuldade"] == "Unknown"])
+    print("Sem soul core:", [c["nome"] for c in criaturas if not c["soulCore"]])
     print("Sem imagem:", [c["nome"] for c in criaturas if not c["sprite"]])
     print("Pontos diferentes entre wiki e TibiaPal:", diverg)
     achados = {c["nome"].lower() for c in criaturas}

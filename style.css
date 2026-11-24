@@ -667,3 +667,46 @@ html { scroll-behavior: smooth; }
    A ilustração de fundo (.arte) continua com suavização normal. */
 html { image-rendering: pixelated; }
 .arte { image-rendering: auto; }
+
+/* Bestiário: seções por classe, Echo Warden e Soul Core */
+.secao-separada { margin-top: 34px; }
+.stats-bestiario { flex-wrap: wrap; row-gap: 2px; }
+.ico-inline { vertical-align: -2px; height: 12px; }
+.tabela-bestiario tr.grupo-cab td { background: #4a3c32; color: #ffe9c4; cursor: pointer; text-align: left; padding: 6px 8px; border-top: 2px solid #2a1f18; user-select: none; }
+.tabela-bestiario tr.grupo-cab:hover td { background: #5c4b3e; }
+.tabela-bestiario tr.grupo-cab b { font-size: 10pt; letter-spacing: .3px; }
+.tabela-bestiario .grupo-seta { display: inline-block; width: 12px; color: #ffd18c; }
+.tabela-bestiario .grupo-info { float: right; font-size: 8pt; color: #e8d2ae; }
+.tabela-bestiario .grupo-info img { margin: 0 2px 0 4px; filter: brightness(1.2); }
+.tabela-bestiario th.col-extra, .tabela-bestiario td.col-extra { text-align: center; white-space: nowrap; width: 72px; }
+.tabela-bestiario th.col-extra img { vertical-align: -2px; }
+.tabela-bestiario label.extra { display: inline-flex; align-items: center; gap: 3px; cursor: pointer; }
+.tabela-bestiario label.extra input { width: 16px; height: 16px; cursor: pointer; accent-color: #6a3aa8; }
+.tabela-bestiario tr.feito td.col-extra { opacity: 1; }
+.bonus { font-size: 7.5pt; color: #6a3aa8; font-weight: bold; }
+.tabela-bestiario label.extra:not(.marcado) .bonus { color: #9a8a7a; font-weight: normal; }
+.bt-grupos { font: 8pt Verdana, Arial, sans-serif; color: #fff; background: linear-gradient(#6e5a48, #3f3127); border: 1px solid #2a1f18; padding: 2px 8px; cursor: pointer; }
+.bt-grupos:hover { background: linear-gradient(#80694f, #4d3c2f); }
+.chips-best { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip-best { display: flex; align-items: center; gap: 4px; padding: 2px 4px 2px 2px; background: #f7ead4; border: 1px solid #c9ab82; font-size: 8pt; }
+.chip-best .tirar { border: 0; background: none; color: #a33a00; font: bold 11pt Verdana; cursor: pointer; padding: 0 2px; line-height: 1; }
+.chip-best .tirar:hover { color: #e00; }
+
+/* Bestiário: popup "Extrair lista" */
+.controles .bt-extrair { flex: none; }
+.ext-grade { display: grid; grid-template-columns: 210px 1fr; gap: 12px; }
+.ext-ops { display: flex; flex-direction: column; gap: 3px; font-size: 9pt; }
+.ext-ops .ext-sub { margin-top: 10px; }
+.ext-op { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+.ext-saida textarea, .ext-cmp textarea { width: 100%; box-sizing: border-box; font: 9pt Consolas, "Courier New", monospace; color: #2a1a0a; background: #fffaf0; border: 1px solid #8a6a42; padding: 6px; resize: vertical; }
+.ext-saida textarea { height: 260px; }
+.ext-cmp textarea { height: 110px; }
+.ext-acoes { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; font-size: 8pt; color: #6a5440; }
+.ext-acoes .bt-grupos { font-size: 9pt; padding: 3px 14px; }
+.ext-cmp { margin-top: 14px; padding-top: 10px; border-top: 1px solid #c9ab82; font-size: 9pt; }
+.cmp-bloco { margin-top: 8px; padding: 6px 8px; border: 1px solid; font-size: 9pt; }
+.cmp-bloco div { margin-top: 3px; line-height: 1.5; }
+.cmp-ja { background: #e4f3e0; border-color: #6aa55c; color: #1f5a14; }
+.cmp-falta { background: #fbe7d8; border-color: #c8794a; color: #7a3208; }
+.cmp-nao { background: #f1ede6; border-color: #b0a090; color: #5a4c40; }
+@media (max-width: 640px) { .ext-grade { grid-template-columns: 1fr; } }
