@@ -712,3 +712,12 @@ html { image-rendering: pixelated; }
 @media (max-width: 640px) { .ext-grade { grid-template-columns: 1fr; } }
 .ext-dica { font-size: 7.5pt; color: #7a6450; margin-bottom: 2px; }
 .tabela-bestiario tr.divisao td { background: #d8c29c; color: #3c5a1e; font-size: 8pt; padding: 3px 10px; border-top: 1px solid #a88a62; border-bottom: 1px solid #a88a62; }
+/* Echo Wardens / Soul Cores: quadrinhos do mesmo tamanho em grade (6 colunas; menos em telas menores) */
+.chips-best { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.chip-best { min-width: 0; min-height: 40px; box-sizing: border-box; }
+.chip-best > span { flex: 1; min-width: 0; line-height: 1.25; overflow-wrap: anywhere; }
+.chip-best .tirar { flex: none; align-self: center; }
+@media (max-width: 1100px) { .chips-best { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .chips-best { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .chips-best { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.chip-best .bonus { display: block; }
