@@ -7,9 +7,18 @@
   <title>Outfits · Painel de Bosses</title>
   <script>
     (function () {
-      var i = new Image();
-      i.onerror = function () { document.documentElement.classList.add("sem-tema"); };
-      i.src = "tema/border-1.gif";
+      // só desliga o tema se a imagem falhar 3 vezes (uma falha passageira do servidor não derruba o visual)
+      var tentativas = 0, raiz = document.documentElement;
+      function testar() {
+        var i = new Image();
+        i.onload = function () { raiz.classList.remove("sem-tema"); };
+        i.onerror = function () {
+          if (++tentativas < 3) setTimeout(testar, 1500);
+          else raiz.classList.add("sem-tema");
+        };
+        i.src = "tema/border-1.gif" + (tentativas ? "?r=" + tentativas : "");
+      }
+      testar();
     })();
   </script>
   <script>document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
