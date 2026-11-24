@@ -710,3 +710,4 @@ html { image-rendering: pixelated; }
 .cmp-falta { background: #fbe7d8; border-color: #c8794a; color: #7a3208; }
 .cmp-nao { background: #f1ede6; border-color: #b0a090; color: #5a4c40; }
 @media (max-width: 640px) { .ext-grade { grid-template-columns: 1fr; } }
+.ext-dica { font-size: 7.5pt; color: #7a6450; margin-bottom: 2px; }

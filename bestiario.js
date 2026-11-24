@@ -294,28 +294,48 @@
   var modalEl = document.getElementById("modal");
   var modalCaixaEl = document.getElementById("modal-caixa");
   var ultimoFoco = null;
+  // [id, título, filtro, charm points de cada criatura nessa lista (null = não dá pontos), tipo para comparar]
   var LISTAS = [
-    ["faltando", "Bestiário não completo", function (c) { return !completos[c.nome]; }],
-    ["completas", "Bestiário completo", function (c) { return completos[c.nome]; }],
-    ["warden", "Echo Warden já morto", function (c) { return wardens[c.nome]; }],
-    ["core", "Soul Core já feito", function (c) { return cores[c.nome]; }],
-    ["sem-warden", "Echo Warden que falta", function (c) { return !wardens[c.nome]; }],
-    ["sem-core", "Soul Core que falta", function (c) { return c.soulCore && !cores[c.nome]; }]
+    ["completas", "Bestiário completo", function (c) { return completos[c.nome]; }, function (c) { return c.pontos; }, "completo"],
+    ["warden", "Echo Warden morto", function (c) { return wardens[c.nome]; }, function (c) { return c.pontosWarden || 0; }, "warden"],
+    ["core", "Soul Core feito", function (c) { return cores[c.nome]; }, null, "core"],
+    ["faltando", "Bestiário não completo", function (c) { return !completos[c.nome]; }, function (c) { return c.pontos; }, "completo"],
+    ["sem-warden", "Echo Warden que falta", function (c) { return !wardens[c.nome]; }, function (c) { return c.pontosWarden || 0; }, "warden"],
+    ["sem-core", "Soul Core que falta", function (c) { return c.soulCore && !cores[c.nome]; }, null, "core"]
   ];
-  var ext = { lista: ler("bestiarioExtrairLista", "core"), formato: ler("bestiarioExtrairFormato", "linhas"), classe: ler("bestiarioExtrairClasse", false) };
-  function listaAtual() { return LISTAS.filter(function (l) { return l[0] === ext.lista; })[0] || LISTAS[0]; }
+  var CONQUISTADOS = { completas: 1, warden: 1 };   // listas que somam no total de charm points conquistados
+  var salvo = ler("bestiarioExtrairListas", null);
+  var ext = {
+    listas: Array.isArray(salvo) ? salvo : [ler("bestiarioExtrairLista", "core")],
+    formato: ler("bestiarioExtrairFormato", "linhas"),
+    classe: ler("bestiarioExtrairClasse", false),
+    pontos: ler("bestiarioExtrairPontos", true)
+  };
+  function listasMarcadas() { return LISTAS.filter(function (l) { return ext.listas.indexOf(l[0]) !== -1; }); }
 
   function textoLista() {
-    var def = listaAtual();
-    var sel = CRIATURAS.filter(def[2]).sort(function (a, b) { return nome(a).localeCompare(nome(b)); });
-    var cabecalho = def[1] + " (" + sel.length + ")";
-    function junta(nomes) { return ext.formato === "virgula" ? nomes.join(", ") : nomes.map(function (n) { return "- " + n; }).join("\n"); }
-    if (!ext.classe) return { texto: cabecalho + ":\n" + junta(sel.map(nome)), n: sel.length };
-    var partes = CLASSES.map(function (cl) {
-      var g = sel.filter(function (c) { return (c.classe || "Outras") === cl; });
-      return g.length ? cl + " (" + g.length + "):\n" + junta(g.map(nome)) : "";
-    }).filter(Boolean);
-    return { texto: cabecalho + ":\n\n" + partes.join("\n\n"), n: sel.length };
+    var defs = listasMarcadas(), total = 0, n = 0;
+    if (!defs.length) return { texto: "", n: 0 };
+    var secoes = defs.map(function (def) {
+      var sel = CRIATURAS.filter(def[2]).sort(function (a, b) { return nome(a).localeCompare(nome(b)); });
+      var comPts = ext.pontos && def[3];
+      if (CONQUISTADOS[def[0]]) total += soma(sel, def[3]);
+      n += sel.length;
+      function item(c) { return nome(c) + (comPts ? " (" + def[3](c) + ")" : ""); }
+      function junta(lista) {
+        return ext.formato === "virgula" ? lista.map(item).join(", ") : lista.map(function (c) { return "- " + item(c); }).join("\n");
+      }
+      var cab = def[1] + " (" + sel.length + (comPts ? " · " + milhar(soma(sel, def[3])) + " charm points" : "") + "):";
+      if (!ext.classe) return cab + "\n" + junta(sel);
+      return cab + "\n\n" + CLASSES.map(function (cl) {
+        var g = sel.filter(function (c) { return (c.classe || "Outras") === cl; });
+        return g.length ? cl + " (" + g.length + (comPts ? " · " + milhar(soma(g, def[3])) + " pts" : "") + "):\n" + junta(g) : "";
+      }).filter(Boolean).join("\n\n");
+    });
+    var texto = secoes.join("\n\n\n");
+    if (ext.pontos && defs.filter(function (d) { return CONQUISTADOS[d[0]]; }).length > 1)
+      texto += "\n\nTotal de charm points conquistados: " + milhar(total);
+    return { texto: texto, n: n };
   }
 
   // compara uma lista colada (de outra pessoa) com as suas marcações
@@ -326,27 +346,30 @@
   var INDICE = {};
   CRIATURAS.forEach(function (c) { INDICE[normaliza(nome(c))] = c; INDICE[normaliza(c.nome)] = c; });
   function comparar(texto) {
-    var l = ext.lista;
-    var tipo = (l === "warden" || l === "sem-warden") ? "warden" : (l === "completas" || l === "faltando") ? "completo" : "core";
-    var marcado = { warden: wardens, core: cores, completo: completos }[tipo];
-    var rotulo = { warden: "Echo Warden", core: "Soul Core", completo: "Bestiário completo" }[tipo];
-    var ja = [], falta = [], desconhecidos = [], vistos = {};
+    var tipos = [];
+    listasMarcadas().forEach(function (d) { if (tipos.indexOf(d[4]) === -1) tipos.push(d[4]); });
+    if (!tipos.length) tipos = ["core"];
+    var achadas = [], desconhecidos = [], vistos = {};
     texto.split(/[\n,;]+/).forEach(function (bruto) {
       var limpo = bruto.trim();
       if (!limpo || /:$/.test(limpo)) return;                    // linhas de título ("Soul cores à venda:")
-      var n = normaliza(limpo.replace(/^(?:[-*•>]+|\d+\s*[.)x-]?)\s*/, ""));
+      var n = normaliza(limpo.replace(/^(?:[-*•>]+|\d+\s*[.)x-]?)\s*/, "").replace(/\s*\(\d+\)\s*$/, ""));
       if (n.length < 3) return;
       var c = INDICE[n] || INDICE[n.replace(/s$/, "")] || INDICE[n.replace(/es$/, "")];
       if (!c) { desconhecidos.push(limpo); return; }
       if (vistos[c.nome]) return;
       vistos[c.nome] = 1;
-      (marcado[c.nome] ? ja : falta).push(nome(c));
+      achadas.push(c);
     });
     function bloco(cls, titulo, itens) {
       return itens.length ? '<div class="cmp-bloco ' + cls + '"><b>' + titulo + " (" + itens.length + ")</b><div>" + itens.map(esc).join(", ") + "</div></div>" : "";
     }
-    return bloco("cmp-ja", rotulo + ": você já tem", ja) + bloco("cmp-falta", rotulo + ": você ainda não tem", falta) +
-      bloco("cmp-nao", "Não reconhecidos (confira a grafia)", desconhecidos.filter(function (d) { return d.length < 60; }));
+    return tipos.map(function (tipo) {
+      var marcado = { warden: wardens, core: cores, completo: completos }[tipo];
+      var rotulo = { warden: "Echo Warden", core: "Soul Core", completo: "Bestiário completo" }[tipo];
+      return bloco("cmp-ja", rotulo + ": você já tem", achadas.filter(function (c) { return marcado[c.nome]; }).map(nome)) +
+        bloco("cmp-falta", rotulo + ": você ainda não tem", achadas.filter(function (c) { return !marcado[c.nome]; }).map(nome));
+    }).join("") + bloco("cmp-nao", "Não reconhecidos (confira a grafia)", desconhecidos.filter(function (d) { return d.length < 60; }));
   }
 
   function atualizaExtrair() {
@@ -359,22 +382,23 @@
 
   function abrirExtrair() {
     var radios = LISTAS.map(function (l) {
-      return '<label class="ext-op"><input type="radio" name="ext-lista" value="' + l[0] + '"' + (l[0] === ext.lista ? " checked" : "") + "> " + l[1] + "</label>";
+      return '<label class="ext-op"><input type="checkbox" name="ext-lista" value="' + l[0] + '"' + (ext.listas.indexOf(l[0]) !== -1 ? " checked" : "") + "> " + l[1] + "</label>";
     }).join("");
     var corpo =
       '<div class="ext-grade">' +
-        '<div class="ext-ops"><b>Quais criaturas?</b>' + radios +
+        '<div class="ext-ops"><b>Quais listas?</b><span class="ext-dica">Pode marcar mais de uma.</span>' + radios +
           '<b class="ext-sub">Formato</b>' +
           '<label class="ext-op"><input type="radio" name="ext-formato" value="linhas"' + (ext.formato === "linhas" ? " checked" : "") + "> Uma por linha</label>" +
           '<label class="ext-op"><input type="radio" name="ext-formato" value="virgula"' + (ext.formato === "virgula" ? " checked" : "") + "> Separadas por vírgula</label>" +
           '<label class="ext-op"><input type="checkbox" id="ext-classe"' + (ext.classe ? " checked" : "") + "> Agrupar por classe</label>" +
+          '<label class="ext-op"><input type="checkbox" id="ext-pontos"' + (ext.pontos ? " checked" : "") + "> Mostrar charm points</label>" +
         "</div>" +
         '<div class="ext-saida"><textarea id="ext-texto" readonly spellcheck="false"></textarea>' +
           '<div class="ext-acoes"><span id="ext-info"></span><button type="button" class="bt-grupos" id="ext-copiar">Copiar texto</button></div></div>' +
       "</div>" +
       '<div class="ext-cmp"><b>Comparar com a lista de outra pessoa</b>' +
         '<p class="intro-itens">Cole aqui a lista que recebeu (ex.: os Soul Cores que alguém está vendendo). ' +
-        "Ela é comparada com o tipo marcado acima: Soul Core, Echo Warden ou Bestiário.</p>" +
+        "Ela é comparada com os tipos marcados acima (Bestiário, Echo Warden e/ou Soul Core).</p>" +
         '<textarea id="ext-comparar" placeholder="Dragon Lord&#10;Frost Dragon&#10;Hydra..." spellcheck="false"></textarea>' +
         '<div id="ext-resultado"></div></div>' +
       '<div class="botoes"><a class="BigButton" href="#" data-fechar="1"><span class="BigButtonText">Fechar</span></a></div>';
@@ -411,7 +435,11 @@
   });
   modalEl.addEventListener("change", function (e) {
     var t = e.target;
-    if (t.name === "ext-lista") { ext.lista = t.value; guardar("bestiarioExtrairLista", t.value); }
+    if (t.name === "ext-lista") {
+      ext.listas = [].map.call(modalEl.querySelectorAll('input[name="ext-lista"]:checked'), function (i) { return i.value; });
+      guardar("bestiarioExtrairListas", ext.listas);
+    }
+    if (t.id === "ext-pontos") { ext.pontos = t.checked; guardar("bestiarioExtrairPontos", t.checked); }
     if (t.name === "ext-formato") { ext.formato = t.value; guardar("bestiarioExtrairFormato", t.value); }
     if (t.id === "ext-classe") { ext.classe = t.checked; guardar("bestiarioExtrairClasse", t.checked); }
     atualizaExtrair();
