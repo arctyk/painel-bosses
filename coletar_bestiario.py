@@ -136,19 +136,31 @@ def infoboxes(titulos):
     return res
 
 
+# o TibiaPal separa as criaturas em 3 tabelas, nesta ordem
+MODOS_TIBIAPAL = ["1x", "rapid", "evento"]
+
+
 def tibiapal():
-    """{nome: (pontos, tempo, respawn)}"""
+    """{nome: (pontos, tempo, respawn, [modos])}  modos: "1x", "rapid" e/ou "evento" (tabela onde aparece)"""
     try:
         h = _get(TIBIAPAL).decode("utf-8", "replace")
     except Exception as e:
         print("  AVISO: não consegui ler o TibiaPal:", e)
         return {}
     res = {}
-    for nome, pts, dif, spawn in re.findall(
-            r"<tr>\s*<td>(.*?)</td>\s*<td>(.*?)</td>\s*<td>(.*?)</td>\s*<td>(.*?)</td>", h, re.S):
-        nome = html.unescape(re.sub(r"<[^>]+>", "", nome)).strip()
-        res[nome.lower()] = (pts.strip(), re.sub(r"<[^>]+>", "", dif).strip(),
-                             html.unescape(re.sub(r"<[^>]+>", "", spawn)).strip())
+    tabelas = re.findall(r"<table[^>]*>(.*?)</table>", h, re.S)
+    if len(tabelas) < 3:
+        print("  AVISO: o TibiaPal mudou o layout (esperava 3 tabelas, achei %d)" % len(tabelas))
+    for k, tabela in enumerate(tabelas[:3]):
+        for nome, pts, dif, spawn in re.findall(
+                r"<tr>\s*<td>(.*?)</td>\s*<td>(.*?)</td>\s*<td>(.*?)</td>\s*<td>(.*?)</td>", tabela, re.S):
+            nome = html.unescape(re.sub(r"<[^>]+>", "", nome)).strip().lower()
+            modos = res[nome][3] if nome in res else []
+            if MODOS_TIBIAPAL[k] not in modos:
+                modos.append(MODOS_TIBIAPAL[k])
+            if nome not in res:   # mantém o respawn da primeira tabela em que aparece
+                res[nome] = (pts.strip(), re.sub(r"<[^>]+>", "", dif).strip(),
+                             html.unescape(re.sub(r"<[^>]+>", "", spawn)).strip(), modos)
     return res
 
 
@@ -261,6 +273,7 @@ def main():
         if p:
             c["respawn"] = p[2]
             c["tempo"] = p[1]  # Easy / Medium / Hard (TibiaPal)
+            c["modo"] = p[3]   # ["1x"], ["rapid"], ["evento"] ou mais de um
             c["fonteRespawn"] = "tibiapal"
             if p[0].isdigit() and int(p[0]) != c["pontos"]:
                 c["pontosTibiapal"] = int(p[0])

@@ -752,3 +752,11 @@ input[type="checkbox"]:focus-visible { outline: 2px solid #3e6cff; outline-offse
 .tabela-bestiario tr.feito .spr img, .tabela-bestiario tr.feito .ocorr img,
 .tabela-bestiario tr.feito img.estrelas, .tabela-bestiario tr.feito .pts img { opacity: .5; }
 .tabela-bestiario tr.feito .rara { color: #b98a6a; }
+
+/* Bestiário: badge do tipo de respawn recomendado pelo TibiaPal */
+.modo { display: inline-block; margin-right: 5px; padding: 0 5px; font-size: 7pt; font-weight: bold; line-height: 14px;
+  border-radius: 7px; color: #fff; vertical-align: 1px; cursor: help; white-space: nowrap; }
+.modo-1x { background: #2f7a2f; }
+.modo-rapid { background: #c0531a; }
+.modo-evento { background: #6a3aa8; }
+.tabela-bestiario tr.feito .modo { opacity: .55; }

@@ -15,6 +15,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Seacrest Grounds",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/abyssal-calamary.gif",
 "recorte": [
@@ -41,6 +44,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Alchemist Quarter",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/acid-blob.gif",
 "recorte": [
@@ -67,6 +73,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/acolyte-of-darkness.gif",
 "recorte": [
@@ -93,6 +102,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cults, Goroma Volcano",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/acolyte-of-the-cult.gif",
 "recorte": [
@@ -119,6 +131,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cults, Goroma Volcano",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/adept-of-the-cult.gif",
 "recorte": [
@@ -170,6 +185,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Swamps",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/adventurer.gif",
 "recorte": [
@@ -221,6 +239,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Bounac",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/agrestic-chicken.gif",
 "recorte": [
@@ -247,6 +268,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Various Rare Spawns",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/albino-dragon.gif",
 "recorte": [
@@ -273,6 +297,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Amazon Camp",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/amazon.gif",
 "recorte": [
@@ -299,6 +326,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mother of Scarabs Lair -4/-5",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ancient-scarab.gif",
 "recorte": [
@@ -375,6 +405,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Percht Island",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/animated-snowman.gif",
 "recorte": [
@@ -426,6 +459,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Arctic Faun's Island",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/arctic-faun.gif",
 "recorte": [
@@ -477,6 +513,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demonwar Crypt",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/askarak-demon.gif",
 "recorte": [
@@ -503,6 +542,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demonwar Crypt",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/askarak-lord.gif",
 "recorte": [
@@ -529,6 +571,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demonwar Crypt",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/askarak-prince.gif",
 "recorte": [
@@ -555,6 +600,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Cathedral",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/assassin.gif",
 "recorte": [
@@ -581,6 +629,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/azure-frog.gif",
 "recorte": [
@@ -607,6 +658,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Mammoth Mountain (South west from depot)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/badger.gif",
 "recorte": [
@@ -633,6 +687,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Percht Island",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/baleful-bunny.gif",
 "recorte": [
@@ -659,6 +716,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Cathedral",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bandit.gif",
 "recorte": [
@@ -710,6 +770,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bane-of-light.gif",
 "recorte": [
@@ -736,6 +799,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ghostland Banshee Quest Area",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/banshee.gif",
 "recorte": [
@@ -762,6 +828,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Barbarian Camp",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/barbarian-bloodwalker.gif",
 "recorte": [
@@ -788,6 +857,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Barbarian Camp",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/barbarian-brutetamer.gif",
 "recorte": [
@@ -814,6 +886,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Barbarian Camp",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/barbarian-headsplitter.gif",
 "recorte": [
@@ -840,6 +915,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Barbarian Camp",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/barbarian-skullhunter.gif",
 "recorte": [
@@ -866,6 +944,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ab'Dendriel Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/barkless-devotee.gif",
 "recorte": [
@@ -892,6 +973,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ab'Dendriel Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/barkless-fanatic.gif",
 "recorte": [
@@ -943,6 +1027,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Bat Cave South of Thais",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "pontosTibiapal": 15,
 "sprite": "img/bestiario/bat.gif",
@@ -970,6 +1057,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Poacher's Cave (Wildlife stage)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bear.gif",
 "recorte": [
@@ -1021,6 +1111,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orcsoberfest",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bellicose-orger.gif",
 "recorte": [
@@ -1047,6 +1140,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Annual Autumn Vintage",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/berrypest.gif",
 "recorte": [
@@ -1073,6 +1169,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/berserker-chicken.gif",
 "recorte": [
@@ -1149,6 +1248,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Femor Hills, Liberty Bay",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/black-sheep.gif",
 "recorte": [
@@ -1275,6 +1377,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/blood-beast.gif",
 "recorte": [
@@ -1301,6 +1406,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Blood Crab Caves",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/blood-crab.gif",
 "recorte": [
@@ -1327,6 +1435,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/blood-hand.gif",
 "recorte": [
@@ -1353,6 +1464,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/blood-priest.gif",
 "recorte": [
@@ -1379,6 +1493,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Djinn Area (depending on faction), Forgoten Tomb Edron",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/blue-djinn.gif",
 "recorte": [
@@ -1430,6 +1547,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Poacher's Cave (Wildlife stage)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/boar.gif",
 "recorte": [
@@ -1481,6 +1601,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Shadowthorn",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bog-frog.gif",
 "recorte": [
@@ -1507,6 +1630,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Hydra Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bog-raider.gif",
 "recorte": [
@@ -1533,6 +1659,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mother of Scarabs Lair -4/-5, Edron Old Fortress -1",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bonebeast.gif",
 "recorte": [
@@ -1559,6 +1688,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fenrock Bonelord Cave, Oasis Tomb -6, Liberty Bay Bonelords",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bonelord.gif",
 "recorte": [
@@ -1610,6 +1742,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Faun Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/boogy.gif",
 "recorte": [
@@ -1686,6 +1821,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Liberty Bay Bonelords",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/braindeath.gif",
 "recorte": [
@@ -1787,6 +1925,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bride-of-night.gif",
 "recorte": [
@@ -1813,6 +1954,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Northern Zao Plantations",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/brimstone-bug.gif",
 "recorte": [
@@ -1864,6 +2008,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Astral Shaper Dungeon",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/broken-shaper.gif",
 "recorte": [
@@ -1915,6 +2062,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Swamp Troll Cave, Venore Bug Cave",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/bug.gif",
 "recorte": [
@@ -2091,6 +2241,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tiquanda",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/butterfly-blue.gif",
 "recorte": [
@@ -2117,6 +2270,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tiquanda",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/butterfly-purple.gif",
 "recorte": [
@@ -2143,6 +2299,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tiquanda",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/butterfly-red.gif",
 "recorte": [
@@ -2169,6 +2328,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Piece of Cake",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cake-golem.gif",
 "recorte": [
@@ -2195,6 +2357,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja Stage 3 End of Manta Ray Area",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/calamary.gif",
 "recorte": [
@@ -2296,6 +2461,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Tiquanda Laboratory",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/carniphila.gif",
 "recorte": [
@@ -2347,6 +2515,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Liberty Bay Rotworms",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/carrion-worm.gif",
 "recorte": [
@@ -2373,6 +2544,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cat.gif",
 "recorte": [
@@ -2449,6 +2623,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Desecrated Glade",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cave-parrot.gif",
 "recorte": [
@@ -2475,6 +2652,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Thais Sewers",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cave-rat.gif",
 "recorte": [
@@ -2501,6 +2681,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Dworcs, Deeper Banuta, Tiquanda",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/centipede.gif",
 "recorte": [
@@ -2527,6 +2710,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor Chakoyas",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/chakoya-toolshaper.gif",
 "recorte": [
@@ -2553,6 +2739,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor Chakoyas",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/chakoya-tribewarden.gif",
 "recorte": [
@@ -2579,6 +2768,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor Chakoyas",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/chakoya-windcaller.gif",
 "recorte": [
@@ -2605,6 +2797,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 4 (650/h~)",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/chasm-spawn.gif",
 "recorte": [
@@ -2631,6 +2826,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Greenshore, Northport",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/chicken.gif",
 "recorte": [
@@ -2732,6 +2930,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Medusa Tower",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/clay-guardian.gif",
 "recorte": [
@@ -2808,6 +3009,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/clomp.gif",
 "recorte": [
@@ -2834,6 +3038,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Talahu Surface (Hydra Island)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cobra.gif",
 "recorte": [
@@ -2960,6 +3167,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/coral-frog.gif",
 "recorte": [
@@ -3036,6 +3246,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Coryms PH, Coryms Venore",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/corym-charlatan.gif",
 "recorte": [
@@ -3062,6 +3275,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Coryms PH",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/corym-skirmisher.gif",
 "recorte": [
@@ -3088,6 +3304,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Coryms PH",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/corym-vanguard.gif",
 "recorte": [
@@ -3139,6 +3358,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orcsoberfest",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cow.gif",
 "recorte": [
@@ -3165,6 +3387,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Goroma",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crab.gif",
 "recorte": [
@@ -3216,6 +3441,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crawler.gif",
 "recorte": [
@@ -3242,6 +3470,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Trade Quarter, Yalahar Factory Quarter",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crazed-beggar.gif",
 "recorte": [
@@ -3418,6 +3649,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crimson-frog.gif",
 "recorte": [
@@ -3444,6 +3678,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Crocodile Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crocodile.gif",
 "recorte": [
@@ -3495,6 +3732,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Seacrest Grounds",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crustacea-gigantica.gif",
 "recorte": [
@@ -3546,6 +3786,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change inactive)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crypt-defiler.gif",
 "recorte": [
@@ -3622,6 +3865,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cemetery, Mount Sternum, Ramoa -1/-2",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crypt-shambler.gif",
 "recorte": [
@@ -3698,6 +3944,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor Cave",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crystal-spider.gif",
 "recorte": [
@@ -3724,6 +3973,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Boss Spawn Shadowthorn",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crystal-wolf.gif",
 "recorte": [
@@ -3750,6 +4002,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Crystal Grounds",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/crystalcrusher.gif",
 "recorte": [
@@ -3951,6 +4206,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Cyclops, Mistrock",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cyclops.gif",
 "recorte": [
@@ -3977,6 +4235,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mistrock",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cyclops-drone.gif",
 "recorte": [
@@ -4003,6 +4264,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mistrock",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/cyclops-smith.gif",
 "recorte": [
@@ -4054,6 +4318,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Golem Workshop",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/damaged-crystal-golem.gif",
 "recorte": [
@@ -4080,6 +4347,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Factory Surface",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/damaged-worker-golem.gif",
 "recorte": [
@@ -4106,6 +4376,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Magician Quarter",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dark-apprentice.gif",
 "recorte": [
@@ -4182,6 +4455,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Magician Quarter",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dark-magician.gif",
 "recorte": [
@@ -4208,6 +4484,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Cathedral",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dark-monk.gif",
 "recorte": [
@@ -4409,6 +4688,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Souleater Mountains",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/death-blob.gif",
 "recorte": [
@@ -4435,6 +4717,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/death-priest.gif",
 "recorte": [
@@ -4511,6 +4796,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-brawler.gif",
 "recorte": [
@@ -4537,6 +4825,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-elite.gif",
 "recorte": [
@@ -4563,6 +4854,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja Library",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-guard.gif",
 "recorte": [
@@ -4589,6 +4883,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-master-librarian.gif",
 "recorte": [
@@ -4615,6 +4912,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja (way to Deathlings)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-scout.gif",
 "recorte": [
@@ -4641,6 +4941,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja Library",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-spellsinger.gif",
 "recorte": [
@@ -4667,6 +4970,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-tyrant.gif",
 "recorte": [
@@ -4693,6 +4999,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja Library",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-warrior.gif",
 "recorte": [
@@ -4719,6 +5028,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepling-worker.gif",
 "recorte": [
@@ -4745,6 +5057,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Sea Serpent Area Svargrond",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepsea-blood-crab.gif",
 "recorte": [
@@ -4771,6 +5086,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 6",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deepworm.gif",
 "recorte": [
@@ -4797,6 +5115,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Mammoth Mountain (South west from depot)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/deer.gif",
 "recorte": [
@@ -4898,6 +5219,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/demon-parrot.gif",
 "recorte": [
@@ -4924,6 +5248,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ghostland Banshee Quest Area, Vengoth Surface",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/demon-skeleton.gif",
 "recorte": [
@@ -5125,6 +5452,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/devourer.gif",
 "recorte": [
@@ -5151,6 +5481,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "POI Levers, INQ Warlock seal",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/diabolic-imp.gif",
 "recorte": [
@@ -5177,6 +5510,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Their Master's Voice World Change",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/diamond-servant.gif",
 "recorte": [
@@ -5203,6 +5539,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Replica Dungeon (Lloyd)",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/diamond-servant-replica.gif",
 "recorte": [
@@ -5229,6 +5568,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Random Boss Spawn Svargrond",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dire-penguin.gif",
 "recorte": [
@@ -5255,6 +5597,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 6",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/diremaw.gif",
 "recorte": [
@@ -5306,6 +5651,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Thais",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dog.gif",
 "recorte": [
@@ -5332,6 +5680,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/doom-deer.gif",
 "recorte": [
@@ -5358,6 +5709,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/doomsday-cultist.gif",
 "recorte": [
@@ -5409,6 +5763,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Dragons, Edron Dragons",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dragon.gif",
 "recorte": [
@@ -5435,6 +5792,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fenrock, Various Dragon Caves",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dragon-hatchling.gif",
 "recorte": [
@@ -5461,6 +5821,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fenrock DLs, POI DLs",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dragon-lord.gif",
 "recorte": [
@@ -5487,6 +5850,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fenrock",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dragon-lord-hatchling.gif",
 "recorte": [
@@ -5513,6 +5879,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fury Dungeon",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dragonling.gif",
 "recorte": [
@@ -5639,6 +6008,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Muggy Plains Raid, WOTE",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/draptor.gif",
 "recorte": [
@@ -5690,6 +6062,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 4",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/drillworm.gif",
 "recorte": [
@@ -5716,6 +6091,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "West of Darashia",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dromedary.gif",
 "recorte": [
@@ -5767,6 +6145,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "June Raids",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dryad.gif",
 "recorte": [
@@ -5793,6 +6174,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/duskbringer.gif",
 "recorte": [
@@ -5819,6 +6203,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Cormaya Dwarves",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dwarf.gif",
 "recorte": [
@@ -5845,6 +6232,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dwarven Axe Quest (Circle Room), Beregar",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dwarf-geomancer.gif",
 "recorte": [
@@ -5871,6 +6261,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dwarven Axe Quest (Circle Room)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dwarf-guard.gif",
 "recorte": [
@@ -5897,6 +6290,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "7th mission of the Secret Service Quest",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dwarf-henchman.gif",
 "recorte": [
@@ -5923,6 +6319,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dwarven Axe Quest (Circle Room)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dwarf-soldier.gif",
 "recorte": [
@@ -5949,6 +6348,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Dworcs",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dworc-fleshhunter.gif",
 "recorte": [
@@ -6000,6 +6402,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Dworcs",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dworc-venomsniper.gif",
 "recorte": [
@@ -6026,6 +6431,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Dworcs",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/dworc-voodoomaster.gif",
 "recorte": [
@@ -6052,6 +6460,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Crystal Grounds",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/earth-elemental.gif",
 "recorte": [
@@ -6078,6 +6489,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Djinn Area, Darashia Burster Spectre Djinns",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/efreet.gif",
 "recorte": [
@@ -6104,6 +6518,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Liberty Bay Bonelords",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elder-bonelord.gif",
 "recorte": [
@@ -6130,6 +6547,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dryad Gardens",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elder-forest-fury.gif",
 "recorte": [
@@ -6156,6 +6576,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elder-mummy.gif",
 "recorte": [
@@ -6207,6 +6630,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Tiquanda near Asura Palace",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elephant.gif",
 "recorte": [
@@ -6233,6 +6659,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Elves",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elf.gif",
 "recorte": [
@@ -6259,6 +6688,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Elves",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elf-arcanist.gif",
 "recorte": [
@@ -6285,6 +6717,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Shadowthorn World Change",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elf-overseer.gif",
 "recorte": [
@@ -6311,6 +6746,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Elves",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/elf-scout.gif",
 "recorte": [
@@ -6337,6 +6775,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Salamander Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/emerald-damselfly.gif",
 "recorte": [
@@ -6438,6 +6879,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "North west Ankrahmun levitate area, Energy Elemental Lair",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/energy-elemental.gif",
 "recorte": [
@@ -6464,6 +6908,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Mini Rosha",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/enfeebled-silencer.gif",
 "recorte": [
@@ -6490,6 +6937,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/enlightened-of-the-cult.gif",
 "recorte": [
@@ -6516,6 +6966,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Golem Workshop",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/enraged-crystal-golem.gif",
 "recorte": [
@@ -6567,6 +7020,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Deeper Banuta",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/eternal-guardian.gif",
 "recorte": [
@@ -6618,6 +7074,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/evil-sheep.gif",
 "recorte": [
@@ -6644,6 +7103,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/evil-sheep-lord.gif",
 "recorte": [
@@ -6670,6 +7132,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond East Minos",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/execowtioner.gif",
 "recorte": [
@@ -6696,6 +7161,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Exotic Cave Spider Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/exotic-bat.gif",
 "recorte": [
@@ -6722,6 +7190,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Exotic Cave Spider Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/exotic-cave-spider.gif",
 "recorte": [
@@ -6823,6 +7294,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/faun.gif",
 "recorte": [
@@ -6899,6 +7373,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Afflicted Raid",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/feverish-citizen.gif",
 "recorte": [
@@ -6950,6 +7427,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lake Equivocolao",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/filth-toad.gif",
 "recorte": [
@@ -6976,6 +7456,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Spike Sword Quest",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/fire-devil.gif",
 "recorte": [
@@ -7002,6 +7485,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Goroma Volcano, DHQ",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/fire-elemental.gif",
 "recorte": [
@@ -7028,6 +7514,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Shadowthorn",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/firestarter.gif",
 "recorte": [
@@ -7054,6 +7543,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/fish-creature.gif",
 "recorte": [
@@ -7080,6 +7572,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Meriana",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/flamingo.gif",
 "recorte": [
@@ -7206,6 +7701,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dryad Gardens",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/forest-fury.gif",
 "recorte": [
@@ -7232,6 +7730,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Goblin/Troll Peninsula",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/fox.gif",
 "recorte": [
@@ -7308,6 +7809,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Chyllfroest",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/frost-dragon.gif",
 "recorte": [
@@ -7334,6 +7838,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Chyllfroest",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/frost-dragon-hatchling.gif",
 "recorte": [
@@ -7385,6 +7892,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/frost-giant.gif",
 "recorte": [
@@ -7411,6 +7921,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/frost-giantess.gif",
 "recorte": [
@@ -7437,6 +7950,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Folda Surface",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/frost-troll.gif",
 "recorte": [
@@ -7488,6 +8004,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Hellgate",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/furious-fire-elemental.gif",
 "recorte": [
@@ -7514,6 +8033,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Beregar",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/furious-troll.gif",
 "recorte": [
@@ -7540,6 +8062,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Fury Dungeon",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/fury.gif",
 "recorte": [
@@ -7566,6 +8091,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Trade Quarter",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gang-member.gif",
 "recorte": [
@@ -7592,6 +8120,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Meriana Gargoyle Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gargoyle.gif",
 "recorte": [
@@ -7618,6 +8149,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Liberty Bay Bonelords",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gazer.gif",
 "recorte": [
@@ -7669,6 +8203,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Draken Palace",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ghastly-dragon.gif",
 "recorte": [
@@ -7695,6 +8232,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Peninsula Tomb",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ghost.gif",
 "recorte": [
@@ -7721,6 +8261,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Poacher's Cave (Undead stage)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ghost-wolf.gif",
 "recorte": [
@@ -7747,6 +8290,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cemetery, Mount Sternum, Edron Vampire Crypt -1/-2",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ghoul.gif",
 "recorte": [
@@ -7773,6 +8319,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ghoulish-hyaena.gif",
 "recorte": [
@@ -7822,6 +8371,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Spider Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/giant-spider.gif",
 "recorte": [
@@ -7898,6 +8450,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Arena Quarter",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gladiator.gif",
 "recorte": [
@@ -7949,6 +8504,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Poacher's Cave (Undead stage)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gloom-wolf.gif",
 "recorte": [
@@ -7975,6 +8533,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Wildlife Raid",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/glooth-anemone.gif",
 "recorte": [
@@ -8026,6 +8587,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/glooth-blob.gif",
 "recorte": [
@@ -8102,6 +8666,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Zao Gnarlhound Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gnarlhound.gif",
 "recorte": [
@@ -8128,6 +8695,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Goblin Troll Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/goblin.gif",
 "recorte": [
@@ -8154,6 +8724,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Goblin Cave, Femor Hills",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/goblin-assassin.gif",
 "recorte": [
@@ -8180,6 +8753,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Beregar",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/goblin-leader.gif",
 "recorte": [
@@ -8206,6 +8782,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Goblin Cave, Femor Hills",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/goblin-scavenger.gif",
 "recorte": [
@@ -8257,6 +8836,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Their Master's Voice World Change",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/golden-servant.gif",
 "recorte": [
@@ -8283,6 +8865,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Replica Dungeon (Lloyd)",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/golden-servant-replica.gif",
 "recorte": [
@@ -8309,6 +8894,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Museum of Tibian Arts",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/goldhanded-cultist.gif",
 "recorte": [
@@ -8335,6 +8923,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Museum of Tibian Arts",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/goldhanded-cultist-bride.gif",
 "recorte": [
@@ -8436,6 +9027,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Farmine Mines",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gozzler.gif",
 "recorte": [
@@ -8462,6 +9056,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/grave-guard.gif",
 "recorte": [
@@ -8488,6 +9085,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change inactive)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/grave-robber.gif",
 "recorte": [
@@ -8514,6 +9114,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/gravedigger.gif",
 "recorte": [
@@ -8632,6 +9235,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Djinn Area (depending on faction), Oasis Tomb -8",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/green-djinn.gif",
 "recorte": [
@@ -8658,6 +9264,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Meriana",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/green-frog.gif",
 "recorte": [
@@ -8734,6 +9343,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Christmas",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/grynch-clan-goblin.gif",
 "recorte": [
@@ -8885,6 +9497,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "First Dragon Quest",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/haunted-dragon.gif",
 "recorte": [
@@ -8936,6 +9551,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Vengoth Surface",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/haunted-treeling.gif",
 "recorte": [
@@ -9162,6 +9780,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/herald-of-gloom.gif",
 "recorte": [
@@ -9263,6 +9884,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Glooth Underground Raid, Warzone 5",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/high-voltage-elemental.gif",
 "recorte": [
@@ -9289,6 +9913,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/hive-overseer.gif",
 "recorte": [
@@ -9363,6 +9990,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ankrahmun Desert",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/honour-guard.gif",
 "recorte": [
@@ -9389,6 +10019,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "South-east, east and north-east of Thais",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/horse-brown.gif",
 "recorte": [
@@ -9415,6 +10048,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "South-east, east and north-east of Thais",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/horse-grey.gif",
 "recorte": [
@@ -9441,6 +10077,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "South-east, east and north-east of Thais",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/horse-taupe.gif",
 "recorte": [
@@ -9467,6 +10106,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/hot-dog.gif",
 "recorte": [
@@ -9568,6 +10210,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Poacher's Cave (Hunter stage)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/hunter.gif",
 "recorte": [
@@ -9594,6 +10239,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/husky.gif",
 "recorte": [
@@ -9620,6 +10268,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Green Djinn Ankrahmun Entrance, Oasis Tomb",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/hyaena.gif",
 "recorte": [
@@ -9671,6 +10322,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "First Dragon Quest",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ice-dragon.gif",
 "recorte": [
@@ -9697,6 +10351,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ice-golem.gif",
 "recorte": [
@@ -9723,6 +10380,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Barbarian Camp, Yalahar Magician Quarter",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ice-witch.gif",
 "recorte": [
@@ -9799,6 +10459,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Iksupan",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/iks-ahpututu.gif",
 "recorte": [
@@ -9975,6 +10638,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 1-3",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/infected-weeper.gif",
 "recorte": [
@@ -10026,6 +10692,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/infernal-frog.gif",
 "recorte": [
@@ -10077,6 +10746,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fury Dungeon",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/infernalist.gif",
 "recorte": [
@@ -10278,6 +10950,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change inactive)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/insect-swarm.gif",
 "recorte": [
@@ -10304,6 +10979,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Unnanounced Raid Greenshore",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/insectoid-scout.gif",
 "recorte": [
@@ -10330,6 +11008,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Hive Surface",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/insectoid-worker.gif",
 "recorte": [
@@ -10406,6 +11087,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Their Master's Voice World Change",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/iron-servant.gif",
 "recorte": [
@@ -10432,6 +11116,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Replica Dungeon (Lloyd)",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/iron-servant-replica.gif",
 "recorte": [
@@ -10483,6 +11170,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Goroma",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/island-troll.gif",
 "recorte": [
@@ -10534,6 +11224,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Shark Cave",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/jellyfish.gif",
 "recorte": [
@@ -10635,6 +11328,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Muggy Plains Killer Caimans",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/killer-caiman.gif",
 "recorte": [
@@ -10661,6 +11357,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Isle of Evil",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "pontosTibiapal": 25,
 "sprite": "img/bestiario/killer-rabbit.gif",
@@ -10738,6 +11437,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/kollos.gif",
 "recorte": [
@@ -10764,6 +11466,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Ape City",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/kongra.gif",
 "recorte": [
@@ -10815,6 +11520,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Hive Surface",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ladybug.gif",
 "recorte": [
@@ -10866,6 +11574,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Northern Zao Plantations",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lancer-beetle.gif",
 "recorte": [
@@ -10892,6 +11603,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ankrahmun Larva Caves, Mother of Scarabs Lair -1/-2",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/larva.gif",
 "recorte": [
@@ -10918,6 +11632,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 1-3",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lava-golem.gif",
 "recorte": [
@@ -11019,6 +11736,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dryad Gardens",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/leaf-golem.gif",
 "recorte": [
@@ -11045,6 +11765,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lich Hell, Ferumbras Tower -1",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lich.gif",
 "recorte": [
@@ -11096,6 +11819,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Jakundaf Desert, Darama Desert",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lion.gif",
 "recorte": [
@@ -11147,6 +11873,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore marshes cave",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/little-corym-charlatan.gif",
 "recorte": [
@@ -11173,6 +11902,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Temple of Equilibrium",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-chosen.gif",
 "recorte": [
@@ -11224,6 +11956,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lizard City (South mostly)",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-dragon-priest.gif",
 "recorte": [
@@ -11300,6 +12035,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lizard City",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-high-guard.gif",
 "recorte": [
@@ -11326,6 +12064,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lizard City",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-legionnaire.gif",
 "recorte": [
@@ -11377,6 +12118,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Razzachai",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-magistratus.gif",
 "recorte": [
@@ -11403,6 +12147,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Razzachai",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-noble.gif",
 "recorte": [
@@ -11429,6 +12176,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Chor",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-sentinel.gif",
 "recorte": [
@@ -11455,6 +12205,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Chor",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-snakecharmer.gif",
 "recorte": [
@@ -11506,6 +12259,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Chor",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-templar.gif",
 "recorte": [
@@ -11532,6 +12288,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lower Draken Walls",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lizard-zaogun.gif",
 "recorte": [
@@ -11558,6 +12317,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orcsoberfest",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/loricate-orger.gif",
 "recorte": [
@@ -11734,6 +12496,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Carnivora's Rock",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/lumbering-carnivor.gif",
 "recorte": [
@@ -11760,6 +12525,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Magician Quarter",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mad-scientist.gif",
 "recorte": [
@@ -11786,6 +12554,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 1-3",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/magma-crawler.gif",
 "recorte": [
@@ -11837,6 +12608,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Mammoth Mountain (South west from depot)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mammoth.gif",
 "recorte": [
@@ -11863,6 +12637,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/manta-ray.gif",
 "recorte": [
@@ -11964,6 +12741,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Djinn Area, Darashia Burster Spectre Djinns",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/marid.gif",
 "recorte": [
@@ -11990,6 +12770,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Salamander Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/marsh-stalker.gif",
 "recorte": [
@@ -12016,6 +12799,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mushroom Gardens",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/massive-earth-elemental.gif",
 "recorte": [
@@ -12042,6 +12828,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "North west Ankrahmun levitate area",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/massive-energy-elemental.gif",
 "recorte": [
@@ -12068,6 +12857,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Hot Spot",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/massive-fire-elemental.gif",
 "recorte": [
@@ -12094,6 +12886,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "INQ Quaras",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/massive-water-elemental.gif",
 "recorte": [
@@ -12220,6 +13015,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Carnivora's Rock",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/menacing-carnivor.gif",
 "recorte": [
@@ -12271,6 +13069,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Alchemist Quarter",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mercury-blob.gif",
 "recorte": [
@@ -12297,6 +13098,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Ape City",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/merlkin.gif",
 "recorte": [
@@ -12323,6 +13127,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Surface, Abandoned Sewers",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/metal-gargoyle.gif",
 "recorte": [
@@ -12374,6 +13181,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Rare Boss Spawn",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/midnight-panther.gif",
 "recorte": [
@@ -12400,6 +13210,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/midnight-spawn.gif",
 "recorte": [
@@ -12426,6 +13239,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/midnight-warrior.gif",
 "recorte": [
@@ -12452,6 +13268,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Pyramid Darashia",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur.gif",
 "recorte": [
@@ -12478,6 +13297,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond East Minos",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-amazon.gif",
 "recorte": [
@@ -12504,6 +13326,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Pyramid Darashia",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-archer.gif",
 "recorte": [
@@ -12530,6 +13355,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mintwallin Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-cult-follower.gif",
 "recorte": [
@@ -12556,6 +13384,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mintwallin Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-cult-prophet.gif",
 "recorte": [
@@ -12582,6 +13413,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mintwallin Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-cult-zealot.gif",
 "recorte": [
@@ -12608,6 +13442,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Pyramid Darashia",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-guard.gif",
 "recorte": [
@@ -12634,6 +13471,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond East Minos",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-hunter.gif",
 "recorte": [
@@ -12685,6 +13525,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Pyramid Darashia",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/minotaur-mage.gif",
 "recorte": [
@@ -12711,6 +13554,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Misguided Camp",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/misguided-bully.gif",
 "recorte": [
@@ -12737,6 +13583,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Misguided Camp",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/misguided-thief.gif",
 "recorte": [
@@ -12813,6 +13662,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Stonehome, under Telas's house",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/modified-gnarlhound.gif",
 "recorte": [
@@ -12839,6 +13691,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 6",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mole.gif",
 "recorte": [
@@ -12865,6 +13720,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron -6 (rooms on the way to Anni)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/monk-creature.gif",
 "recorte": [
@@ -12916,6 +13774,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond East Minos",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/moohtah-warrior.gif",
 "recorte": [
@@ -12942,6 +13803,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond East Minos",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/moohtant.gif",
 "recorte": [
@@ -13143,6 +14007,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Peninsula Tomb",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mummy.gif",
 "recorte": [
@@ -13169,6 +14036,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Truffels Garden",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mushroom-sniffer.gif",
 "recorte": [
@@ -13195,6 +14065,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Souleater Mountains, Farmine Mutated Bat/Tiger Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mutated-bat.gif",
 "recorte": [
@@ -13221,6 +14094,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Alchemist Quarter",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mutated-human.gif",
 "recorte": [
@@ -13247,6 +14123,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Arena Quarter",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mutated-rat.gif",
 "recorte": [
@@ -13273,6 +14152,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Alchemist Quarter, Farmine Mutated Bat/Tiger Cave",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/mutated-tiger.gif",
 "recorte": [
@@ -13374,6 +14256,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/necromancer.gif",
 "recorte": [
@@ -13450,6 +14335,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Pale Count Raid",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nightfiend.gif",
 "recorte": [
@@ -13551,6 +14439,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nightslayer.gif",
 "recorte": [
@@ -13577,6 +14468,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cemetery, Vandura Mountain",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nightstalker.gif",
 "recorte": [
@@ -13603,6 +14497,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lion's Rock",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/noble-lion.gif",
 "recorte": [
@@ -13629,6 +14526,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nomad Cave",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nomad-basic.gif",
 "recorte": [
@@ -13655,6 +14555,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ankrahmun Desert",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nomad-blue.gif",
 "recorte": [
@@ -13681,6 +14584,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ankrahmun Desert",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nomad-female.gif",
 "recorte": [
@@ -13757,6 +14663,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Fiehonja",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/northern-pike-creature.gif",
 "recorte": [
@@ -13783,6 +14692,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cults",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/novice-of-the-cult.gif",
 "recorte": [
@@ -13834,6 +14746,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/nymph.gif",
 "recorte": [
@@ -13860,6 +14775,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ogre-brute.gif",
 "recorte": [
@@ -13961,6 +14879,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ogre-savage.gif",
 "recorte": [
@@ -13987,6 +14908,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/ogre-shaman.gif",
 "recorte": [
@@ -14151,6 +15075,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Medusa Tower",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/omnivora.gif",
 "recorte": [
@@ -14227,6 +15154,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Orcs",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc.gif",
 "recorte": [
@@ -14253,6 +15183,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Tower",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-berserker.gif",
 "recorte": [
@@ -14279,6 +15212,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Orc Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-cult-fanatic.gif",
 "recorte": [
@@ -14305,6 +15241,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Orc Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-cult-inquisitor.gif",
 "recorte": [
@@ -14331,6 +15270,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Orc Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-cult-minion.gif",
 "recorte": [
@@ -14357,6 +15299,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Orc Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-cult-priest.gif",
 "recorte": [
@@ -14383,6 +15328,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Orc Cults",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-cultist.gif",
 "recorte": [
@@ -14409,6 +15357,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Quest",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-leader.gif",
 "recorte": [
@@ -14435,6 +15386,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Zao Orc Land",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-marauder.gif",
 "recorte": [
@@ -14461,6 +15415,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Quest",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-rider.gif",
 "recorte": [
@@ -14487,6 +15444,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Tower",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-shaman.gif",
 "recorte": [
@@ -14513,6 +15473,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Tower, Edron Orcs",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-spearman.gif",
 "recorte": [
@@ -14539,6 +15502,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Quest",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-warlord.gif",
 "recorte": [
@@ -14565,6 +15531,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Surface",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orc-warrior.gif",
 "recorte": [
@@ -14591,6 +15560,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orchid-frog.gif",
 "recorte": [
@@ -14642,6 +15614,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Desecrated Glade",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orclops-doomhauler.gif",
 "recorte": [
@@ -14668,6 +15643,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Desecrated Glade",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orclops-ravager.gif",
 "recorte": [
@@ -14694,6 +15672,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 1-3",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orewalker.gif",
 "recorte": [
@@ -14720,6 +15701,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orcsoberfest",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/orger.gif",
 "recorte": [
@@ -14771,6 +15755,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Southern Tiquanda Coast",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/panda.gif",
 "recorte": [
@@ -14822,6 +15809,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Meriana",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/parrot.gif",
 "recorte": [
@@ -14848,6 +15838,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/penguin.gif",
 "recorte": [
@@ -14874,6 +15867,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Winterlight Solstice",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/percht.gif",
 "recorte": [
@@ -14925,6 +15921,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress East, Mintwallin Minotaur Cults",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pig.gif",
 "recorte": [
@@ -14951,6 +15950,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pigeon.gif",
 "recorte": [
@@ -14977,6 +15979,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Wreckoning",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirat-bombardier.gif",
 "recorte": [
@@ -15003,6 +16008,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Wreckoning",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirat-cutthroat.gif",
 "recorte": [
@@ -15029,6 +16037,10 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Wreckoning",
 "tempo": "Medium",
+"modo": [
+"1x",
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirat-mate.gif",
 "recorte": [
@@ -15055,6 +16067,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Wreckoning",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirat-scoundrel.gif",
 "recorte": [
@@ -15081,6 +16096,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nargor Quest",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirate-buccaneer.gif",
 "recorte": [
@@ -15132,6 +16150,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nargor Quest, Krailos Pirate Raid",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirate-corsair.gif",
 "recorte": [
@@ -15158,6 +16179,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Pirates",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirate-cutthroat.gif",
 "recorte": [
@@ -15184,6 +16208,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Treasure Island, Nargor",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirate-ghost.gif",
 "recorte": [
@@ -15235,6 +16262,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Pirates",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirate-marauder.gif",
 "recorte": [
@@ -15311,6 +16341,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Treasure Island, Nargor",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pirate-skeleton.gif",
 "recorte": [
@@ -15337,6 +16370,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pixie.gif",
 "recorte": [
@@ -15388,6 +16424,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Poacher's Cave (Hunter stage)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/poacher.gif",
 "recorte": [
@@ -15414,6 +16453,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tibia, should be completed naturally",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/poison-spider.gif",
 "recorte": [
@@ -15465,6 +16507,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Nibelor",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/polar-bear.gif",
 "recorte": [
@@ -15491,6 +16536,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/pooka.gif",
 "recorte": [
@@ -15517,6 +16565,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia, Lich Hell",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/priestess.gif",
 "recorte": [
@@ -15568,6 +16619,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Caverna Exanima",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/putrid-mummy.gif",
 "recorte": [
@@ -15594,6 +16648,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Frozen Trench",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-constrictor.gif",
 "recorte": [
@@ -15620,6 +16677,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West Raid",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-constrictor-scout.gif",
 "recorte": [
@@ -15646,6 +16706,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Sunken Quarter, Calassa",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-hydromancer.gif",
 "recorte": [
@@ -15672,6 +16735,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West Raid",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-hydromancer-scout.gif",
 "recorte": [
@@ -15723,6 +16789,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Frozen Trench, Sunken Quarter",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-mantassin.gif",
 "recorte": [
@@ -15749,6 +16818,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Malada",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-mantassin-scout.gif",
 "recorte": [
@@ -15775,6 +16847,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Sunken Quarter, Calassa",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-pincher.gif",
 "recorte": [
@@ -15801,6 +16876,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West Raid",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-pincher-scout.gif",
 "recorte": [
@@ -15852,6 +16930,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Sunken Quarter, Calassa",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-predator.gif",
 "recorte": [
@@ -15878,6 +16959,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West Raid",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/quara-predator-scout.gif",
 "recorte": [
@@ -15929,6 +17013,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Outlaw Camp Rabbit Cave",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/rabbit.gif",
 "recorte": [
@@ -16180,6 +17267,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Jaccus Maxxen's Dungeon",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/raging-fire.gif",
 "recorte": [
@@ -16206,6 +17296,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Thais Sewers",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/rat.gif",
 "recorte": [
@@ -16357,6 +17450,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Tainted Caves",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/redeemed-soul.gif",
 "recorte": [
@@ -16408,6 +17504,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Seacrest Grounds World Change",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/renegade-quara-constrictor.gif",
 "recorte": [
@@ -16434,6 +17533,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Seacrest Grounds World Change",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/renegade-quara-hydromancer.gif",
 "recorte": [
@@ -16460,6 +17562,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Seacrest Grounds World Change",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/renegade-quara-mantassin.gif",
 "recorte": [
@@ -16486,6 +17591,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Seacrest Grounds World Change",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/renegade-quara-pincher.gif",
 "recorte": [
@@ -16512,6 +17620,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Seacrest Grounds World Change",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/renegade-quara-predator.gif",
 "recorte": [
@@ -16638,6 +17749,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lion's Rock",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/roaring-lion.gif",
 "recorte": [
@@ -16664,6 +17778,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orcsoberfest",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/roast-pork.gif",
 "recorte": [
@@ -16765,6 +17882,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Surroundings",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/rorc.gif",
 "recorte": [
@@ -16791,6 +17911,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond West",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/rot-elemental.gif",
 "recorte": [
@@ -16867,6 +17990,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Darashia Rotworms, Liberty Bay Rotworms",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/rotworm.gif",
 "recorte": [
@@ -16943,6 +18069,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/sacred-spider.gif",
 "recorte": [
@@ -16969,6 +18098,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Salamander Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/salamander.gif",
 "recorte": [
@@ -16995,6 +18127,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Zao Steppe",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/sandcrawler.gif",
 "recorte": [
@@ -17021,6 +18156,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/sandstone-scorpion.gif",
 "recorte": [
@@ -17047,6 +18185,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ankrahmun Larva Caves, Mother of Scarabs Lair -4/-5",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/scarab.gif",
 "recorte": [
@@ -17073,6 +18214,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Winterlight Solstice",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/schiach.gif",
 "recorte": [
@@ -17099,6 +18243,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia Entrance",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/scorpion.gif",
 "recorte": [
@@ -17150,6 +18297,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Sea Serpent Area",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/sea-serpent.gif",
 "recorte": [
@@ -17176,6 +18326,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Seacrest Grounds",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/seacrest-serpent.gif",
 "recorte": [
@@ -17202,6 +18355,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/seagull.gif",
 "recorte": [
@@ -17253,6 +18409,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demonwar Crypt",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shaburak-demon.gif",
 "recorte": [
@@ -17279,6 +18438,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demonwar Crypt",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shaburak-lord.gif",
 "recorte": [
@@ -17305,6 +18467,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demonwar Crypt",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shaburak-prince.gif",
 "recorte": [
@@ -17331,6 +18496,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "The Lightbearer Event",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shadow-hound.gif",
 "recorte": [
@@ -17357,6 +18525,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shadow-pupil.gif",
 "recorte": [
@@ -17383,6 +18554,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Astral Shaper Dungeon",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shaper-matriarch.gif",
 "recorte": [
@@ -17409,6 +18583,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Shark Cave",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/shark.gif",
 "recorte": [
@@ -17435,6 +18612,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Femor Hills, Edron way to Grimvale",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/sheep.gif",
 "recorte": [
@@ -17536,6 +18716,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Ape City",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/sibang.gif",
 "recorte": [
@@ -17612,6 +18795,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Mammoth Mountain (South west from depot)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/silver-rabbit.gif",
 "recorte": [
@@ -17688,6 +18874,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar Cemetery, Mount Sternum, Edron Vampire Crypt -1/-2",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/skeleton.gif",
 "recorte": [
@@ -17739,6 +18928,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Carlin Ghostland, Edron Vampire Crypt -1/-2",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/skeleton-warrior.gif",
 "recorte": [
@@ -17765,6 +18957,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "South Thais",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/skunk.gif",
 "recorte": [
@@ -17791,6 +18986,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Vengoth Surface",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/slime.gif",
 "recorte": [
@@ -17817,6 +19015,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Slug Cave Venore",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/slug.gif",
 "recorte": [
@@ -17843,6 +19044,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Cathedral",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/smuggler.gif",
 "recorte": [
@@ -17869,6 +19073,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tibia, Edron Vampire Crypt",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/snake.gif",
 "recorte": [
@@ -18020,6 +19227,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Souleater Mountains, Deeper Banuta",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/souleater.gif",
 "recorte": [
@@ -18146,6 +19356,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tibia, should be completed naturally",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/spider.gif",
 "recorte": [
@@ -18172,6 +19385,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/spidris.gif",
 "recorte": [
@@ -18198,6 +19414,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/spidris-elite.gif",
 "recorte": [
@@ -18224,6 +19443,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Carnivora's Rock",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/spiky-carnivor.gif",
 "recorte": [
@@ -18250,6 +19472,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Tiquanda Laboratory",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/spit-nettle.gif",
 "recorte": [
@@ -18276,6 +19501,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/spitter.gif",
 "recorte": [
@@ -18327,6 +19555,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/squidgy-slime.gif",
 "recorte": [
@@ -18353,6 +19584,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Yalahar",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/squirrel.gif",
 "recorte": [
@@ -18454,6 +19688,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Peninsula Tomb",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/stalker.gif",
 "recorte": [
@@ -18505,6 +19742,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Stampor Cave Muggy Plains",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/stampor.gif",
 "recorte": [
@@ -18531,6 +19771,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ab'Dendriel Surroundings",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/starving-wolf.gif",
 "recorte": [
@@ -18557,6 +19800,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 1-3",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/stone-devourer.gif",
 "recorte": [
@@ -18583,6 +19829,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Goroma Volcano",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/stone-golem.gif",
 "recorte": [
@@ -18609,6 +19858,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Astral Shaper Ruins",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/stone-rhino.gif",
 "recorte": [
@@ -18635,6 +19887,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Corym Mines Venore",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/stonerefiner.gif",
 "recorte": [
@@ -18786,6 +20041,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Port Hope Swamp Trolls Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/swamp-troll.gif",
 "recorte": [
@@ -18812,6 +20070,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Tiquanda Laboratory, Venore Salamander Cave",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/swampling.gif",
 "recorte": [
@@ -18838,6 +20099,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/swan-maiden.gif",
 "recorte": [
@@ -18864,6 +20128,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Hive Surface",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/swarmer.gif",
 "recorte": [
@@ -18890,6 +20157,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Tainted Caves",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/tainted-soul.gif",
 "recorte": [
@@ -18941,6 +20211,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/tarnished-spirit.gif",
 "recorte": [
@@ -18967,6 +20240,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Darashia Terramite Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/terramite.gif",
 "recorte": [
@@ -18993,6 +20269,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Stampede Mini World Change",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/terrified-elephant.gif",
 "recorte": [
@@ -19019,6 +20298,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Southern Tiquanda Coast",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/terror-bird.gif",
 "recorte": [
@@ -19095,6 +20377,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands Tortoise Caves",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/thornback-tortoise.gif",
 "recorte": [
@@ -19121,6 +20406,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Boss Spawn Shadowthorn",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/thornfire-wolf.gif",
 "recorte": [
@@ -19147,6 +20435,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Meriana, Tiquanda",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/tiger.gif",
 "recorte": [
@@ -19173,6 +20464,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands, Tainted Soul Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/toad.gif",
 "recorte": [
@@ -19199,6 +20493,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horestis Tomb (World Change active)",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/tomb-servant.gif",
 "recorte": [
@@ -19225,6 +20522,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Laguna Islands Tortoise Caves",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/tortoise.gif",
 "recorte": [
@@ -19276,6 +20576,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Troll Cave",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/troll.gif",
 "recorte": [
@@ -19302,6 +20605,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Troll Cave",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/troll-champion.gif",
 "recorte": [
@@ -19328,6 +20634,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Carlin Troll raid, Thais Kingsday",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/troll-guard.gif",
 "recorte": [
@@ -19354,6 +20663,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Beregar",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "pontosTibiapal": 15,
 "sprite": "img/bestiario/troll-legionnaire.gif",
@@ -19581,6 +20893,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Faun Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/twisted-pooka.gif",
 "recorte": [
@@ -19607,6 +20922,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Astral Shaper Dungeon",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/twisted-shaper.gif",
 "recorte": [
@@ -19658,6 +20976,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lich Hell rare Spawn",
 "tempo": "Medium",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/undead-cavebear.gif",
 "recorte": [
@@ -19734,6 +21055,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Nightmare Cave",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/undead-gladiator.gif",
 "recorte": [
@@ -19760,6 +21084,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "April Fool's",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/undead-jester.gif",
 "recorte": [
@@ -19786,6 +21113,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lost Mines",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/undead-mine-worker.gif",
 "recorte": [
@@ -19812,6 +21142,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Lost Mines",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/undead-prospector.gif",
 "recorte": [
@@ -19938,6 +21271,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Amazon Camp",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/valkyrie.gif",
 "recorte": [
@@ -19964,6 +21300,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Vampire Crypt, Peninsula Tomb",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/vampire.gif",
 "recorte": [
@@ -19990,6 +21329,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Vampire Crypt",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/vampire-bride.gif",
 "recorte": [
@@ -20041,6 +21383,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Edron Vampire Crypt",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/vampire-viscount.gif",
 "recorte": [
@@ -20192,6 +21537,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Pale Count Raid",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/vicious-manbat.gif",
 "recorte": [
@@ -20268,6 +21616,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Hot Spot, Lower Spike",
 "tempo": "Hard",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/vulcongra.gif",
 "recorte": [
@@ -20319,6 +21670,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Krailos Spider Lair",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wailing-widow.gif",
 "recorte": [
@@ -20345,6 +21699,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Underground Glooth Factory, Rathleton Sewers",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/walker.gif",
 "recorte": [
@@ -20446,6 +21803,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Catacombs - Golem stage",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/war-golem.gif",
 "recorte": [
@@ -20472,6 +21832,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Orc Fortress Tower",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/war-wolf.gif",
 "recorte": [
@@ -20523,6 +21886,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Demona",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/warlock.gif",
 "recorte": [
@@ -20549,6 +21915,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ab'Dendriel Wasp Cave, Darashia Wasp Tower",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wasp.gif",
 "recorte": [
@@ -20575,6 +21944,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Inner Hive",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/waspoid.gif",
 "recorte": [
@@ -20601,6 +21973,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Venore Southern Swamp",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/water-buffalo.gif",
 "recorte": [
@@ -20627,6 +22002,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Water Elemental Cave",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/water-elemental.gif",
 "recorte": [
@@ -20653,6 +22031,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Mini Rosha",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/weakened-frazzlemaw.gif",
 "recorte": [
@@ -20679,6 +22060,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Warzone 1-3",
 "tempo": "Hard",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/weeper.gif",
 "recorte": [
@@ -21005,6 +22389,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Ab'Dendriel Surroundings",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/white-deer.gif",
 "recorte": [
@@ -21056,6 +22443,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Drefia",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/white-shade.gif",
 "recorte": [
@@ -21132,6 +22522,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mushroom Gardens",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wiggler.gif",
 "recorte": [
@@ -21158,6 +22551,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Horse Station World Change",
 "tempo": "Easy",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wild-horse.gif",
 "recorte": [
@@ -21184,6 +22580,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Cathedral",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wild-warrior.gif",
 "recorte": [
@@ -21210,6 +22609,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dryad Gardens",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wilting-leaf-golem.gif",
 "recorte": [
@@ -21261,7 +22663,11 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Mammoth Mountain (South west from depot)",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
+"pontosTibiapal": 15,
 "sprite": "img/bestiario/winter-wolf.gif",
 "recorte": [
 38,
@@ -21287,6 +22693,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Feyrist Surface",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wisp.gif",
 "recorte": [
@@ -21313,6 +22722,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Dark Cathedral -2",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/witch.gif",
 "recorte": [
@@ -21339,6 +22751,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "All over Tibia, should be completed naturally",
 "tempo": "Easy",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wolf.gif",
 "recorte": [
@@ -21365,6 +22780,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond Catacombs - Golem stage",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/worker-golem.gif",
 "recorte": [
@@ -21391,6 +22809,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Oramond East Minos",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/worm-priestess.gif",
 "recorte": [
@@ -21442,6 +22863,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Mushroom Gardens",
 "tempo": "Medium",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/wyvern.gif",
 "recorte": [
@@ -21468,6 +22892,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Rare Boss Spawn",
 "tempo": "Hard",
+"modo": [
+"evento"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/yeti.gif",
 "recorte": [
@@ -21544,6 +22971,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Svargrond Sea Serpent Area",
 "tempo": "Medium",
+"modo": [
+"1x"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/young-sea-serpent.gif",
 "recorte": [
@@ -21570,6 +23000,9 @@ window.BESTIARIO = [
 "soulCore": true,
 "respawn": "Treasure Island",
 "tempo": "Easy",
+"modo": [
+"rapid"
+],
 "fonteRespawn": "tibiapal",
 "sprite": "img/bestiario/zombie.gif",
 "recorte": [

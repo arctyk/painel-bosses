@@ -119,10 +119,23 @@
       rotulo + '<span class="seta">' + (o.col === col ? (o.dir > 0 ? " ▲" : " ▼") : "") + "</span></th>";
   }
 
+  // em que tipo de respawn o TibiaPal recomenda completar a criatura
+  var MODOS = {
+    "1x": ["1x", "Dá para completar em respawn normal (1x). O rapid respawn ajuda, mas não é necessário."],
+    rapid: ["Rapid", "Melhor completar durante o rapid respawn; fora dele demora bem mais."],
+    evento: ["Evento", "Só dá para completar durante raids, eventos ou quests (ex.: Midnight Panther, Cake Golem, Yeti)."]
+  };
+  function badgesModo(c) {
+    return (c.modo || []).map(function (m) {
+      var d = MODOS[m];
+      return d ? '<span class="modo modo-' + m + '" title="' + esc(d[1]) + '">' + d[0] + "</span>" : "";
+    }).join("");
+  }
+
   function linha(c, i) {
     var feito = !!completos[c.nome], conhecida = c.dificuldade !== "Unknown";
     var respawn = c.respawn
-      ? esc(c.respawn) + (c.fonteRespawn === "wiki" ? ' <span class="fonte" title="Locais citados na TibiaWiki (não é uma sugestão do TibiaPal)">wiki</span>' : "")
+      ? badgesModo(c) + esc(c.respawn) + (c.fonteRespawn === "wiki" ? ' <span class="fonte" title="Locais citados na TibiaWiki (não é uma sugestão do TibiaPal)">wiki</span>' : "")
       : '<span class="sem-dano">—</span>';
     return '<tr class="' + (i % 2 ? "Even" : "Odd") + (feito ? " feito" : "") + '">' +
       '<td class="col-check"><input type="checkbox" class="marca" data-tipo="completo" data-nome="' + esc(c.nome) + '"' + (feito ? " checked" : "") +
