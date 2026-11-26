@@ -18,7 +18,8 @@
   var completos = ler("bestiarioCompletos", {});
   var wardens = ler("bestiarioWardens", {});
   var cores = ler("bestiarioSoulCores", {});
-  var abertos = ler("bestiarioGruposAbertos", {});   // "criaturas:Classe" -> true
+  var abertos = ler("bestiarioGruposAbertos", {});
+  var listaCompletasAberta = ler("bestiarioListaCompletasAberta", false);   // vem recolhida por padrão   // "criaturas:Classe" -> true
 
   var estado = {
     busca: "",
@@ -52,10 +53,10 @@
       ";margin-left:-" + px(r[0]) + ";margin-top:-" + px(r[1]) + '"></div></div>';
   }
 
-  function caixa(id, titulo, conteudo, classe) {
+  function caixa(id, titulo, conteudo, classe, extraTitulo, recolhida) {
     return '<div class="Box' + (classe ? " " + classe : "") + '" id="' + id + '"><div class="Corner-tl"></div><div class="Corner-tr"></div>' +
-      '<div class="Border_1"></div><div class="BorderTitleText"><div class="Title">' + titulo + "</div></div>" +
-      '<div class="Border_2"><div class="Border_3"><div class="BoxContent">' + conteudo + "</div></div></div>" +
+      '<div class="Border_1"></div><div class="BorderTitleText"><div class="Title">' + titulo + "</div>" + (extraTitulo || "") + "</div>" +
+      (recolhida ? "" : '<div class="Border_2"><div class="Border_3"><div class="BoxContent">' + conteudo + "</div></div></div>") +
       '<div class="Border_1"></div><div class="CornerWrapper-b"><div class="Corner-bl"></div></div>' +
       '<div class="CornerWrapper-b"><div class="Corner-br"></div></div></div>';
   }
@@ -291,7 +292,10 @@
         '<p class="intro-itens">Criaturas cujo Soul Core você já usou no Soulpit (Animus Mastery: +2% de XP base nelas, ' +
         "mais 0,1% a cada 10 masteries, até +2% extras).</p>" + chips(cores, false), "secao-separada") +
       caixa("bestiarios-completos", "Bestiários completos (" + feitasTodas.length + ")",
-        tabelaCompletas(filtradas.filter(function (c) { return completos[c.nome]; })), "secao-separada");
+        listaCompletasAberta ? tabelaCompletas(filtradas.filter(function (c) { return completos[c.nome]; })) : "", "secao-separada",
+        '<button type="button" class="bt-recolher" aria-expanded="' + listaCompletasAberta + '">' +
+          (listaCompletasAberta ? "▾ Recolher" : "▸ Expandir") + "</button>",
+        !listaCompletasAberta);
     window.scrollTo(0, y);
   }
 
@@ -334,6 +338,12 @@
         });
       });
       guardar("bestiarioGruposAbertos", abertos);
+      render();
+      return;
+    }
+    if (e.target.closest(".bt-recolher")) {
+      listaCompletasAberta = !listaCompletasAberta;
+      guardar("bestiarioListaCompletasAberta", listaCompletasAberta);
       render();
       return;
     }
@@ -516,5 +526,16 @@
   });
   modalEl.addEventListener("input", function (e) { if (e.target.id === "ext-comparar") atualizaExtrair(); });
 
+  // o link "Bestiary Completed" do menu abre o quadro (que vem recolhido) e rola até ele
+  function abrirPeloLink() {
+    if (location.hash !== "#bestiarios-completos" || listaCompletasAberta) return;
+    listaCompletasAberta = true;
+    guardar("bestiarioListaCompletasAberta", true);
+    render();
+    document.getElementById("bestiarios-completos").scrollIntoView();
+  }
+  window.addEventListener("hashchange", abrirPeloLink);
+
   render();
+  abrirPeloLink();
 })();

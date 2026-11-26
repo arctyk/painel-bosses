@@ -772,13 +772,12 @@ input[type="checkbox"]:focus-visible { outline: 2px solid #3e6cff; outline-offse
 
 /* Bestiário: lista simples das completas (sem divisão por classe) */
 .tabela-bestiario td.col-classe { white-space: nowrap; font-size: 8.5pt; }
-/* na lista de completas todas estão completas: mostra normal, sem desbotar nem riscar */
-.tabela-bestiario.lista-completas tr.feito td { color: inherit; }
-.tabela-bestiario.lista-completas tr.feito .col-nome a { color: var(--link); }
-.tabela-bestiario.lista-completas tr.feito .total { color: inherit; }
-.tabela-bestiario.lista-completas tr.feito .col-nome b { text-decoration: none; }
-.tabela-bestiario.lista-completas tr.feito .spr img, .tabela-bestiario.lista-completas tr.feito .ocorr img,
-.tabela-bestiario.lista-completas tr.feito img.estrelas, .tabela-bestiario.lista-completas tr.feito .pts img,
-.tabela-bestiario.lista-completas tr.feito .modo { opacity: 1; }
-.tabela-bestiario.lista-completas tr.feito .rara { color: #a33a00; }
 .tabela-bestiario.lista-completas .col-respawn { min-width: 130px; }
+
+/* botão Expandir/Recolher no canto direito da barra verde */
+.bt-recolher { position: absolute; top: 3px; right: 8px; z-index: 5; height: 18px; padding: 0 10px;
+  font: bold 8pt Verdana, Arial, sans-serif; color: #ffe9c4; cursor: pointer;
+  background: linear-gradient(#5a4a3c, #2e241c); border: 1px solid #1a120c; border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15); }
+.bt-recolher:hover { background: linear-gradient(#6e5a48, #3f3127); color: #fff; }
+.bt-recolher:focus-visible { outline: 2px solid #ffd18c; outline-offset: 1px; }
