@@ -17,7 +17,16 @@
 @font-face {
   font-family: "TituloTibia";
   src: url("fontes/uncial-antiqua.woff2") format("woff2");
-  unicode-range: U+0021-0040, U+00C7, U+00E7;
+  unicode-range: U+0021-002F, U+003A-0040, U+00C7, U+00E7;
+  font-display: swap;
+}
+/* algarismos: a Uncial Antiqua tem números "antigos" (3, 4, 5, 7, 9 descem e 6, 8 sobem),
+   que ficam desalinhados nos títulos; usa uma fonte com números alinhados */
+@font-face {
+  font-family: "TituloTibia";
+  src: local("Palatino Linotype Bold"), local("PalatinoLinotype-Bold"), local("Palatino-Bold"),
+       local("Book Antiqua Bold"), local("Palatino Linotype"), local("Palatino"), local("Times New Roman Bold");
+  unicode-range: U+0030-0039;
   font-display: swap;
 }
 
@@ -760,3 +769,16 @@ input[type="checkbox"]:focus-visible { outline: 2px solid #3e6cff; outline-offse
 .modo-rapid { background: #c0531a; }
 .modo-evento { background: #6a3aa8; }
 .tabela-bestiario tr.feito .modo { opacity: .55; }
+
+/* Bestiário: lista simples das completas (sem divisão por classe) */
+.tabela-bestiario td.col-classe { white-space: nowrap; font-size: 8.5pt; }
+/* na lista de completas todas estão completas: mostra normal, sem desbotar nem riscar */
+.tabela-bestiario.lista-completas tr.feito td { color: inherit; }
+.tabela-bestiario.lista-completas tr.feito .col-nome a { color: var(--link); }
+.tabela-bestiario.lista-completas tr.feito .total { color: inherit; }
+.tabela-bestiario.lista-completas tr.feito .col-nome b { text-decoration: none; }
+.tabela-bestiario.lista-completas tr.feito .spr img, .tabela-bestiario.lista-completas tr.feito .ocorr img,
+.tabela-bestiario.lista-completas tr.feito img.estrelas, .tabela-bestiario.lista-completas tr.feito .pts img,
+.tabela-bestiario.lista-completas tr.feito .modo { opacity: 1; }
+.tabela-bestiario.lista-completas tr.feito .rara { color: #a33a00; }
+.tabela-bestiario.lista-completas .col-respawn { min-width: 130px; }

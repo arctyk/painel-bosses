@@ -24,7 +24,8 @@
     busca: "",
     dificuldade: "",
     soTibiapal: ler("bestiarioSoTibiapal", false),
-    ordem: ler("bestiarioOrdem", { col: "nome", dir: 1 })
+    ordem: ler("bestiarioOrdem", { col: "nome", dir: 1 }),
+    ordemCompletas: ler("bestiarioOrdemCompletas", { col: "jogo", dir: 1 })
   };
 
   function esc(s) {
@@ -69,10 +70,12 @@
     return true;
   }
 
-  function ordenar(lista) {
-    var o = estado.ordem;
+  function ordenar(lista, o) {
+    o = o || estado.ordem;
     var val = {
-      jogo: function (c) { return c.raceId || 1e9; },   // ordem em que aparecem no bestiário do jogo
+      // ordem em que aparecem no bestiário do jogo (na lista sem divisão por classe: classe e depois race_id)
+      jogo: function (c) { return o.porClasse ? CLASSES.indexOf(c.classe || "Outras") * 1e6 + (c.raceId || 9e5) : (c.raceId || 1e9); },
+      classe: function (c) { return c.classe || "Outras"; },
       nome: function (c) { return nome(c); },
       dificuldade: function (c) { return DIFS.indexOf(c.dificuldade); },
       pontos: function (c) { return c.pontos; },
@@ -114,9 +117,10 @@
   }
 
   /* ---------------- tabela agrupada por classe ---------------- */
-  function cab(col, rotulo, classe) {
-    var o = estado.ordem;
-    return '<th class="ordenavel' + (o.col === col ? " ativa" : "") + (classe ? " " + classe : "") + '" data-col="' + col + '">' +
+  function cab(col, rotulo, classe, tab) {
+    var o = tab === "completas" ? estado.ordemCompletas : estado.ordem;
+    return '<th class="ordenavel' + (o.col === col ? " ativa" : "") + (classe ? " " + classe : "") + '" data-col="' + col + '"' +
+      (tab ? ' data-tab="' + tab + '"' : "") + ">" +
       rotulo + '<span class="seta">' + (o.col === col ? (o.dir > 0 ? " ▲" : " ▼") : "") + "</span></th>";
   }
 
@@ -133,7 +137,7 @@
     }).join("");
   }
 
-  function linha(c, i) {
+  function linha(c, i, comClasse) {
     var feito = !!completos[c.nome], conhecida = c.dificuldade !== "Unknown";
     var respawn = c.respawn
       ? badgesModo(c) + esc(c.respawn) + (c.fonteRespawn === "wiki" ? ' <span class="fonte" title="Locais citados na TibiaWiki (não é uma sugestão do TibiaPal)">wiki</span>' : "")
@@ -146,6 +150,7 @@
         '<div class="ocorr"><img class="pixel" src="' + icone("Bestiary Occurrence " + c.raridade) + '" alt="" title="Ocorrência: ' +
           esc(RARIDADE_PT[c.raridade] || c.raridade) + '">' +
           (c.raridade === "Very Rare" ? '<span class="rara">Muito rara (5 kills)</span>' : "") + "</div></div></div></td>" +
+      (comClasse ? '<td class="col-classe">' + esc(c.classe || "Outras") + "</td>" : "") +
       '<td class="dif dif-' + c.dificuldade.toLowerCase() + '">' +
         (conhecida ? '<img class="pixel estrelas" src="' + icone("Bestiary Level " + c.dificuldade) + '" alt="">' : "") +
         "<div>" + esc(DIF_PT[c.dificuldade]) + "</div></td>" +
@@ -206,14 +211,37 @@
       "</table></div>";
   }
 
+  function seletorOrdem(id, ordem) {
+    var fixa = ordem.col === "jogo" || ordem.col === "nome";
+    return '<label class="ctrl"><span class="ctrl-rotulo">Ordenar por:</span><select id="' + id + '">' +
+      [["jogo", "Ordem do jogo"], ["nome", "Nome (A-Z)"]].concat(fixa ? [] : [["", "Coluna clicada"]]).map(function (o) {
+        return '<option value="' + o[0] + '"' + (o[0] === (fixa ? ordem.col : "") ? " selected" : "") + ">" + o[1] + "</option>";
+      }).join("") + "</select></label>";
+  }
+
+  // lista simples (sem divisão por classe) das criaturas com bestiário completo
+  function tabelaCompletas(lista) {
+    var o = estado.ordemCompletas;
+    o.porClasse = true;
+    var corpo = ordenar(lista, o).map(function (c, i) { return linha(c, i, true); }).join("");
+    var t = "completas";
+    return '<div class="controles">' + seletorOrdem("f-ordem-c", o) +
+      '<span class="ctrl-dica">Mesmas criaturas que aparecem no fim de cada classe acima, aqui numa lista só. ' +
+      'Desmarcar ✓ aqui também tira a criatura das completas.</span></div>' +
+      '<p class="intro-itens">' + lista.length + " criaturas completas · " + milhar(soma(lista, function (c) { return c.pontos; })) + " pontos do bestiário</p>" +
+      '<div class="tabela-rolagem"><table class="tabela-outfits tabela-bestiario lista-completas"><thead><tr>' +
+      '<th class="col-check" title="Bestiário completo">✓</th>' + cab("nome", "Criatura", "", t) + cab("classe", "Classe", "", t) +
+      cab("dificuldade", "Dificuldade", "", t) + cab("pontos", "Pontos", "", t) + cab("kills", "Kills", "", t) +
+      cab("tempo", "Tempo", "", t) + cab("respawn", "Respawn sugerido", "", t) +
+      cab("warden", '<img class="pixel" src="' + ICO_WARDEN + '" alt=""> Warden', "col-extra", t) +
+      cab("core", '<img class="pixel" src="' + ICO_ANIMUS + '" alt=""> Soul Core', "col-extra", t) +
+      "</tr></thead><tbody>" + (corpo || '<tr><td colspan="' + (COLUNAS + 1) + '" class="vazio-cel">Nenhuma criatura completa ainda.</td></tr>') +
+      "</tbody></table></div>";
+  }
+
   function controles() {
     return '<div class="controles">' +
-      '<label class="ctrl"><span class="ctrl-rotulo">Ordenar por:</span><select id="f-ordem">' +
-        [["jogo", "Ordem do jogo"], ["nome", "Nome (A-Z)"]].concat(
-          estado.ordem.col === "jogo" || estado.ordem.col === "nome" ? [] : [["", "Coluna clicada"]]).map(function (o) {
-          var atual = estado.ordem.col === "jogo" || estado.ordem.col === "nome" ? estado.ordem.col : "";
-          return '<option value="' + o[0] + '"' + (o[0] === atual ? " selected" : "") + ">" + o[1] + "</option>";
-        }).join("") + "</select></label>" +
+      seletorOrdem("f-ordem", estado.ordem) +
       '<label class="ctrl"><span class="ctrl-rotulo">Dificuldade:</span><select id="f-dif">' +
         [["", "Todas"]].concat(DIFS.map(function (d) { return [d, DIF_PT[d]]; })).map(function (o) {
           return '<option value="' + o[0] + '"' + (o[0] === estado.dificuldade ? " selected" : "") + ">" + esc(o[1]) + "</option>";
@@ -248,6 +276,7 @@
     var pendentes = filtradas.filter(function (c) { return !completos[c.nome]; });
     var nW = CRIATURAS.filter(function (c) { return wardens[c.nome]; }).length;
     var nC = CRIATURAS.filter(function (c) { return cores[c.nome]; }).length;
+    var feitasTodas = CRIATURAS.filter(function (c) { return completos[c.nome]; });
 
     raiz.innerHTML = barra() +
       caixa("criaturas", "Criaturas", controles() +
@@ -260,7 +289,9 @@
         "(10% de chance por raid, 20% se o bestiário da criatura estiver completo).</p>" + chips(wardens, true), "secao-separada") +
       caixa("soul-core", "Soul Cores completos (" + nC + ")",
         '<p class="intro-itens">Criaturas cujo Soul Core você já usou no Soulpit (Animus Mastery: +2% de XP base nelas, ' +
-        "mais 0,1% a cada 10 masteries, até +2% extras).</p>" + chips(cores, false), "secao-separada");
+        "mais 0,1% a cada 10 masteries, até +2% extras).</p>" + chips(cores, false), "secao-separada") +
+      caixa("bestiarios-completos", "Bestiários completos (" + feitasTodas.length + ")",
+        tabelaCompletas(filtradas.filter(function (c) { return completos[c.nome]; })), "secao-separada");
     window.scrollTo(0, y);
   }
 
@@ -283,9 +314,11 @@
     var th = e.target.closest("th.ordenavel");
     if (th) {
       var col = th.getAttribute("data-col");
-      if (estado.ordem.col === col) estado.ordem.dir = -estado.ordem.dir;
-      else { estado.ordem.col = col; estado.ordem.dir = (col === "nome" || col === "respawn" || col === "tempo" || col === "dificuldade") ? 1 : -1; }
-      guardar("bestiarioOrdem", estado.ordem);
+      var daLista = th.getAttribute("data-tab") === "completas";
+      var o = daLista ? estado.ordemCompletas : estado.ordem;
+      if (o.col === col) o.dir = -o.dir;
+      else { o.col = col; o.dir = (col === "nome" || col === "respawn" || col === "tempo" || col === "dificuldade" || col === "classe") ? 1 : -1; }
+      guardar(daLista ? "bestiarioOrdemCompletas" : "bestiarioOrdem", { col: o.col, dir: o.dir });
       render();
       return;
     }
@@ -316,6 +349,7 @@
     if (t.classList.contains("marca")) { marcar(t.getAttribute("data-tipo"), t.getAttribute("data-nome"), t.checked); return; }
     if (t.id === "f-dif") estado.dificuldade = t.value;
     if (t.id === "f-ordem" && t.value) { estado.ordem = { col: t.value, dir: 1 }; guardar("bestiarioOrdem", estado.ordem); }
+    if (t.id === "f-ordem-c" && t.value) { estado.ordemCompletas = { col: t.value, dir: 1 }; guardar("bestiarioOrdemCompletas", estado.ordemCompletas); }
     if (t.id === "f-tibiapal") { estado.soTibiapal = t.checked; guardar("bestiarioSoTibiapal", t.checked); }
     render();
   });

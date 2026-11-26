@@ -25,7 +25,8 @@
       sub: [
         ["Criaturas", "bestiario.html#criaturas"],
         ["Echo Warden Killed", "bestiario.html#echo-warden"],
-        ["Soul Core Completed", "bestiario.html#soul-core"]
+        ["Soul Core Completed", "bestiario.html#soul-core"],
+        ["Bestiary Completed", "bestiario.html#bestiarios-completos"]
       ]
     }
   ];

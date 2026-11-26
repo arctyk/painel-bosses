@@ -172,6 +172,7 @@ tempo estimado e respawn sugerido, com uma caixa para marcar as já completas (f
   Soulpit (Animus Mastery). Criaturas novas sem dificuldade na wiki aparecem como "A confirmar".
 - **Extrair lista em texto**: gera uma lista simples (não completas, completas, Wardens, Soul Cores feitos ou que faltam)
   para copiar e mandar no WhatsApp/Discord, e compara com uma lista colada de outra pessoa (o que você já tem e o que falta).
+- No fim da página, **Bestiários completos** repete as criaturas completas numa lista só (sem divisão por classe), com coluna de classe e ordenação própria (Ordem do jogo, Nome ou clique no cabeçalho).
 - **Ordenar por: Ordem do jogo** deixa cada classe na mesma ordem do bestiário do Tibia (pelo `race_id` da TibiaWiki). Quando a wiki ainda não tem o `race_id`, ele é estimado pela versão em que a criatura foi implementada.
 - Cada respawn sugerido tem uma badge com o tipo recomendado pelo TibiaPal: **1x** (respawn normal), **Rapid** (melhor no rapid respawn) ou **Evento** (só em raids/eventos/quests).
 - Respawn e tempo vêm do TibiaPal (tibiapal.com/bestiary). Quando o TibiaPal não tem a criatura, aparecem

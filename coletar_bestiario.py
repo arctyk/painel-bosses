@@ -98,6 +98,7 @@ def limpa(t):
     t = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*)\]\]", r"\1", t)
     t = re.sub(r"\[https?://\S+ ([^\]]*)\]", r"\1", t)
     t = re.sub(r"'''?|<[^>]+>", "", t)
+    t = re.sub(r"\s*\(\s*(?:[,;]|and|or)?\s*\)", "", t)   # parênteses que ficaram vazios sem as predefinições
     return re.sub(r"\s+", " ", t).strip(" .,;")
 
 
@@ -160,7 +161,7 @@ def tibiapal():
                 modos.append(MODOS_TIBIAPAL[k])
             if nome not in res:   # mantém o respawn da primeira tabela em que aparece
                 res[nome] = (pts.strip(), re.sub(r"<[^>]+>", "", dif).strip(),
-                             html.unescape(re.sub(r"<[^>]+>", "", spawn)).strip(), modos)
+                             limpa(html.unescape(re.sub(r"<[^>]+>", "", spawn))), modos)
     return res
 
 
