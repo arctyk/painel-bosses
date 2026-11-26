@@ -151,13 +151,13 @@
         '<div class="ocorr"><img class="pixel" src="' + icone("Bestiary Occurrence " + c.raridade) + '" alt="" title="Ocorrência: ' +
           esc(RARIDADE_PT[c.raridade] || c.raridade) + '">' +
           (c.raridade === "Very Rare" ? '<span class="rara">Muito rara (5 kills)</span>' : "") + "</div></div></div></td>" +
-      (comClasse ? '<td class="col-classe">' + esc(c.classe || "Outras") + "</td>" : "") +
+      (comClasse === true ? '<td class="col-classe">' + esc(c.classe || "Outras") + "</td>" : "") +
       '<td class="dif dif-' + c.dificuldade.toLowerCase() + '">' +
         (conhecida ? '<img class="pixel estrelas" src="' + icone("Bestiary Level " + c.dificuldade) + '" alt="">' : "") +
         "<div>" + esc(DIF_PT[c.dificuldade]) + "</div></td>" +
       '<td class="col-num total"><span class="pts">' + (conhecida ? c.pontos : "?") + '<img class="pixel" src="' + ICO_CHARM + '" alt="" title="Charm points"></span></td>' +
       '<td class="col-num">' + (c.kills ? milhar(c.kills) : "?") + "</td>" +
-      '<td class="col-num tempo">' + (c.tempo ? esc(TEMPO_PT[c.tempo] || c.tempo) : '<span class="sem-dano">—</span>') + "</td>" +
+      '<td class="col-num tempo">' + (c.tempo ? esc(TEMPO_PT[c.tempo] || c.tempo).replace(" (", "<br>(") : '<span class="sem-dano">—</span>') + "</td>" +
       '<td class="col-respawn">' + respawn + "</td>" +
       '<td class="col-extra"><label class="extra' + (wardens[c.nome] ? " marcado" : "") + '" title="Echo Warden morto (+' + (c.pontosWarden || "?") + ' charm points)">' +
         '<input type="checkbox" class="marca" data-tipo="warden" data-nome="' + esc(c.nome) + '"' + (wardens[c.nome] ? " checked" : "") + ">" +
@@ -231,7 +231,7 @@
       'Desmarcar ✓ aqui também tira a criatura das completas.</span></div>' +
       '<p class="intro-itens">' + lista.length + " criaturas completas · " + milhar(soma(lista, function (c) { return c.pontos; })) + " pontos do bestiário</p>" +
       '<div class="tabela-rolagem"><table class="tabela-outfits tabela-bestiario lista-completas"><thead><tr>' +
-      '<th class="col-check" title="Bestiário completo">✓</th>' + cab("nome", "Criatura", "", t) + cab("classe", "Classe", "", t) +
+      '<th class="col-check" title="Bestiário completo">✓</th>' + cab("nome", "Criatura", "", t) + cab("classe", "Classe", "col-classe", t) +
       cab("dificuldade", "Dificuldade", "", t) + cab("pontos", "Pontos", "", t) + cab("kills", "Kills", "", t) +
       cab("tempo", "Tempo", "", t) + cab("respawn", "Respawn sugerido", "", t) +
       cab("warden", '<img class="pixel" src="' + ICO_WARDEN + '" alt=""> Warden', "col-extra", t) +

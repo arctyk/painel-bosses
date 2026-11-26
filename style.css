@@ -645,8 +645,8 @@ html { scroll-behavior: smooth; }
 .tabela-bestiario .col-nome .outfit-cel { min-width: 170px; }
 .tabela-bestiario .col-nome img.sprite { max-height: 44px; max-width: 44px; }
 .tabela-bestiario td { padding-top: 2px; padding-bottom: 2px; }
-.tabela-bestiario .col-respawn { min-width: 200px; }
-.tabela-bestiario .tempo { white-space: nowrap; }
+.tabela-bestiario .col-respawn { min-width: 140px; }
+.tabela-bestiario .tempo { white-space: nowrap; line-height: 1.25; }
 .rara { font-size: 7pt; color: #a33a00; font-weight: bold; }
 .fonte { font-size: 6.5pt; padding: 0 3px; border: 1px solid #a88a62; border-radius: 2px; color: #7a5a3a; background: #fffaf0; cursor: help; }
 .dif { white-space: nowrap; font-weight: bold; }
@@ -656,7 +656,7 @@ html { scroll-behavior: smooth; }
 .dif-medium { color: #8a6a00; }
 .dif-hard { color: #b04a00; }
 .dif-challenging { color: #a01010; }
-.tabela-bestiario .nome-cel { display: flex; align-items: center; gap: 8px; min-width: 190px; }
+.tabela-bestiario .nome-cel { display: flex; align-items: center; gap: 8px; min-width: 170px; }
 .tabela-bestiario .spr { flex: 0 0 46px; height: 46px; display: flex; align-items: center; justify-content: center; }
 .tabela-bestiario .spr-corte { overflow: hidden; flex: none; }
 .tabela-bestiario .spr img { display: block; max-width: none; image-rendering: pixelated; }
@@ -771,8 +771,6 @@ input[type="checkbox"]:focus-visible { outline: 2px solid #3e6cff; outline-offse
 .tabela-bestiario tr.feito .modo { opacity: .55; }
 
 /* Bestiário: lista simples das completas (sem divisão por classe) */
-.tabela-bestiario td.col-classe { white-space: nowrap; font-size: 8.5pt; }
-.tabela-bestiario.lista-completas .col-respawn { min-width: 130px; }
 
 /* botão Expandir/Recolher no canto direito da barra verde */
 .bt-recolher { position: absolute; top: 3px; right: 8px; z-index: 5; height: 18px; padding: 0 10px;
@@ -781,3 +779,8 @@ input[type="checkbox"]:focus-visible { outline: 2px solid #3e6cff; outline-offse
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15); }
 .bt-recolher:hover { background: linear-gradient(#6e5a48, #3f3127); color: #fff; }
 .bt-recolher:focus-visible { outline: 2px solid #ffd18c; outline-offset: 1px; }
+
+/* lista de completas: coluna Classe estreita (quebra em 2 linhas) e colunas mais justas para não rolar */
+.tabela-bestiario .col-classe { width: 70px; font-size: 8pt; line-height: 1.2; overflow-wrap: anywhere; }
+.tabela-bestiario.lista-completas .nome-cel { min-width: 150px; gap: 6px; }
+.tabela-bestiario.lista-completas .col-respawn { min-width: 120px; }
