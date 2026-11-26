@@ -24,7 +24,7 @@
     busca: "",
     dificuldade: "",
     soTibiapal: ler("bestiarioSoTibiapal", false),
-    ordem: { col: "nome", dir: 1 }
+    ordem: ler("bestiarioOrdem", { col: "nome", dir: 1 })
   };
 
   function esc(s) {
@@ -72,6 +72,7 @@
   function ordenar(lista) {
     var o = estado.ordem;
     var val = {
+      jogo: function (c) { return c.raceId || 1e9; },   // ordem em que aparecem no bestiário do jogo
       nome: function (c) { return nome(c); },
       dificuldade: function (c) { return DIFS.indexOf(c.dificuldade); },
       pontos: function (c) { return c.pontos; },
@@ -207,6 +208,12 @@
 
   function controles() {
     return '<div class="controles">' +
+      '<label class="ctrl"><span class="ctrl-rotulo">Ordenar por:</span><select id="f-ordem">' +
+        [["jogo", "Ordem do jogo"], ["nome", "Nome (A-Z)"]].concat(
+          estado.ordem.col === "jogo" || estado.ordem.col === "nome" ? [] : [["", "Coluna clicada"]]).map(function (o) {
+          var atual = estado.ordem.col === "jogo" || estado.ordem.col === "nome" ? estado.ordem.col : "";
+          return '<option value="' + o[0] + '"' + (o[0] === atual ? " selected" : "") + ">" + o[1] + "</option>";
+        }).join("") + "</select></label>" +
       '<label class="ctrl"><span class="ctrl-rotulo">Dificuldade:</span><select id="f-dif">' +
         [["", "Todas"]].concat(DIFS.map(function (d) { return [d, DIF_PT[d]]; })).map(function (o) {
           return '<option value="' + o[0] + '"' + (o[0] === estado.dificuldade ? " selected" : "") + ">" + esc(o[1]) + "</option>";
@@ -278,6 +285,7 @@
       var col = th.getAttribute("data-col");
       if (estado.ordem.col === col) estado.ordem.dir = -estado.ordem.dir;
       else { estado.ordem.col = col; estado.ordem.dir = (col === "nome" || col === "respawn" || col === "tempo" || col === "dificuldade") ? 1 : -1; }
+      guardar("bestiarioOrdem", estado.ordem);
       render();
       return;
     }
@@ -307,6 +315,7 @@
     var t = e.target;
     if (t.classList.contains("marca")) { marcar(t.getAttribute("data-tipo"), t.getAttribute("data-nome"), t.checked); return; }
     if (t.id === "f-dif") estado.dificuldade = t.value;
+    if (t.id === "f-ordem" && t.value) { estado.ordem = { col: t.value, dir: 1 }; guardar("bestiarioOrdem", estado.ordem); }
     if (t.id === "f-tibiapal") { estado.soTibiapal = t.checked; guardar("bestiarioSoTibiapal", t.checked); }
     render();
   });

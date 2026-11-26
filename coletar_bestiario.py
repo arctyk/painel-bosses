@@ -207,6 +207,28 @@ def medir_sprite(caminho):
     return [caixa[0], caixa[1], caixa[2] - caixa[0], caixa[3] - caixa[1], im.width, im.height]
 
 
+def versao(v):
+    """ "12.40.9997" -> (12, 40); "7.8" -> (7, 80). Só major.minor (o resto é número de build)."""
+    m = re.match(r"\s*(\d+)\.(\d+)", v or "")
+    if not m:
+        return None
+    menor = m.group(2)
+    return int(m.group(1)), int(menor) * (10 if len(menor) == 1 else 1)
+
+
+def estimar_race_ids(criaturas):
+    """Criaturas sem race_id na wiki: o ID cresce com a ordem em que entraram no jogo, então
+    estima um logo acima do maior ID das criaturas implementadas até a mesma versão."""
+    conhecidos = [(versao(c["implementado"]), c["raceId"]) for c in criaturas if c["raceId"] and versao(c["implementado"])]
+    for c in criaturas:
+        if c["raceId"]:
+            continue
+        v = versao(c["implementado"])
+        anteriores = [r for vv, r in conhecidos if v and vv <= v]
+        c["raceId"] = (max(anteriores) if anteriores else max(r for _, r in conhecidos)) + 0.5
+        c["raceIdEstimado"] = True
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -268,6 +290,9 @@ def main():
             "xp": limpa(b.get("exp")) or None,
             "locais": locais[:300] or None,
             "pontosWarden": WARDEN.get(dif, 0),
+            "implementado": limpa(b.get("implemented")) or None,
+            # race_id = número interno da criatura; o bestiário do jogo ordena cada classe por ele
+            "raceId": int(limpa(b.get("race_id"))) if limpa(b.get("race_id")).isdigit() else None,
             "soulCore": any(x.replace("grey", "gray") in cores for x in (n.lower(), re.sub(r" \(creature\)$", "", n.lower()))),
         }
         if p:
@@ -292,6 +317,7 @@ def main():
             arq = ICONES[norm.get(pg["title"], pg["title"])[5:]]
             with open(os.path.join(BASE, "img", "bestiario-icones", arq), "wb") as f:
                 f.write(_get(pg["imageinfo"][0]["url"]))
+    estimar_race_ids(criaturas)
     print("Imagens...")
     spr = baixar_imagens([c["nome"] for c in criaturas], forcar)
     for c in criaturas:
@@ -308,6 +334,7 @@ def main():
     print("Sem classe nem dificuldade na wiki (ficaram de fora):", sem_dif)
     print("Dificuldade a confirmar:", [c["nome"] for c in criaturas if c["dificuldade"] == "Unknown"])
     print("Sem soul core:", [c["nome"] for c in criaturas if not c["soulCore"]])
+    print("race_id estimado pela versão:", len([c for c in criaturas if c.get("raceIdEstimado")]))
     print("Sem imagem:", [c["nome"] for c in criaturas if not c["sprite"]])
     print("Pontos diferentes entre wiki e TibiaPal:", diverg)
     achados = {c["nome"].lower() for c in criaturas}
