@@ -274,6 +274,58 @@ def baixar_imagens(nomes_arquivo, pasta, forcar):
     return res
 
 
+def infobox(w):
+    """Campos do {{Infobox Outfit}} da página '<Nome> Outfits'."""
+    f = {}
+    for linha in (w or "").splitlines():
+        m = re.match(r"^\|\s*(\w+)\s*=(.*)$", linha)
+        if m:
+            f[m.group(1)] = m.group(2).strip()
+        if linha.startswith("}}"):
+            break
+    return f
+
+
+def como_obter(txt):
+    """'[[Premium Account]], see [[X Quest]].' -> 'Premium' (a quest vai em outro campo)."""
+    t = re.sub(r",?\s*see\s*\[\[[^\]]*\]\]\.?", "", txt or "")
+    t = limpa(t).replace("Free Account", "Grátis").replace("Premium Account", "Premium")
+    return None if t.lower() in ("", "unavailable", "-") else t
+
+
+def quest_de(*campos):
+    for c in campos:
+        m = re.search(r"see\s*\[\[([^\]|#]+)", c or "")
+        if m:
+            return m.group(1).strip()
+    return None
+
+
+def preco(v):
+    v = re.sub(r"[^\d]", "", v or "")
+    return int(v) if v else None
+
+
+def area_util(caminho, caixa=None):
+    """Retângulo com desenho (somando todos os quadros da animação): [x, y, largura, altura, W, H].
+    caixa=(x0, x1) limita a uma faixa horizontal (Yalaharian: duas figuras na mesma imagem)."""
+    from PIL import Image, ImageSequence
+    im = Image.open(os.path.join(BASE, caminho))
+    bb = None
+    for q in ImageSequence.Iterator(im):
+        a = q.convert("RGBA").getchannel("A")
+        if caixa:
+            a = a.crop((caixa[0], 0, caixa[1], a.height))
+        b = a.getbbox()
+        if b and caixa:
+            b = (b[0] + caixa[0], b[1], b[2] + caixa[0], b[3])
+        if b:
+            bb = b if not bb else (min(bb[0], b[0]), min(bb[1], b[1]), max(bb[2], b[2]), max(bb[3], b[3]))
+    if not bb:
+        return None
+    return [bb[0], bb[1], bb[2] - bb[0], bb[3] - bb[1], im.width, im.height]
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -285,9 +337,15 @@ def main():
 
     print("Lendo a lista de outfits...")
     cat = api(action="query", list="categorymembers", cmtitle="Category:Outfits", cmlimit=500)
-    nomes = sorted(x["title"][:-len(" Outfits")] for x in cat["query"]["categorymembers"] if x["title"].endswith(" Outfits"))
+    nomes = sorted(x["title"][:-len(" Outfits")] for x in cat["query"]["categorymembers"]
+                   if x["title"].endswith(" Outfits") and ":" not in x["title"])   # sem as subcategorias
+    paginas = conteudo([n + " Outfits" for n in nomes])
+    fichas = {k[:-len(" Outfits")]: infobox(v[1]) for k, v in paginas.items()}
     spoilers = conteudo([n + " Outfits Quest/Spoiler" for n in nomes])
-    quests = conteudo([n + " Outfits Quest" for n in nomes])
+    # quest de cada outfit: a citada na ficha ("see [[...]]") ou "<Nome> Outfits Quest"
+    nomes_quest = {n: quest_de(fichas.get(n, {}).get("outfit"), fichas.get(n, {}).get("addons")) or n + " Outfits Quest"
+                   for n in nomes}
+    quests = conteudo(sorted(set(nomes_quest.values())))
 
     outfits = []
     for n in nomes:
@@ -325,16 +383,29 @@ def main():
             if p["parte"] in (1, 2):
                 prox = p["parte"] + 1 if p["genero"] is None else prox
         partes = [p for p in partes if p["itens"]]
-        if not partes:
-            continue
-        q = quests.get(n + " Outfits Quest")
+        f = fichas.get(n, {})
+        q = quests.get(nomes_quest[n])
         lvl = None
         if q:
             m = re.search(r"\|\s*lvlrec\s*=\s*([^\n|]*)", q[1])
             lvl = limpa(m.group(1)) if m else None
-        outfits.append({"nome": n, "pagina": n + " Outfits", "quest": (q[0] if q else None),
-                        "level": lvl if lvl and lvl not in ("0", "-") else None, "partes": partes})
-    print(len(outfits), "outfits com itens")
+        loja = f.get("store") == "yes"
+        precos = {k: preco(f.get(c)) for k, c in (("base", "baseoutfitprice"), ("addon1", "addon1price"),
+                                                   ("addon2", "addon2price"), ("completo", "fulloutfitprice"))}
+        sem_addons = (f.get("addons") or "").strip(" '").lower() == "unavailable"
+        outfits.append({
+            "nome": n, "pagina": n + " Outfits", "quest": (q[0] if q else None),
+            "level": lvl if lvl and lvl not in ("0", "-") else None, "partes": partes,
+            "tipo": f.get("primarytype"),                       # Quest, Basic, Premium, Special
+            "loja": loja,
+            "precos": {k: v for k, v in precos.items() if v} if loja else None,
+            "comoOutfit": como_obter(f.get("outfit")),
+            "comoAddons": "sem addons" if sem_addons else como_obter(f.get("addons")),
+            "conquista": limpa(f.get("achievement") or "") or None,
+            "lancado": limpa(f.get("implemented") or "") or None,
+        })
+    print(len(outfits), "outfits;", sum(1 for o in outfits if o["partes"]), "com itens;",
+          sum(1 for o in outfits if o["loja"]), "da store")
 
     # nomes canônicos dos itens (redirects) e dados de cada item
     todos = sorted({it["item"] for o in outfits for p in o["partes"] for it in p["itens"]})
@@ -350,7 +421,9 @@ def main():
         itens[n] = {"link": WIKI + urllib.parse.quote(n.replace(" ", "_")), "dropadoPor": dropado_por(wt)}
 
     print("Imagens dos itens...")
-    spr = baixar_imagens({n: (n + ".gif", slug(n) + ".gif") for n in itens}, DIR_ITENS, forcar)
+    # itens sem sprite próprio na wiki: usa a imagem de outro (Pure Water é coletada no Ceiron's Waterskin)
+    IMAGEM_DE = {"Pure Water": "Ceiron's Waterskin"}
+    spr = baixar_imagens({n: (IMAGEM_DE.get(n, n) + ".gif", slug(n) + ".gif") for n in itens}, DIR_ITENS, forcar)
     for n in itens:
         itens[n]["sprite"] = spr.get(n)
     print("Imagens dos outfits...")
@@ -359,8 +432,26 @@ def main():
         for g, G in (("m", "Male"), ("f", "Female")):
             pedidos[(o["nome"], g)] = ("Outfit %s %s Addon 3.gif" % (o["nome"], G), "%s-%s.gif" % (slug(o["nome"]), g))
     spr = baixar_imagens(pedidos, DIR_OUTFITS, forcar)
+    # sem a versão com os 2 addons (ex.: outfits da store sem addons): usa o outfit base.
+    # A wiki guarda essas versões como imagem vazia de 32x32, então imagem vazia também conta como "falta".
+    vazias = {k for k, c in spr.items() if area_util(c) is None}
+    faltam = {k: ("Outfit %s %s.gif" % (k[0], "Male" if k[1] == "m" else "Female"), v[1])
+              for k, v in pedidos.items() if k not in spr or k in vazias}
+    spr.update(baixar_imagens(faltam, DIR_OUTFITS, True))
     for o in outfits:
         o["sprite"] = {"m": spr.get((o["nome"], "m")), "f": spr.get((o["nome"], "f"))}
+        # área com desenho de cada sprite, para centralizar a figura (e não o quadro de 64x64)
+        o["recorte"] = {}
+        for g in ("m", "f"):
+            c = o["sprite"][g]
+            if not c:
+                continue
+            r = area_util(c)
+            if r and r[4] > 64 and o["nome"] == "Yalaharian":
+                # duas figuras lado a lado: lado bom (esquerda) e lado mau (direita)
+                o["recorte"][g] = [area_util(c, (0, r[4] // 2)), area_util(c, (r[4] // 2, r[4]))]
+            else:
+                o["recorte"][g] = [r]
 
     with open(ARQ_SAIDA, "w", encoding="utf-8") as f:
         f.write("// Gerado por coletar_outfits.py (TibiaWiki em inglês). Não edite à mão: rode o script.\n")
@@ -369,6 +460,8 @@ def main():
     sem = [n for n in itens if not itens[n]["sprite"]]
     print("\nPronto:", len(outfits), "outfits,", len(itens), "itens. Itens sem imagem:", sem)
     print("Outfits sem imagem:", [o["nome"] for o in outfits if not o["sprite"]["m"]])
+    print("Sprites vazios:", [o["nome"] for o in outfits if not all(o["recorte"].values())])
+    print("Store sem preço:", [o["nome"] for o in outfits if o["loja"] and not o["precos"]])
 
 
 if __name__ == "__main__":

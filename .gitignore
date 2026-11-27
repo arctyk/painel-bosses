@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# originais em alta das imagens geradas no ChatGPT (o site usa as versões leves em tema/)
+novo-tema/

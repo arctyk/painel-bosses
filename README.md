@@ -1,4 +1,4 @@
-# Painel de Bosses
+# Tibia Collection
 
 Guia rápido offline de bosses de Tibia, com dados da [TibiaWiki BR](https://www.tibiawiki.com.br).
 Para abrir, dê duplo clique em `index.html`. Não precisa de servidor nem de internet.
@@ -27,7 +27,7 @@ Se alguma imagem de `tema/` faltar, o painel usa cores parecidas no lugar.
 | `coletar.py` | Script que busca os dados na wiki e atualiza `bosses.js` |
 | `servidor.py` | Servidor local sem cache (`python servidor.py` → http://127.0.0.1:8765), para ver as mudanças na hora |
 | `menu.js` | Menu lateral compartilhado (Bosses / Outfits) |
-| `outfits.html`, `outfits.js`, `outfits-dados.js` | Página de outfits (tabela por outfit e por item) |
+| `outfits.html`, `outfits.js`, `outfits-dados.js` | Página de outfits: todos os outfits (quest, básicos, premium e especiais), Store Outfits com preço em Tibia Coins e itens de drop; marcação de Outfit/Addon 1/Addon 2 já obtidos (salva no navegador) |
 | `coletar_outfits.py` | Gera `outfits-dados.js` a partir da TibiaWiki em inglês |
 | `rotacoes.py` | Gera a rotação de ataque de cada vocação (usado pelo `coletar.py`) |
 | `img/magias/` | Ícones das magias (da tibia.fandom.com) |

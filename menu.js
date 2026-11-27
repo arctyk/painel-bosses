@@ -5,7 +5,7 @@
 
   var MENU = [
     {
-      id: "bosses", rotulo: "Bosses", pagina: "index.html", icone: "img/itens/final-judgement.gif",
+      id: "bosses", rotulo: "Bosses", pagina: "index.html", icone: "tema/collection/icone-bosses.png",
       sub: [
         ["Grave Danger", "index.html#g-grave-danger"],
         ["Heart of Destruction", "index.html#g-heart-of-destruction"],
@@ -14,14 +14,15 @@
       ]
     },
     {
-      id: "outfits", rotulo: "Outfits", pagina: "outfits.html", icone: "img/itens-outfit/ape-fur.gif",
+      id: "outfits", rotulo: "Outfits", pagina: "outfits.html", icone: "tema/collection/icone-outfits.png",
       sub: [
-        ["Por outfit", "outfits.html#por-outfit"],
-        ["Por item", "outfits.html#por-item"]
+        ["Outfits e addons", "outfits.html#por-outfit"],
+        ["Store Outfits", "outfits.html#store"],
+        ["Itens", "outfits.html#por-item"]
       ]
     },
     {
-      id: "bestiario", rotulo: "Bestiário", pagina: "bestiario.html", icone: "img/bestiario-icones/menu-rato.gif",
+      id: "bestiario", rotulo: "Bestiário", pagina: "bestiario.html", icone: "tema/collection/icone-bestiario.png",
       sub: [
         ["Criaturas", "bestiario.html#criaturas"],
         ["Echo Warden Killed", "bestiario.html#echo-warden"],
@@ -50,7 +51,7 @@
         '<div class="MenuButton" role="button" tabindex="0" aria-expanded="' + aberto + '" data-pagina="' + m.pagina + '">' +
           '<div class="Button"></div>' +
           '<span class="Lights"><div class="light_lu"></div><div class="light_ld"></div><div class="light_ru"></div></span>' +
-          '<div class="Icon"><img class="pixel" src="' + esc(m.icone) + '" alt=""></div>' +
+          '<div class="Icon"><img class="icone-menu" src="' + esc(m.icone) + '" alt=""></div>' +
           '<div class="Label">' + esc(m.rotulo) + "</div>" +
           '<div class="Extend"></div>' +
         "</div>" +

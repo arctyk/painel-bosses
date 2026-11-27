@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="only light">
-  <title>Outfits · Painel de Bosses</title>
+  <title>Outfits · Tibia Collection</title>
   <script>
     (function () {
       // só desliga o tema se a imagem falhar 3 vezes (uma falha passageira do servidor não derruba o visual)
@@ -29,7 +29,7 @@
   <div id="Pagina">
     <div id="MenuColumn">
       <div id="LeftArtwork">
-        <img id="TibiaLogoArtworkTop" src="tema/tibia-logo-artwork-top.gif" alt="">
+        <a href="index.html" id="LogoLink" title="Tibia Collection"><img id="TibiaLogoArtworkTop" src="tema/logo-collection.png" alt="Tibia Collection"></a>
       </div>
 
       <div class="SmallMenuBox" id="BuscaBox">
@@ -37,8 +37,8 @@
         <div class="SmallBoxBorder BorderLeft"></div>
         <div class="SmallBoxBorder BorderRight"></div>
         <div class="SmallBoxButtonContainer">
-          <label for="busca">Buscar</label>
-          <input id="busca" type="search" placeholder="Outfit, item ou monstro..." autocomplete="off">
+          <label for="busca">Buscar outfit</label>
+          <input id="busca" type="search" placeholder="Outfit ou item..." autocomplete="off">
         </div>
         <div class="SmallBoxBottom"></div>
       </div>
@@ -52,7 +52,7 @@
 
     <div id="ContentColumn" class="Content">
       <div id="conteudo-outfits"></div>
-      <div id="Footer">Painel pessoal. Dados: TibiaWiki (tibia.fandom.com). Visual baseado em tibia.com (CipSoft GmbH).<br>
+      <div id="Footer">Tibia Collection: fã-site sem vínculo com a CipSoft. Dados: TibiaWiki (tibia.fandom.com). Visual baseado em tibia.com (CipSoft GmbH).<br>
         Atualize os dados com <code>python coletar_outfits.py</code>.</div>
     </div>
   </div>

@@ -294,7 +294,7 @@
       caixa("bestiarios-completos", "Bestiários completos (" + feitasTodas.length + ")",
         listaCompletasAberta ? tabelaCompletas(filtradas.filter(function (c) { return completos[c.nome]; })) : "", "secao-separada",
         '<button type="button" class="bt-recolher" aria-expanded="' + listaCompletasAberta + '">' +
-          (listaCompletasAberta ? "▾ Recolher" : "▸ Expandir") + "</button>",
+          (listaCompletasAberta ? '<span class="seta-bt aberta"></span>Recolher' : '<span class="seta-bt"></span>Expandir') + "</button>",
         !listaCompletasAberta);
     window.scrollTo(0, y);
   }
@@ -474,14 +474,14 @@
           '<label class="ext-op"><input type="checkbox" id="ext-pontos"' + (ext.pontos ? " checked" : "") + "> Mostrar charm points</label>" +
         "</div>" +
         '<div class="ext-saida"><textarea id="ext-texto" readonly spellcheck="false"></textarea>' +
-          '<div class="ext-acoes"><span id="ext-info"></span><button type="button" class="bt-grupos" id="ext-copiar">Copiar texto</button></div></div>' +
+          '<div class="ext-acoes"><span id="ext-info"></span><button type="button" class="BigButton" id="ext-copiar"><span class="BigButtonText">Copiar texto</span></button></div></div>' +
       "</div>" +
       '<div class="ext-cmp"><b>Comparar com a lista de outra pessoa</b>' +
         '<p class="intro-itens">Cole aqui a lista que recebeu (ex.: os Soul Cores que alguém está vendendo). ' +
         "Ela é comparada com os tipos marcados acima (Bestiário, Echo Warden e/ou Soul Core).</p>" +
         '<textarea id="ext-comparar" placeholder="Dragon Lord&#10;Frost Dragon&#10;Hydra..." spellcheck="false"></textarea>' +
         '<div id="ext-resultado"></div></div>' +
-      '<div class="botoes"><a class="BigButton" href="#" data-fechar="1"><span class="BigButtonText">Fechar</span></a></div>';
+      '<div class="botoes"><a class="botao-sec grande" href="#" data-fechar="1">Fechar</a></div>';
     modalCaixaEl.innerHTML = '<div class="Box"><div class="Corner-tl"></div><div class="Corner-tr"></div><div class="Border_1"></div>' +
       '<div class="BorderTitleText"><div class="Title"><span id="m-nome">Extrair lista</span></div>' +
       '<button class="fechar-x" type="button" data-fechar="1" aria-label="Fechar">X</button></div>' +
@@ -502,7 +502,7 @@
     if (ultimoFoco) ultimoFoco.focus();
   }
   function copiar() {
-    var ta = document.getElementById("ext-texto"), bt = document.getElementById("ext-copiar");
+    var ta = document.getElementById("ext-texto"), bt = document.querySelector("#ext-copiar .BigButtonText");
     function ok() { bt.textContent = "Copiado!"; setTimeout(function () { bt.textContent = "Copiar texto"; }, 1500); }
     function antigo() { ta.focus(); ta.select(); try { if (document.execCommand("copy")) ok(); } catch (e) { /* fica selecionado para Ctrl+C */ } }
     if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(ta.value).then(ok, antigo);
@@ -511,7 +511,7 @@
 
   modalEl.addEventListener("click", function (e) {
     if (e.target === modalEl || e.target.closest("[data-fechar]")) { e.preventDefault(); fecharExtrair(); return; }
-    if (e.target.id === "ext-copiar") copiar();
+    if (e.target.closest("#ext-copiar")) copiar();
   });
   modalEl.addEventListener("change", function (e) {
     var t = e.target;

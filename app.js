@@ -29,12 +29,10 @@
   var TIPOS = { bane: "Bane", archfoe: "Archfoe", nemesis: "Nemesis" };
 
   var bosses = (window.BOSSES || []).slice();
+  var EXTRA = window.BOSSES_EXTRA || {};   // resumo da mecânica e cooldown (bosses-extra.js)
   var secoesEl = document.getElementById("secoes");
   var buscaEl = document.getElementById("busca");
   var vazioEl = document.getElementById("vazio");
-  var modalEl = document.getElementById("modal");
-  var modalCaixaEl = document.getElementById("modal-caixa");
-  var ultimoFoco = null;
 
   // ---------- utilidades ----------
   function esc(s) {
@@ -122,17 +120,88 @@
       });
   }
 
-  // ---------- cards ----------
-  function card(b, i) {
-    var lv = textoLevel(b.level);
-    return '<button class="card" type="button" data-i="' + i + '" id="card-' + i + '" data-busca="' +
-      esc((b.nome + " " + (b.local || "")).toLowerCase()) + '">' +
-      '<div class="TableContainer">' + legenda(esc(b.nome)) +
-      '<div class="Table1"><div class="InnerTableContainer"><div class="TableContentContainer">' +
-      '<div class="slot">' + sprite(b.sprite, b.nome) + "</div>" +
-      (b.local ? '<div class="linha Even">' + esc(b.local) + "</div>" : "") +
-      (lv ? '<div class="linha Odd">' + lv + "</div>" : "") +
-      "</div></div></div></div></button>";
+  // ---------- tabela ----------
+  function textoCooldown(h) {
+    if (h == null) return '<span class="sem-dano" title="A TibiaWiki não informa o cooldown deste boss">—</span>';
+    if (h < 24) return "<b>" + h + "h</b>";
+    var d = Math.floor(h / 24), r = h % 24;
+    return "<b>" + d + "d" + (r ? " " + r + "h" : "") + "</b>";
+  }
+
+  // só o ícone do elemento (o nome aparece ao passar o mouse)
+  function icoElemento(el, comSD) {
+    var rotulo = NOME_ELEMENTO[el] || el;
+    if (el === "morte" && comSD) rotulo = "SD (Sudden Death)";
+    return '<span class="el-ic el-' + el + '" title="' + esc(rotulo) + '">' + icone(el, rotulo) + "</span>";
+  }
+
+  function celulaDano(b) {
+    var a = b.ataque || {};
+    var sd = { sorcerer: 1, druid: 1, paladin: 1 };       // death de quem usa runa = SD
+    return '<div class="dano-voc">' + VOCACOES.map(function (v) {
+      var d = a[v[0]] || {};
+      var els = d.elementos || [];
+      var alt = (d.alternativas || []).length
+        ? '<span class="el-ou">ou</span>' + d.alternativas.map(function (e) { return icoElemento(e); }).join("") : "";
+      return '<div class="dv"><span class="dv-voc">' + v[1] + '</span><span class="dv-els">' +
+        (els.length ? els.map(function (e) { return icoElemento(e, sd[v[0]]); }).join('<span class="el-mais">+</span>')
+          : '<span class="sem-dano">sem dano</span>') + alt + "</span></div>";
+    }).join("") + "</div>";
+  }
+
+  function celulaDefesa(b) {
+    var d = b.defesa || {};
+    var lista = d.elementos || [];
+    return (lista.length ? '<div class="def-lista">' + lista.map(function (e) { return icoElemento(e); }).join("") + "</div>"
+      : '<span class="sem-dano">—</span>') +
+      (d.melee ? '<div class="def-melee" title="Knight e monk lutam colados no boss: também precisam de proteção física">' +
+        icoElemento("fisico") + " EK/EM</div>" : "");
+  }
+
+  function linhaBoss(b, i, n) {
+    var ex = EXTRA[b.nome] || {};
+    var tipo = b.tipo && TIPOS[b.tipo] ? '<div class="boss-tipo">' + icone(b.tipo, TIPOS[b.tipo]) + " " + TIPOS[b.tipo] + "</div>" : "";
+    return '<tr class="boss-linha ' + (n % 2 ? "Even" : "Odd") + '" data-i="' + i + '" data-busca="' +
+        esc((b.nome + " " + (b.local || "")).toLowerCase()) + '">' +
+      '<td class="col-boss"><div class="boss-cel"><div class="boss-spr">' + sprite(b.sprite, b.nome) + "</div>" +
+        '<div><b class="boss-nome">' + esc(b.nome) + "</b>" + tipo +
+        (b.local ? '<div class="boss-local">' + esc(b.local) + "</div>" : "") + "</div></div></td>" +
+      '<td class="col-dano">' + celulaDano(b) + "</td>" +
+      '<td class="col-def">' + celulaDefesa(b) + "</td>" +
+      '<td class="col-resumo">' + esc(ex.resumo || "") + "</td>" +
+      '<td class="col-cd">' + textoCooldown(ex.cooldown) + "</td>" +
+      '<td class="col-det"><button type="button" class="botao-sec bt-detalhes" aria-expanded="false" ' +
+        'title="Ver detalhes" aria-label="Detalhes de ' + esc(b.nome) + '"><span class="seta-bt aberta"></span></button></td>' +
+      "</tr>" +
+      '<tr class="det-linha" hidden><td colspan="6"><div class="det-corpo"></div></td></tr>';
+  }
+
+  function tabelaBosses(lista) {
+    return '<div class="TableContainer"><div class="Table1"><div class="InnerTableContainer"><div class="TableContentContainer">' +
+      '<table class="TableContent tabela-bosses"><thead><tr>' +
+        "<th>Boss</th><th>Dano por vocação</th><th>Defesa</th><th>Mecânica</th>" +
+        '<th class="col-cd" title="Cooldown (tempo de espera para matar de novo)">CD</th><th></th>' +
+      "</tr></thead><tbody>" +
+      lista.map(function (x, n) { return linhaBoss(x.b, x.i, n); }).join("") +
+      "</tbody></table></div></div></div></div>";
+  }
+
+  // conteúdo do "Detalhes" (o que antes ficava no popup)
+  function detalhes(b) {
+    return blocoInfo(b) + blocoResistencias(b) + blocoFases(b) + blocoDefesa(b) + blocoLoot(b) + blocoMecanica(b) + blocoTabela(b) +
+      (b.link ? '<div class="botoes"><a class="BigButton" href="' + esc(b.link) + '" target="_blank" rel="noopener">' +
+        '<span class="BigButtonText">Ver na TibiaWiki</span></a></div>' : "");
+  }
+
+  function alternarDetalhes(tr, abrir) {
+    var det = tr.nextElementSibling, bt = tr.querySelector(".bt-detalhes");
+    if (abrir === undefined) abrir = det.hidden;
+    if (abrir && !det.querySelector(".det-corpo").innerHTML) det.querySelector(".det-corpo").innerHTML = detalhes(bosses[Number(tr.getAttribute("data-i"))]);
+    det.hidden = !abrir;
+    tr.classList.toggle("aberta", abrir);
+    bt.setAttribute("aria-expanded", abrir);
+    bt.querySelector(".seta-bt").classList.toggle("cima", abrir);   // ▾ fechado, ▴ aberto
+    bt.title = abrir ? "Recolher detalhes" : "Ver detalhes";
   }
 
   // ---------- conteúdo ----------
@@ -162,7 +231,7 @@
             (doSub.length === 1 ? "boss" : "bosses") + " -</div></div>" +
             '<div class="NewsHeadlineText">' + esc(s) + "</div></div></div>";
         }
-        corpo += '<div class="grade">' + doSub.map(function (x) { return card(x.b, x.i); }).join("") + "</div></div>";
+        corpo += tabelaBosses(doSub) + "</div>";
       });
 
       html += '<div class="secao" id="g-' + slug(g) + '">' +
@@ -180,9 +249,11 @@
       var total = 0;
       sec.querySelectorAll(".subgrupo").forEach(function (sub) {
         var vis = 0;
-        sub.querySelectorAll(".card").forEach(function (c) {
-          var ok = !termo || c.getAttribute("data-busca").indexOf(termo) !== -1;
-          c.hidden = !ok;
+        sub.querySelectorAll(".boss-linha").forEach(function (tr) {
+          var ok = !termo || tr.getAttribute("data-busca").indexOf(termo) !== -1;
+          tr.hidden = !ok;
+          if (!ok) tr.nextElementSibling.hidden = true;
+          else if (tr.classList.contains("aberta")) tr.nextElementSibling.hidden = false;
           if (ok) vis++;
         });
         sub.hidden = vis === 0;
@@ -301,22 +372,6 @@
     return lista.map(function (e) { return chipElemento(e, comSD); }).join('<span class="el-mais">+</span>');
   }
 
-  function blocoAtaque(b) {
-    var a = b.ataque;
-    if (!a) return "";
-    var mago = { sorcerer: 1, druid: 1 };
-    var cols = VOCACOES.map(function (v) {
-      var d = a[v[0]] || {};
-      var alt = (d.alternativas || []).length
-        ? '<div class="el-alt">ou ' + d.alternativas.map(function (e) { return chipElemento(e); }).join(" ") + "</div>" : "";
-      return '<div class="voc-el"><div class="voc-titulo">' + v[1] + '</div><div class="el-linha">' +
-        listaElementos(d.elementos, mago[v[0]] || v[0] === "paladin") + "</div>" + alt + "</div>";
-    }).join("");
-    var nota = (b.rotacaoAjustes && b.rotacaoAjustes.nota) ? '<p class="rot-nota Even"><b>Neste boss:</b> ' + esc(b.rotacaoAjustes.nota) + "</p>" : "";
-    return tabela("Ataque", '<div class="elementos-voc">' + cols + "</div>" + nota +
-      '<p class="rot-rodape Odd">Elemento para a luta inteira: boss, formas e summons que precisam morrer. "SD" = Sudden Death Rune.</p>');
-  }
-
   function blocoDefesa(b) {
     var d = b.defesa;
     if (!d) return "";
@@ -433,56 +488,19 @@
       "Resistências da TibiaWiki BR, corrigidas pela wiki em inglês quando a BR só tinha o valor padrão.</p>");
   }
 
-  function botao(texto, attrs) {
-    return '<a class="BigButton" ' + attrs + '><span class="BigButtonText">' + texto + "</span></a>";
-  }
-
-  function abrir(i) {
-    var b = bosses[i];
-    if (!b) return;
-    var corpo =
-      blocoInfo(b) + blocoResistencias(b) + blocoAtaque(b) + blocoDefesa(b) + blocoFases(b) + blocoLoot(b) + blocoMecanica(b) + blocoTabela(b) +
-      '<div class="botoes">' +
-      (b.link ? botao("Ver na TibiaWiki", 'href="' + esc(b.link) + '" target="_blank" rel="noopener"') : "") +
-      botao("Fechar", 'href="#" data-fechar="1"') + "</div>";
-    modalCaixaEl.innerHTML = caixa('<span id="m-nome">' + esc(b.nome) + "</span>", corpo, {
-      extraTitulo: '<button class="fechar-x" type="button" data-fechar="1" aria-label="Fechar">X</button>'
-    });
-    // separa as tabelas do popup
-    modalCaixaEl.querySelectorAll(".BoxContent > .TableContainer").forEach(function (t, n) { if (n) t.style.marginTop = "14px"; });
-    ultimoFoco = document.activeElement;
-    modalEl.hidden = false;
-    modalEl.scrollTop = 0;
-    document.body.style.overflow = "hidden";
-    modalCaixaEl.querySelector(".fechar-x").focus();
-  }
-
-  function fechar() {
-    if (modalEl.hidden) return;
-    modalEl.hidden = true;
-    document.body.style.overflow = "";
-    if (ultimoFoco) ultimoFoco.focus();
-  }
-
   // ---------- eventos ----------
   secoesEl.addEventListener("click", function (e) {
-    var c = e.target.closest(".card");
-    if (c) abrir(Number(c.getAttribute("data-i")));
-  });
-  modalEl.addEventListener("click", function (e) {
-    if (e.target === modalEl || e.target.closest("[data-fechar]")) { e.preventDefault(); fechar(); }
+    var bt = e.target.closest(".bt-detalhes");
+    if (bt) alternarDetalhes(bt.closest("tr"));
   });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      if (!modalEl.hidden) fechar();
-      else if (buscaEl.value) { buscaEl.value = ""; filtrar(); }
-    }
+    if (e.key === "Escape" && buscaEl.value) { buscaEl.value = ""; filtrar(); }
   });
   buscaEl.addEventListener("input", filtrar);
   buscaEl.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
-      var primeiro = secoesEl.querySelector(".card:not([hidden])");
-      if (primeiro) primeiro.click();
+      var primeira = secoesEl.querySelector(".boss-linha:not([hidden])");
+      if (primeira) { alternarDetalhes(primeira, true); primeira.scrollIntoView({ block: "start" }); }
     }
   });
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- o painel só tem tema claro: impede o "modo escuro automático" do navegador de escurecer as cores -->
   <meta name="color-scheme" content="only light">
-  <title>Painel de Bosses</title>
+  <title>Bosses · Tibia Collection</title>
   <script>
     // Se as imagens do tema (tema/) não estiverem presentes, usa cores no lugar.
     (function () {
@@ -33,7 +33,7 @@
     <!-- coluna do menu (como no tibia.com) -->
     <div id="MenuColumn">
       <div id="LeftArtwork">
-        <img id="TibiaLogoArtworkTop" src="tema/tibia-logo-artwork-top.gif" alt="">
+        <a href="index.html" id="LogoLink" title="Tibia Collection"><img id="TibiaLogoArtworkTop" src="tema/logo-collection.png" alt="Tibia Collection"></a>
       </div>
 
       <div class="SmallMenuBox" id="BuscaBox">
@@ -58,18 +58,15 @@
     <div id="ContentColumn" class="Content">
       <div id="secoes"></div>
       <p id="vazio" class="vazio" hidden>Nenhum boss encontrado.</p>
-      <div id="Footer">Painel pessoal. Dados: TibiaWiki BR. Visual baseado em tibia.com (CipSoft GmbH).<br>
+      <div id="Footer">Tibia Collection: fã-site sem vínculo com a CipSoft. Dados: TibiaWiki BR. Visual baseado em tibia.com (CipSoft GmbH).<br>
         Atualize os dados com <code>python coletar.py</code>.</div>
     </div>
-  </div>
-
-  <div id="modal" class="modal" hidden>
-    <div class="modal-caixa Content" role="dialog" aria-modal="true" aria-labelledby="m-nome" id="modal-caixa"></div>
   </div>
 
   <script>
     var v = Date.now();
     document.write('<script src="bosses.js?v=' + v + '"><\/script>');
+    document.write('<script src="bosses-extra.js?v=' + v + '"><\/script>');
     document.write('<script src="app.js?v=' + v + '"><\/script>');
     document.write('<script src="menu.js?v=' + v + '"><\/script>');
   </script>

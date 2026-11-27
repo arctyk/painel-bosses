@@ -1,6 +1,48 @@
 // Gerado por coletar_outfits.py (TibiaWiki em inglês). Não edite à mão: rode o script.
 window.OUTFITS = [
  {
+  "nome": "Aerial Disciple",
+  "pagina": "Aerial Disciple Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.23.1d12c3",
+  "sprite": {
+   "m": "img/outfits/aerial-disciple-m.gif",
+   "f": "img/outfits/aerial-disciple-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     5,
+     59,
+     59,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     5,
+     59,
+     59,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
   "nome": "Afflicted",
   "pagina": "Afflicted Outfits",
   "quest": "Afflicted Outfits Quest",
@@ -60,9 +102,38 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Beak Doctor",
+  "lancado": "9.10",
   "sprite": {
    "m": "img/outfits/afflicted-m.gif",
    "f": "img/outfits/afflicted-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     4,
+     43,
+     42,
+     51,
+     46
+    ]
+   ],
+   "f": [
+    [
+     4,
+     4,
+     43,
+     42,
+     51,
+     46
+    ]
+   ]
   }
  },
  {
@@ -99,9 +170,167 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Warrior of the Iks",
+  "lancado": "13.10.12852",
   "sprite": {
    "m": "img/outfits/ancient-aucar-m.gif",
    "f": "img/outfits/ancient-aucar-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     17,
+     48,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     17,
+     48,
+     47,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Arbalester",
+  "pagina": "Arbalester Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.71.11165",
+  "sprite": {
+   "m": "img/outfits/arbalester-m.gif",
+   "f": "img/outfits/arbalester-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     19,
+     41,
+     44,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     19,
+     41,
+     44,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Arena Champion",
+  "pagina": "Arena Champion Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 690,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.96",
+  "sprite": {
+   "m": "img/outfits/arena-champion-m.gif",
+   "f": "img/outfits/arena-champion-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     17,
+     41,
+     44,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     16,
+     44,
+     45,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Armoured Archer",
+  "pagina": "Armoured Archer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.15.13186",
+  "sprite": {
+   "m": "img/outfits/armoured-archer-m.gif",
+   "f": "img/outfits/armoured-archer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -222,9 +451,38 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Swift Death",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/assassin-m.gif",
    "f": "img/outfits/assassin-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     11,
+     35,
+     35,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ]
   }
  },
  {
@@ -293,9 +551,80 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Brutal Politeness",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/barbarian-m.gif",
    "f": "img/outfits/barbarian-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     4,
+     42,
+     42,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     5,
+     5,
+     41,
+     41,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Bat Knight",
+  "pagina": "Bat Knight Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.10.46b862",
+  "sprite": {
+   "m": "img/outfits/bat-knight-m.gif",
+   "f": "img/outfits/bat-knight-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     5,
+     16,
+     54,
+     48,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     16,
+     52,
+     48,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -329,9 +658,125 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Exalted Battle Mage",
+  "lancado": "11.80.7048",
   "sprite": {
    "m": "img/outfits/battle-mage-m.gif",
    "f": "img/outfits/battle-mage-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     14,
+     44,
+     49,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     14,
+     45,
+     49,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Beastmaster",
+  "pagina": "Beastmaster Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 690,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.53 (2)",
+  "sprite": {
+   "m": "img/outfits/beastmaster-m.gif",
+   "f": "img/outfits/beastmaster-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Beekeeper",
+  "pagina": "Beekeeper Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.37.1a37e1",
+  "sprite": {
+   "m": "img/outfits/beekeeper-m.gif",
+   "f": "img/outfits/beekeeper-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     20,
+     45,
+     44,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     21,
+     45,
+     43,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -397,9 +842,202 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Life on the Streets",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/beggar-m.gif",
    "f": "img/outfits/beggar-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     7,
+     44,
+     41,
+     48,
+     48
+    ]
+   ],
+   "f": [
+    [
+     0,
+     2,
+     48,
+     46,
+     48,
+     48
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Blade Dancer",
+  "pagina": "Blade Dancer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.36.5b5f56",
+  "sprite": {
+   "m": "img/outfits/blade-dancer-m.gif",
+   "f": "img/outfits/blade-dancer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     8,
+     16,
+     44,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     14,
+     46,
+     47,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Breezy Garb",
+  "pagina": "Breezy Garb Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.15.8762",
+  "sprite": {
+   "m": "img/outfits/breezy-garb-m.gif",
+   "f": "img/outfits/breezy-garb-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     15,
+     30,
+     34,
+     34,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     15,
+     29,
+     33,
+     35,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Brotherhood",
+  "pagina": "Brotherhood Outfits",
+  "quest": "Brotherhood Outfits Quest",
+  "level": "40-70+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Skull and Bones",
+  "lancado": "8.10",
+  "sprite": {
+   "m": "img/outfits/brotherhood-m.gif",
+   "f": "img/outfits/brotherhood-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     63,
+     63,
+     63,
+     63
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     51,
+     51,
+     51,
+     51
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Captains",
+  "pagina": "Captains Outfits",
+  "quest": "The Great Expedition",
+  "level": null,
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Aye-aye, Captain!",
+  "lancado": "15.32.fc9100",
+  "sprite": {
+   "m": "img/outfits/captains-m.gif",
+   "f": "img/outfits/captains-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     17,
+     49,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     19,
+     46,
+     42,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -445,9 +1083,215 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Cave Completionist",
+  "lancado": "10.20",
   "sprite": {
    "m": "img/outfits/cave-explorer-m.gif",
    "f": "img/outfits/cave-explorer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     21,
+     41,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     24,
+     39,
+     39,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Celestial Avenger",
+  "pagina": "Celestial Avenger Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.34.14646",
+  "sprite": {
+   "m": "img/outfits/celestial-avenger-m.gif",
+   "f": "img/outfits/celestial-avenger-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     16,
+     48,
+     48,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     16,
+     48,
+     48,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Ceremonial Garb",
+  "pagina": "Ceremonial Garb Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.75",
+  "sprite": {
+   "m": "img/outfits/ceremonial-garb-m.gif",
+   "f": "img/outfits/ceremonial-garb-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     8,
+     17,
+     46,
+     46,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     12,
+     52,
+     52,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Champion",
+  "pagina": "Champion Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 390,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 570
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.53 (2)",
+  "sprite": {
+   "m": "img/outfits/champion-m.gif",
+   "f": "img/outfits/champion-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     20,
+     42,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     22,
+     40,
+     41,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Chaos Acolyte",
+  "pagina": "Chaos Acolyte Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 720,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 900
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.59 (2)",
+  "sprite": {
+   "m": "img/outfits/chaos-acolyte-m.gif",
+   "f": "img/outfits/chaos-acolyte-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     15,
+     49,
+     49,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     20,
+     44,
+     44,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -491,16 +1335,45 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Basic",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Premium",
+  "conquista": "Exemplary Citizen",
+  "lancado": "7.0",
   "sprite": {
    "m": "img/outfits/citizen-m.gif",
    "f": "img/outfits/citizen-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     46,
+     46,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     4,
+     4,
+     42,
+     42,
+     46,
+     46
+    ]
+   ]
   }
  },
  {
   "nome": "Citizen of Issavi",
   "pagina": "Citizen of Issavi Outfits",
-  "quest": "Citizen of Issavi Outfits Quest",
-  "level": "350",
+  "quest": "Kilmaresh Quest",
+  "level": "250",
   "partes": [
    {
     "parte": 1,
@@ -527,9 +1400,83 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Citizen of Issavi",
+  "lancado": "12.70.10953",
   "sprite": {
    "m": "img/outfits/citizen-of-issavi-m.gif",
    "f": "img/outfits/citizen-of-issavi-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     13,
+     27,
+     37,
+     37,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     23,
+     41,
+     41,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Conjurer",
+  "pagina": "Conjurer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 540,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 720
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.53 (2)",
+  "sprite": {
+   "m": "img/outfits/conjurer-m.gif",
+   "f": "img/outfits/conjurer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     7,
+     58,
+     57,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     8,
+     57,
+     56,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -575,9 +1522,245 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Crystal Clear",
+  "lancado": "9.60",
   "sprite": {
    "m": "img/outfits/crystal-warlord-m.gif",
    "f": "img/outfits/crystal-warlord-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     21,
+     47,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     20,
+     48,
+     44,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Darklight Evoker",
+  "pagina": "Darklight Evoker Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 1500
+  },
+  "comoOutfit": null,
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.20.13560",
+  "sprite": {
+   "m": "img/outfits/darklight-evoker-m.gif",
+   "f": "img/outfits/darklight-evoker-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     7,
+     56,
+     57,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     7,
+     55,
+     57,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Death Herald",
+  "pagina": "Death Herald Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 420,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.59 (2)",
+  "sprite": {
+   "m": "img/outfits/death-herald-m.gif",
+   "f": "img/outfits/death-herald-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     17,
+     43,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     16,
+     41,
+     47,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Decaying Defender",
+  "pagina": "Decaying Defender Outfits",
+  "quest": "Rotten Blood Quest",
+  "level": "800+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Fully Decayed",
+  "lancado": "13.20.13560",
+  "sprite": {
+   "m": "img/outfits/decaying-defender-m.gif",
+   "f": "img/outfits/decaying-defender-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     5,
+     11,
+     50,
+     52,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     14,
+     48,
+     49,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Deepling",
+  "pagina": "Deepling Outfits",
+  "quest": "Liquid Black Quest",
+  "level": "130+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Spolium Profundis",
+  "lancado": "9.40",
+  "sprite": {
+   "m": "img/outfits/deepling-m.gif",
+   "f": "img/outfits/deepling-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     51,
+     46,
+     51,
+     46
+    ]
+   ],
+   "f": [
+    [
+     11,
+     17,
+     47,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Demon",
+  "pagina": "Demon Outfits",
+  "quest": "Demon Outfits Quest",
+  "level": "150+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "True Dedication",
+  "lancado": "9.80",
+  "sprite": {
+   "m": "img/outfits/demon-m.gif",
+   "f": "img/outfits/demon-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     13,
+     23,
+     40,
+     41,
+     65,
+     64
+    ]
+   ],
+   "f": [
+    [
+     13,
+     21,
+     39,
+     41,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -619,9 +1802,242 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Demonbane",
+  "lancado": "8.20",
   "sprite": {
    "m": "img/outfits/demon-hunter-m.gif",
    "f": "img/outfits/demon-hunter-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Discoverer",
+  "pagina": "Discoverer Outfits",
+  "quest": "Measuring Tibia Quest",
+  "level": null,
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Measuring the World",
+  "lancado": "11.80.7048",
+  "sprite": {
+   "m": "img/outfits/discoverer-m.gif",
+   "f": "img/outfits/discoverer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     11,
+     53,
+     51,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     3,
+     10,
+     53,
+     50,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Doom Knight",
+  "pagina": "Doom Knight Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.30.14434",
+  "sprite": {
+   "m": "img/outfits/doom-knight-m.gif",
+   "f": "img/outfits/doom-knight-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     8,
+     23,
+     47,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     23,
+     47,
+     41,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Draccoon Herald",
+  "pagina": "Draccoon Herald Outfits",
+  "quest": "20 Years a Cook Quest",
+  "level": "350+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "The Rule of Raccool",
+  "lancado": "13.30.14423",
+  "sprite": {
+   "m": "img/outfits/draccoon-herald-m.gif",
+   "f": "img/outfits/draccoon-herald-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     21,
+     49,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     21,
+     49,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Dragon Knight",
+  "pagina": "Dragon Knight Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.67.10934 (2)",
+  "sprite": {
+   "m": "img/outfits/dragon-knight-m.gif",
+   "f": "img/outfits/dragon-knight-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     8,
+     17,
+     43,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     14,
+     45,
+     46,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Dragon Slayer",
+  "pagina": "Dragon Slayer Outfits",
+  "quest": "Dragon Slayer Outfits Quest",
+  "level": "100+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "See Dragon Slayer Outfits Quest",
+  "comoAddons": "See Dragon Slayer Outfits Quest",
+  "conquista": "None",
+  "lancado": "12.31.9658",
+  "sprite": {
+   "m": "img/outfits/dragon-slayer-m.gif",
+   "f": "img/outfits/dragon-slayer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     13,
+     28,
+     37,
+     36,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     14,
+     28,
+     35,
+     36,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -655,9 +2071,38 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Dream Warden",
+  "lancado": "10.30",
   "sprite": {
    "m": "img/outfits/dream-warden-m.gif",
    "f": "img/outfits/dream-warden-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     37,
+     37,
+     37,
+     37
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     37,
+     37,
+     37,
+     37
+    ]
+   ]
   }
  },
  {
@@ -691,9 +2136,38 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Dream Warrior",
+  "lancado": "12.00.7695",
   "sprite": {
    "m": "img/outfits/dream-warrior-m.gif",
    "f": "img/outfits/dream-warrior-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     11,
+     60,
+     53,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     9,
+     60,
+     53,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -747,9 +2221,38 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Of Wolves and Bears",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/druid-m.gif",
    "f": "img/outfits/druid-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     10,
+     36,
+     36,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ]
   }
  },
  {
@@ -783,15 +2286,256 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Mystic Fabric Magic",
+  "lancado": "9.10",
   "sprite": {
    "m": "img/outfits/elementalist-m.gif",
    "f": "img/outfits/elementalist-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     4,
+     60,
+     60,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     4,
+     60,
+     60,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Entrepreneur",
+  "pagina": "Entrepreneur Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "9.44",
+  "sprite": {
+   "m": "img/outfits/entrepreneur-m.gif",
+   "f": "img/outfits/entrepreneur-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     23,
+     41,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     23,
+     41,
+     41,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Evoker",
+  "pagina": "Evoker Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 660,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 840
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.77",
+  "sprite": {
+   "m": "img/outfits/evoker-m.gif",
+   "f": "img/outfits/evoker-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     4,
+     55,
+     60,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     58,
+     64,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Falconer",
+  "pagina": "Falconer Outfits",
+  "quest": "Falconer Outfits Quest",
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": "Falconer",
+  "lancado": "12.30.9287",
+  "sprite": {
+   "m": "img/outfits/falconer-m.gif",
+   "f": "img/outfits/falconer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Fencer",
+  "pagina": "Fencer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.87.12128",
+  "sprite": {
+   "m": "img/outfits/fencer-m.gif",
+   "f": "img/outfits/fencer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     8,
+     16,
+     45,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     19,
+     43,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Feral Trapper",
+  "pagina": "Feral Trapper Outfits",
+  "quest": "Feral Trappers Quest",
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": "Feral Trapper",
+  "lancado": "15.20.7a5cc9",
+  "sprite": {
+   "m": "img/outfits/feral-trapper-m.gif",
+   "f": "img/outfits/feral-trapper-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     5,
+     18,
+     53,
+     46,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     19,
+     52,
+     45,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
   "nome": "Festive",
   "pagina": "Festive Outfits",
-  "quest": "Festive Outfits Quest",
+  "quest": "The First Dragon Quest",
   "level": "200",
   "partes": [
    {
@@ -819,9 +2563,408 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Reason to Celebrate",
+  "lancado": "11.02.4128",
   "sprite": {
    "m": "img/outfits/festive-m.gif",
    "f": "img/outfits/festive-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Field Surgeon",
+  "pagina": "Field Surgeon Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "14.11.0fbf6c",
+  "sprite": {
+   "m": "img/outfits/field-surgeon-m.gif",
+   "f": "img/outfits/field-surgeon-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     20,
+     43,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     20,
+     44,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Fiend Slayer",
+  "pagina": "Fiend Slayer Outfits",
+  "quest": "No Rest for the Wicked Quest",
+  "level": "500+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Fiend Slayer",
+  "lancado": "14.10.4e0c16",
+  "sprite": {
+   "m": "img/outfits/fiend-slayer-m.gif",
+   "f": "img/outfits/fiend-slayer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Fire-Fighter",
+  "pagina": "Fire-Fighter Outfits",
+  "quest": "Primal Ordeal Quest",
+  "level": "400",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Friendly Fire",
+  "lancado": "12.90.12182",
+  "sprite": {
+   "m": "img/outfits/fire-fighter-m.gif",
+   "f": "img/outfits/fire-fighter-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     11,
+     51,
+     53,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     5,
+     11,
+     50,
+     53,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Flamefury Mage",
+  "pagina": "Flamefury Mage Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": null,
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.20.13673",
+  "sprite": {
+   "m": "img/outfits/flamefury-mage-m.gif",
+   "f": "img/outfits/flamefury-mage-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     64,
+     64,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     0,
+     2,
+     63,
+     62,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Forest Warden",
+  "pagina": "Forest Warden Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.66.10792 (2)",
+  "sprite": {
+   "m": "img/outfits/forest-warden-m.gif",
+   "f": "img/outfits/forest-warden-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     8,
+     24,
+     47,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     24,
+     46,
+     40,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Formal Dress",
+  "pagina": "Formal Dress Outfits",
+  "quest": "25 Years of Tibia Quest",
+  "level": "100",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Sharp Dressed",
+  "lancado": "12.85.11485",
+  "sprite": {
+   "m": "img/outfits/formal-dress-m.gif",
+   "f": "img/outfits/formal-dress-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     15,
+     31,
+     33,
+     33,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     23,
+     41,
+     41,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Frost Tracer",
+  "pagina": "Frost Tracer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.11.12949",
+  "sprite": {
+   "m": "img/outfits/frost-tracer-m.gif",
+   "f": "img/outfits/frost-tracer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     20,
+     42,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     15,
+     46,
+     47,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Ghost Blade",
+  "pagina": "Ghost Blade Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.85.11511",
+  "sprite": {
+   "m": "img/outfits/ghost-blade-m.gif",
+   "f": "img/outfits/ghost-blade-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     6,
+     13,
+     51,
+     51,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     13,
+     51,
+     51,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Glooth Engineer",
+  "pagina": "Glooth Engineer Outfits",
+  "quest": "Glooth Engineer Outfits Quest",
+  "level": "200",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Glooth Engineer",
+  "lancado": "10.50",
+  "sprite": {
+   "m": "img/outfits/glooth-engineer-m.gif",
+   "f": "img/outfits/glooth-engineer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     23,
+     44,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     15,
+     49,
+     49,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -867,9 +3010,252 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.15.8659",
   "sprite": {
    "m": "img/outfits/golden-m.gif",
    "f": "img/outfits/golden-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     15,
+     30,
+     34,
+     34,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     15,
+     30,
+     34,
+     34,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Grove Keeper",
+  "pagina": "Grove Keeper Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 690,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.01.3987",
+  "sprite": {
+   "m": "img/outfits/grove-keeper-m.gif",
+   "f": "img/outfits/grove-keeper-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     18,
+     46,
+     46,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     17,
+     47,
+     47,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Guidon Bearer",
+  "pagina": "Guidon Bearer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.12.8341",
+  "sprite": {
+   "m": "img/outfits/guidon-bearer-m.gif",
+   "f": "img/outfits/guidon-bearer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     1,
+     1,
+     60,
+     62,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     1,
+     60,
+     61,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Hand of the Inquisition",
+  "pagina": "Hand of the Inquisition Outfits",
+  "quest": "Grave Danger Quest",
+  "level": "300",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Inquisition's Arm",
+  "lancado": "12.20.8834",
+  "sprite": {
+   "m": "img/outfits/hand-of-the-inquisition-m.gif",
+   "f": "img/outfits/hand-of-the-inquisition-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     14,
+     29,
+     35,
+     35,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     15,
+     30,
+     34,
+     34,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Herbalist",
+  "pagina": "Herbalist Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.40.5409",
+  "sprite": {
+   "m": "img/outfits/herbalist-m.gif",
+   "f": "img/outfits/herbalist-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     1,
+     0,
+     58,
+     64,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     0,
+     58,
+     63,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Herder",
+  "pagina": "Herder Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.20.9260",
+  "sprite": {
+   "m": "img/outfits/herder-m.gif",
+   "f": "img/outfits/herder-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     18,
+     44,
+     46,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     17,
+     45,
+     47,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -933,9 +3319,198 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Basic",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Premium",
+  "conquista": "Hunting with Style",
+  "lancado": "7.0",
   "sprite": {
    "m": "img/outfits/hunter-m.gif",
    "f": "img/outfits/hunter-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     11,
+     35,
+     35,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     3,
+     3,
+     43,
+     43,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Illuminated Warrior",
+  "pagina": "Illuminated Warrior Outfits",
+  "quest": "Make Believe Quest",
+  "level": "800+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Enlightened, Indeed",
+  "lancado": "15.30.a30dad",
+  "sprite": {
+   "m": "img/outfits/illuminated-warrior-m.gif",
+   "f": "img/outfits/illuminated-warrior-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     10,
+     46,
+     45,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     10,
+     47,
+     44,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Illuminator",
+  "pagina": "Illuminator Outfits",
+  "quest": "Between the Lines Quest",
+  "level": null,
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Illuminator",
+  "lancado": "15.10.46b862",
+  "sprite": {
+   "m": "img/outfits/illuminator-m.gif",
+   "f": "img/outfits/illuminator-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     25,
+     38,
+     38,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     24,
+     41,
+     40,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Insectoid",
+  "pagina": "Insectoid Outfits",
+  "quest": "Insectoid Outfits Quest",
+  "level": "120+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Bane of the Hive",
+  "lancado": "9.40",
+  "sprite": {
+   "m": "img/outfits/insectoid-m.gif",
+   "f": "img/outfits/insectoid-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     7,
+     54,
+     54,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     8,
+     54,
+     54,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Jersey",
+  "pagina": "Jersey Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "sem addons",
+  "conquista": "None",
+  "lancado": "10.41",
+  "sprite": {
+   "m": "img/outfits/jersey-m.gif",
+   "f": "img/outfits/jersey-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     14,
+     28,
+     36,
+     36,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1021,9 +3596,80 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Fool at Heart",
+  "lancado": "8.10",
   "sprite": {
    "m": "img/outfits/jester-m.gif",
    "f": "img/outfits/jester-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     59,
+     51,
+     59,
+     51
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     59,
+     51,
+     60,
+     52
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Jouster",
+  "pagina": "Jouster Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.31.9888",
+  "sprite": {
+   "m": "img/outfits/jouster-m.gif",
+   "f": "img/outfits/jouster-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     6,
+     13,
+     48,
+     49,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     13,
+     48,
+     49,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1077,9 +3723,123 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Basic",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Premium",
+  "conquista": "In Shining Armor",
+  "lancado": "7.0",
   "sprite": {
    "m": "img/outfits/knight-m.gif",
    "f": "img/outfits/knight-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     5,
+     5,
+     41,
+     41,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Lion of War",
+  "pagina": "Lion of War Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.15.8493",
+  "sprite": {
+   "m": "img/outfits/lion-of-war-m.gif",
+   "f": "img/outfits/lion-of-war-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     8,
+     59,
+     56,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     8,
+     58,
+     56,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Lupine Warden",
+  "pagina": "Lupine Warden Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 660,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 840
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.97",
+  "sprite": {
+   "m": "img/outfits/lupine-warden-m.gif",
+   "f": "img/outfits/lupine-warden-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     15,
+     50,
+     49,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     15,
+     50,
+     49,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1227,9 +3987,38 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Basic",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Premium",
+  "conquista": "Alumni",
+  "lancado": "7.0",
   "sprite": {
    "m": "img/outfits/mage-m.gif",
    "f": "img/outfits/mage-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     2,
+     44,
+     44,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     8,
+     8,
+     38,
+     38,
+     46,
+     46
+    ]
+   ]
   }
  },
  {
@@ -1275,9 +4064,370 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Cobbled and Patched",
+  "lancado": "11.50.6055",
   "sprite": {
    "m": "img/outfits/makeshift-warrior-m.gif",
    "f": "img/outfits/makeshift-warrior-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     21,
+     39,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     22,
+     38,
+     42,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Martial Artist",
+  "pagina": "Martial Artist Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.00.249ccc",
+  "sprite": {
+   "m": "img/outfits/martial-artist-m.gif",
+   "f": "img/outfits/martial-artist-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     26,
+     26,
+     38,
+     38,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     26,
+     26,
+     38,
+     38,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Mercenary",
+  "pagina": "Mercenary Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.72.6598",
+  "sprite": {
+   "m": "img/outfits/mercenary-m.gif",
+   "f": "img/outfits/mercenary-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     7,
+     56,
+     56,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     2,
+     57,
+     62,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Merry Garb",
+  "pagina": "Merry Garb Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.60.10503",
+  "sprite": {
+   "m": "img/outfits/merry-garb-m.gif",
+   "f": "img/outfits/merry-garb-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     19,
+     55,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     4,
+     20,
+     55,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Monk",
+  "pagina": "Monk Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Basic",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": null,
+  "conquista": null,
+  "lancado": "15.00.249ccc",
+  "sprite": {
+   "m": "img/outfits/monk-m.gif",
+   "f": "img/outfits/monk-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     25,
+     38,
+     38,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     13,
+     26,
+     37,
+     37,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Moon Guardian",
+  "pagina": "Moon Guardian Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": null,
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.30.a30dad",
+  "sprite": {
+   "m": "img/outfits/moon-guardian-m.gif",
+   "f": "img/outfits/moon-guardian-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     64,
+     64,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     64,
+     64,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Moth Cape",
+  "pagina": "Moth Cape Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.50.10164",
+  "sprite": {
+   "m": "img/outfits/moth-cape-m.gif",
+   "f": "img/outfits/moth-cape-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     20,
+     44,
+     44,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     20,
+     44,
+     44,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Necromancer",
+  "pagina": "Necromancer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.01.13671d",
+  "sprite": {
+   "m": "img/outfits/necromancer-m.gif",
+   "f": "img/outfits/necromancer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     15,
+     50,
+     49,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     5,
+     12,
+     51,
+     52,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Newly Wed",
+  "pagina": "Newly Wed Outfits",
+  "quest": "Marriage",
+  "level": null,
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": "None",
+  "lancado": "8.50",
+  "sprite": {
+   "m": "img/outfits/newly-wed-m.gif",
+   "f": "img/outfits/newly-wed-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     10,
+     32,
+     32,
+     42,
+     42
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     42,
+     42,
+     42,
+     42
+    ]
+   ]
   }
  },
  {
@@ -1299,9 +4449,38 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Nightmare Walker",
+  "lancado": "8.10",
   "sprite": {
    "m": "img/outfits/nightmare-m.gif",
    "f": "img/outfits/nightmare-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     1,
+     57,
+     63,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     1,
+     57,
+     63,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1359,9 +4538,80 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Aristocrat",
+  "lancado": "7.2",
   "sprite": {
    "m": "img/outfits/nobleman-m.gif",
    "f": "img/outfits/nobleman-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     7,
+     39,
+     39,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     8,
+     8,
+     38,
+     38,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Nordic Chieftain",
+  "pagina": "Nordic Chieftain Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.86.11818",
+  "sprite": {
+   "m": "img/outfits/nordic-chieftain-m.gif",
+   "f": "img/outfits/nordic-chieftain-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     6,
+     14,
+     47,
+     50,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     14,
+     48,
+     50,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1395,9 +4645,78 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Out in the Snowstorm",
+  "lancado": "8.00",
   "sprite": {
    "m": "img/outfits/norseman-m.gif",
    "f": "img/outfits/norseman-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     57,
+     57,
+     57,
+     57
+    ]
+   ],
+   "f": [
+    [
+     6,
+     11,
+     53,
+     53,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Orcsoberfest Garb",
+  "pagina": "Orcsoberfest Garb Outfits",
+  "quest": "Orcsoberfest",
+  "level": "8",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Traditionalist",
+  "lancado": "12.20.9066",
+  "sprite": {
+   "m": "img/outfits/orcsoberfest-garb-m.gif",
+   "f": "img/outfits/orcsoberfest-garb-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     22,
+     42,
+     42,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     14,
+     28,
+     36,
+     36,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1473,9 +4792,252 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "One Thousand and One",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/oriental-m.gif",
    "f": "img/outfits/oriental-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     11,
+     11,
+     35,
+     35,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Owl Keeper",
+  "pagina": "Owl Keeper Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.08.7995",
+  "sprite": {
+   "m": "img/outfits/owl-keeper-m.gif",
+   "f": "img/outfits/owl-keeper-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     1,
+     3,
+     60,
+     61,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     2,
+     59,
+     62,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Percht Raider",
+  "pagina": "Percht Raider Outfits",
+  "quest": "Winterlight Solstice",
+  "level": "100",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Raider in the Dark",
+  "lancado": "12.02.7746",
+  "sprite": {
+   "m": "img/outfits/percht-raider-m.gif",
+   "f": "img/outfits/percht-raider-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     1,
+     4,
+     57,
+     59,
+     66,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     2,
+     56,
+     61,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Pharaoh",
+  "pagina": "Pharaoh Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.10.4427",
+  "sprite": {
+   "m": "img/outfits/pharaoh-m.gif",
+   "f": "img/outfits/pharaoh-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     19,
+     42,
+     45,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     21,
+     40,
+     42,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Philosopher",
+  "pagina": "Philosopher Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.91",
+  "sprite": {
+   "m": "img/outfits/philosopher-m.gif",
+   "f": "img/outfits/philosopher-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     22,
+     40,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     22,
+     39,
+     40,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Phoenix Evoker",
+  "pagina": "Phoenix Evoker Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.20.6bd207",
+  "sprite": {
+   "m": "img/outfits/phoenix-evoker-m.gif",
+   "f": "img/outfits/phoenix-evoker-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     4,
+     9,
+     55,
+     55,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     4,
+     9,
+     55,
+     55,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1534,9 +5096,624 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Swashbuckler",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/pirate-m.gif",
    "f": "img/outfits/pirate-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     11,
+     35,
+     35,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     3,
+     3,
+     43,
+     43,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Poltergeist",
+  "pagina": "Poltergeist Outfits",
+  "quest": "Feaster of Souls Quest",
+  "level": "300",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Mainstreet Nightmare",
+  "lancado": "12.30.9287",
+  "sprite": {
+   "m": "img/outfits/poltergeist-m.gif",
+   "f": "img/outfits/poltergeist-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     25,
+     39,
+     39,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Pumpkin Mummy",
+  "pagina": "Pumpkin Mummy Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.92.7441",
+  "sprite": {
+   "m": "img/outfits/pumpkin-mummy-m.gif",
+   "f": "img/outfits/pumpkin-mummy-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Puppeteer",
+  "pagina": "Puppeteer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 690,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.76",
+  "sprite": {
+   "m": "img/outfits/puppeteer-m.gif",
+   "f": "img/outfits/puppeteer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     16,
+     48,
+     48,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     13,
+     51,
+     49,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Ranger",
+  "pagina": "Ranger Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.63",
+  "sprite": {
+   "m": "img/outfits/ranger-m.gif",
+   "f": "img/outfits/ranger-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     6,
+     14,
+     49,
+     50,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     16,
+     51,
+     48,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Rascoohan",
+  "pagina": "Rascoohan Outfits",
+  "quest": "A Pirate's Tail Quest",
+  "level": "250",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Honorary Rascoohan",
+  "lancado": "12.60.10463",
+  "sprite": {
+   "m": "img/outfits/rascoohan-m.gif",
+   "f": "img/outfits/rascoohan-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     13,
+     27,
+     37,
+     37,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     14,
+     28,
+     36,
+     36,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Recruiter",
+  "pagina": "Recruiter Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.81",
+  "sprite": {
+   "m": "img/outfits/recruiter-m.gif",
+   "f": "img/outfits/recruiter-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     1,
+     3,
+     61,
+     61,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     4,
+     61,
+     60,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Citizen",
+  "pagina": "Retro Citizen Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-citizen-m.gif",
+   "f": "img/outfits/retro-citizen-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Hunter",
+  "pagina": "Retro Hunter Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-hunter-m.gif",
+   "f": "img/outfits/retro-hunter-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Knight",
+  "pagina": "Retro Knight Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-knight-m.gif",
+   "f": "img/outfits/retro-knight-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Mage",
+  "pagina": "Retro Mage Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-mage-m.gif",
+   "f": "img/outfits/retro-mage-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Nobleman",
+  "pagina": "Retro Nobleman Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-nobleman-m.gif",
+   "f": "img/outfits/retro-nobleman-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Summoner",
+  "pagina": "Retro Summoner Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-summoner-m.gif",
+   "f": "img/outfits/retro-summoner-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Retro Warrior",
+  "pagina": "Retro Warrior Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "sem addons",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/retro-warrior-m.gif",
+   "f": "img/outfits/retro-warrior-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     16,
+     32,
+     32,
+     32,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Revenant",
+  "pagina": "Revenant Outfits",
+  "quest": "Soul War Quest",
+  "level": "600?",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Unleash the Beast",
+  "lancado": "12.40.9997",
+  "sprite": {
+   "m": "img/outfits/revenant-m.gif",
+   "f": "img/outfits/revenant-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     23,
+     40,
+     41,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1570,9 +5747,118 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Rift Warrior",
+  "lancado": "10.90",
   "sprite": {
    "m": "img/outfits/rift-warrior-m.gif",
    "f": "img/outfits/rift-warrior-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     13,
+     56,
+     50,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     3,
+     6,
+     56,
+     57,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Rootwalker",
+  "pagina": "Rootwalker Outfits",
+  "quest": "Podzilla Quest",
+  "level": "600+",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "The Rootwalker",
+  "lancado": "13.40.54ea79",
+  "sprite": {
+   "m": "img/outfits/rootwalker-m.gif",
+   "f": "img/outfits/rootwalker-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     5,
+     12,
+     50,
+     48,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     4,
+     13,
+     52,
+     50,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Royal Bounacean Advisor",
+  "pagina": "Royal Bounacean Advisor Outfits",
+  "quest": "Adventures of Galthen Quest",
+  "level": "250",
+  "partes": [],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "King's Council",
+  "lancado": "12.70.10953",
+  "sprite": {
+   "m": "img/outfits/royal-bounacean-advisor-m.gif",
+   "f": "img/outfits/royal-bounacean-advisor-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     21,
+     42,
+     42,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     8,
+     16,
+     48,
+     48,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1633,9 +5919,257 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.80.11430",
   "sprite": {
    "m": "img/outfits/royal-costume-m.gif",
    "f": "img/outfits/royal-costume-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     13,
+     28,
+     38,
+     36,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     13,
+     28,
+     38,
+     36,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Royal Pumpkin",
+  "pagina": "Royal Pumpkin Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 660,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 840
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.82",
+  "sprite": {
+   "m": "img/outfits/royal-pumpkin-m.gif",
+   "f": "img/outfits/royal-pumpkin-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     19,
+     45,
+     45,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     18,
+     44,
+     45,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Rune Master",
+  "pagina": "Rune Master Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.62.10592",
+  "sprite": {
+   "m": "img/outfits/rune-master-m.gif",
+   "f": "img/outfits/rune-master-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     15,
+     56,
+     48,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     4,
+     14,
+     55,
+     50,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Sea Dog",
+  "pagina": "Sea Dog Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 420,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.81",
+  "sprite": {
+   "m": "img/outfits/sea-dog-m.gif",
+   "f": "img/outfits/sea-dog-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     21,
+     42,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     21,
+     41,
+     40,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Seaweaver",
+  "pagina": "Seaweaver Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 390,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 570
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.78",
+  "sprite": {
+   "m": "img/outfits/seaweaver-m.gif",
+   "f": "img/outfits/seaweaver-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     3,
+     52,
+     58,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     3,
+     50,
+     59,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Shadowlotus Disciple",
+  "pagina": "Shadowlotus Disciple Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "13.05.12613",
+  "sprite": {
+   "m": "img/outfits/shadowlotus-disciple-m.gif",
+   "f": "img/outfits/shadowlotus-disciple-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     23,
+     40,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     12,
+     24,
+     40,
+     40,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1684,9 +6218,125 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Way of the Shaman",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/shaman-m.gif",
    "f": "img/outfits/shaman-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     0,
+     50,
+     53,
+     53,
+     53
+    ]
+   ],
+   "f": [
+    [
+     2,
+     3,
+     51,
+     50,
+     53,
+     53
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Siege Master",
+  "pagina": "Siege Master Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 420,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.49.6030",
+  "sprite": {
+   "m": "img/outfits/siege-master-m.gif",
+   "f": "img/outfits/siege-master-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     6,
+     13,
+     52,
+     51,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     6,
+     13,
+     52,
+     51,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Sinister Archer",
+  "pagina": "Sinister Archer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.81.7107",
+  "sprite": {
+   "m": "img/outfits/sinister-archer-m.gif",
+   "f": "img/outfits/sinister-archer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     6,
+     17,
+     46,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     5,
+     19,
+     49,
+     45,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1732,9 +6382,83 @@ window.OUTFITS = [
     "genero": null
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Funghitastic",
+  "lancado": "9.60",
   "sprite": {
    "m": "img/outfits/soil-guardian-m.gif",
    "f": "img/outfits/soil-guardian-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     15,
+     30,
+     35,
+     34,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     11,
+     25,
+     39,
+     39,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Spirit Caller",
+  "pagina": "Spirit Caller Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 420,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.76",
+  "sprite": {
+   "m": "img/outfits/spirit-caller-m.gif",
+   "f": "img/outfits/spirit-caller-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     21,
+     42,
+     43,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     24,
+     43,
+     40,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1882,9 +6606,296 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Ritualist",
+  "lancado": "7.2",
   "sprite": {
    "m": "img/outfits/summoner-m.gif",
    "f": "img/outfits/summoner-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     11,
+     35,
+     35,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     3,
+     3,
+     43,
+     43,
+     46,
+     46
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Sun Priest",
+  "pagina": "Sun Priest Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 570,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.45.5528",
+  "sprite": {
+   "m": "img/outfits/sun-priest-m.gif",
+   "f": "img/outfits/sun-priest-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     11,
+     22,
+     40,
+     41,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     7,
+     15,
+     47,
+     48,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Trailblazer",
+  "pagina": "Trailblazer Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 600
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.31.9593",
+  "sprite": {
+   "m": "img/outfits/trailblazer-m.gif",
+   "f": "img/outfits/trailblazer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     7,
+     53,
+     56,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     5,
+     5,
+     53,
+     58,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Trophy Hunter",
+  "pagina": "Trophy Hunter Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 690,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "11.30.4868",
+  "sprite": {
+   "m": "img/outfits/trophy-hunter-m.gif",
+   "f": "img/outfits/trophy-hunter-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     19,
+     19,
+     44,
+     45,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     19,
+     19,
+     43,
+     45,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Vampire Noble",
+  "pagina": "Vampire Noble Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "15.24.d0c720",
+  "sprite": {
+   "m": "img/outfits/vampire-noble-m.gif",
+   "f": "img/outfits/vampire-noble-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     10,
+     20,
+     44,
+     44,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     10,
+     21,
+     43,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Veteran Paladin",
+  "pagina": "Veteran Paladin Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.15.8493",
+  "sprite": {
+   "m": "img/outfits/veteran-paladin-m.gif",
+   "f": "img/outfits/veteran-paladin-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     17,
+     50,
+     47,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     9,
+     21,
+     45,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Void Master",
+  "pagina": "Void Master Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 750
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "12.15.8493",
+  "sprite": {
+   "m": "img/outfits/void-master-m.gif",
+   "f": "img/outfits/void-master-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     3,
+     63,
+     61,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     0,
+     3,
+     63,
+     61,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -1918,9 +6929,38 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Master of War",
+  "lancado": "8.54",
   "sprite": {
    "m": "img/outfits/warmaster-m.gif",
    "f": "img/outfits/warmaster-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     0,
+     0,
+     59,
+     60,
+     59,
+     60
+    ]
+   ],
+   "f": [
+    [
+     0,
+     0,
+     59,
+     60,
+     59,
+     60
+    ]
+   ]
   }
  },
  {
@@ -1974,9 +7014,38 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Wild Warrior (Achievement)",
+  "lancado": "7.2",
   "sprite": {
    "m": "img/outfits/warrior-m.gif",
    "f": "img/outfits/warrior-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     7,
+     7,
+     39,
+     39,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     8,
+     7,
+     38,
+     39,
+     46,
+     46
+    ]
+   ]
   }
  },
  {
@@ -2010,9 +7079,125 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Peazzekeeper",
+  "lancado": "8.60",
   "sprite": {
    "m": "img/outfits/wayfarer-m.gif",
    "f": "img/outfits/wayfarer-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     13,
+     24,
+     39,
+     40,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     13,
+     21,
+     40,
+     43,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Winged Druid",
+  "pagina": "Winged Druid Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "14.12.95abf3",
+  "sprite": {
+   "m": "img/outfits/winged-druid-m.gif",
+   "f": "img/outfits/winged-druid-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     1,
+     3,
+     58,
+     60,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     1,
+     3,
+     60,
+     61,
+     64,
+     64
+    ]
+   ]
+  }
+ },
+ {
+  "nome": "Winter Warden",
+  "pagina": "Winter Warden Outfits",
+  "quest": null,
+  "level": null,
+  "partes": [],
+  "tipo": "Special",
+  "loja": true,
+  "precos": {
+   "base": 690,
+   "addon1": 120,
+   "addon2": 120,
+   "completo": 870
+  },
+  "comoOutfit": "Grátis",
+  "comoAddons": "Grátis",
+  "conquista": null,
+  "lancado": "10.90",
+  "sprite": {
+   "m": "img/outfits/winter-warden-m.gif",
+   "f": "img/outfits/winter-warden-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     2,
+     2,
+     57,
+     62,
+     64,
+     64
+    ]
+   ],
+   "f": [
+    [
+     2,
+     2,
+     57,
+     62,
+     64,
+     64
+    ]
+   ]
   }
  },
  {
@@ -2061,9 +7246,38 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Premium",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "Warlock (Achievement)",
+  "lancado": "7.8",
   "sprite": {
    "m": "img/outfits/wizard-m.gif",
    "f": "img/outfits/wizard-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     9,
+     9,
+     37,
+     37,
+     46,
+     46
+    ]
+   ],
+   "f": [
+    [
+     5,
+     5,
+     41,
+     41,
+     46,
+     46
+    ]
+   ]
   }
  },
  {
@@ -2097,9 +7311,54 @@ window.OUTFITS = [
     ]
    }
   ],
+  "tipo": "Quest",
+  "loja": false,
+  "precos": null,
+  "comoOutfit": "Premium",
+  "comoAddons": "Premium",
+  "conquista": "None",
+  "lancado": "8.40",
   "sprite": {
    "m": "img/outfits/yalaharian-m.gif",
    "f": "img/outfits/yalaharian-f.gif"
+  },
+  "recorte": {
+   "m": [
+    [
+     3,
+     5,
+     58,
+     58,
+     128,
+     64
+    ],
+    [
+     64,
+     1,
+     63,
+     63,
+     128,
+     64
+    ]
+   ],
+   "f": [
+    [
+     3,
+     4,
+     58,
+     60,
+     128,
+     64
+    ],
+    [
+     64,
+     0,
+     64,
+     64,
+     128,
+     64
+    ]
+   ]
   }
  }
 ];
@@ -3246,7 +8505,7 @@ window.ITENS_OUTFIT = {
  "Pure Water": {
   "link": "https://tibia.fandom.com/wiki/Pure_Water",
   "dropadoPor": [],
-  "sprite": null
+  "sprite": "img/itens-outfit/pure-water.gif"
  },
  "Red Dragon Leather": {
   "link": "https://tibia.fandom.com/wiki/Red_Dragon_Leather",
