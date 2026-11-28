@@ -170,6 +170,26 @@ def limpa_alfa(im):
     return Image.merge("RGBA", (r, g, b, a))
 
 
+def tira_fundo(im):
+    """Imagem sem transparência (ex.: o ChatGPT desenha o xadrez cinza/branco no lugar do fundo transparente):
+    apaga os pixels claros e sem cor ligados à borda. O contorno preto do desenho segura o preenchimento,
+    então o branco de dentro da figura fica."""
+    from PIL import ImageDraw
+    if im.mode == "RGBA" and im.getchannel("A").getextrema()[0] < 250:
+        return im                                            # já tem transparência de verdade
+    rgb = im.convert("RGB")
+    mascara = Image.new("L", rgb.size, 0)
+    mascara.putdata([255 if min(px) > 195 and max(px) - min(px) < 22 else 0 for px in rgb.getdata()])
+    w, h = rgb.size
+    borda = [(x, 0) for x in range(w)] + [(x, h - 1) for x in range(w)] + [(0, y) for y in range(h)] + [(w - 1, y) for y in range(h)]
+    for pt in borda:
+        if mascara.getpixel(pt) == 255:
+            ImageDraw.floodfill(mascara, pt, 128)
+    alfa = mascara.point(lambda v: 0 if v == 128 else 255)
+    r, g, b = rgb.split()
+    return Image.merge("RGBA", (r, g, b, alfa))
+
+
 def preparar_imagens_ia():
     """Canto ornamental e ícones do menu, gerados no ChatGPT e salvos em novo-tema/."""
     import glob
@@ -199,6 +219,64 @@ def preparar_imagens_ia():
             q = Image.new("RGBA", (lado, lado))
             q.paste(p, ((lado - p.width) // 2, (lado - p.height) // 2))
             q.resize((64, 64), Image.LANCZOS).save(os.path.join(SAIDA, nome + ".png"), optimize=True)
+    # ícones avulsos (uma imagem por ícone): "novo-tema/*Montaria*.png" ou "*Cavalo*.png" -> icone-montarias.png
+    for padroes, nome in ((("*ontaria*.png", "*avalo*.png", "*Sela*.png"), "icone-montarias"),):
+        # se houver mais de uma versão, vale a mais recente
+        achou = sorted({a for p in padroes for a in glob.glob(os.path.join(pasta, p))}, key=os.path.getmtime, reverse=True)
+        if achou:
+            p = limpa_alfa(tira_fundo(Image.open(achou[0])))
+            p = p.crop(p.getchannel("A").point(lambda v: 255 if v > 8 else 0).getbbox())
+            lado = max(p.size)
+            q = Image.new("RGBA", (lado, lado))
+            q.paste(p, ((lado - p.width) // 2, (lado - p.height) // 2))
+            q.resize((64, 64), Image.LANCZOS).save(os.path.join(SAIDA, nome + ".png"), optimize=True)
+
+
+def encaixa(im, T):
+    """Coloca a imagem num quadrado TxT perdendo o mínimo de qualidade:
+    - pequena: amplia só por número inteiro (pixel duplicado, nítido) e centraliza;
+    - se o inteiro ficar pequeno demais (< 65% do quadro): amplia por inteiro e reduz uma vez (LANCZOS);
+    - grande: reduz uma vez (LANCZOS)."""
+    lado = max(im.size)
+    k = T // lado
+    if k >= 1 and k * lado >= 0.65 * T:
+        im = im.resize((im.width * k, im.height * k), Image.NEAREST)
+    else:
+        if lado < T:
+            m = -(-T // lado)
+            im = im.resize((im.width * m, im.height * m), Image.NEAREST)
+        f = T / max(im.size)
+        im = im.resize((max(1, round(im.width * f)), max(1, round(im.height * f))), Image.LANCZOS)
+    c = Image.new("RGBA", (T, T))
+    c.paste(im, ((T - im.width) // 2, (T - im.height) // 2), im)
+    return c
+
+
+def icones_stats():
+    """Ícones do quadro de estatísticas, todos do mesmo tamanho (16px; 20px nos títulos dos grupos),
+    com um arquivo por escala de tela (1x, 1,5x e 2x) para o navegador não redimensionar de novo:
+    img/icones/st-<nome>-<px>.png"""
+    from PIL import ImageSequence
+    fontes = {
+        "outfit": "img/outfits/citizen-m.gif", "montaria": "img/montarias/war-horse.gif",
+        "addon": "img/itens-outfit/brutus-bloodbeards-hat.gif", "completo": "img/icones/sim.png",
+        "store": "img/icones/tibia-coin-icone.png", "bestiary": "img/bestiario-icones/bestiary-icon.gif",
+        "charm": "img/bestiario-icones/charm-icon.gif", "warden": "img/bestiario-icones/echo-warden.png",
+        "core": "img/bestiario-icones/animus-mastery.png",
+        "g-outfits": "tema/collection/icone-outfits.png", "g-montarias": "tema/collection/icone-montarias.png",
+        "g-bestiario": "tema/collection/icone-bestiario.png",
+    }
+    pasta = os.path.join(BASE, "img", "icones")
+    for nome, arq in fontes.items():
+        caminho = os.path.join(BASE, arq)
+        if not os.path.exists(caminho):
+            continue
+        q = next(ImageSequence.Iterator(Image.open(caminho))).convert("RGBA")
+        q = q.crop(q.getchannel("A").getbbox())
+        base = 20 if nome.startswith("g-") else 16
+        for esc in (1, 1.5, 2):
+            T = int(base * esc)
+            encaixa(q, T).save(os.path.join(pasta, "st-%s-%d.png" % (nome, T)), optimize=True)
 
 
 def main():
@@ -326,6 +404,7 @@ def main():
     salvar(over, "button-over.png")
 
     preparar_imagens_ia()
+    icones_stats()
     print("Peças geradas em", SAIDA)
 
 

@@ -3,6 +3,7 @@
 
   var OUTFITS = window.OUTFITS || [];
   var ITENS = window.ITENS_OUTFIT || {};
+  var EXTRA = window.OUTFITS_EXTRA || {};       // como conseguir as partes sem itens (outfits-extra.js)
   var raiz = document.getElementById("conteudo-outfits");
   var buscaEl = document.getElementById("busca");
 
@@ -62,14 +63,24 @@
     return o.partes.filter(function (p) { return !p.genero || p.genero === estado.genero; });
   }
   function temAddons(o) { return o.comoAddons !== "sem addons"; }
-  function marcado(o, k) { return !!(tenho[o.nome] && tenho[o.nome][k]); }
+  // outfits que já vêm com a conta (básicos) ou com a Premium: o outfit base conta sempre como "tenho"
+  function deBase(o) { return o.tipo === "Basic" || o.tipo === "Premium"; }
+  function marcado(o, k) { return (k === "o" && deBase(o)) || !!(tenho[o.nome] && tenho[o.nome][k]); }
+  // ordem da janela de outfits do jogo (ID de aparência do gênero escolhido)
+  function ordemJogo(a, b) {
+    var x = (a.ids || {})[estado.genero] || 1e9, y = (b.ids || {})[estado.genero] || 1e9;
+    return x - y || a.nome.localeCompare(b.nome);
+  }
 
   // ---------- "já tenho" ----------
   function caixasTenho(o) {
     var partes = temAddons(o) ? [["o", "Outfit"], ["a1", "Addon 1"], ["a2", "Addon 2"]] : [["o", "Outfit"]];
     return '<div class="tenho">' + partes.map(function (p) {
-      return '<label class="tenho-op" title="Já tenho: ' + p[1] + '"><input type="checkbox" class="marca-outfit" data-nome="' +
-        esc(o.nome) + '" data-parte="' + p[0] + '"' + (marcado(o, p[0]) ? " checked" : "") + ">" +
+      var fixo = p[0] === "o" && deBase(o);
+      return '<label class="tenho-op' + (fixo ? " fixo" : "") + '" title="' +
+        (fixo ? (o.tipo === "Basic" ? "Vem com a conta" : "Vem com a Premium Account") : "Já tenho: " + p[1]) +
+        '"><input type="checkbox" class="marca-outfit" data-nome="' +
+        esc(o.nome) + '" data-parte="' + p[0] + '"' + (marcado(o, p[0]) ? " checked" : "") + (fixo ? " disabled" : "") + ">" +
         "<span>" + (p[0] === "o" ? "O" : p[0] === "a1" ? "A1" : "A2") + "</span></label>";
     }).join("") + "</div>";
   }
@@ -138,6 +149,9 @@
 
   // texto para uma parte que não pede itens
   function semItens(o, n) {
+    if (n === 0 && deBase(o)) return o.tipo === "Basic" ? "Vem com a conta (todos os personagens)." : "Vem com a Premium Account.";
+    var txt = (EXTRA[o.nome] || {})[CHAVE_PARTE[n]];
+    if (txt) return txt;
     var como = n === 0 ? o.comoOutfit : o.comoAddons;
     if (o.quest) return "Não pede itens: vem da " + o.quest + (como && /premium/i.test(como) ? " (Premium)" : "") + ".";
     return "Não pede itens" + (como ? " (" + como + ")" : "") + ".";
@@ -154,7 +168,7 @@
           p.itens.filter(function (it) { return it.obs; }).map(function (it) {
             return '<div class="obs">' + esc(it.item) + ": " + esc(it.obs) + "</div>";
           }).join("");
-      }).join("") : '<span class="sem-dano">' + esc(semItens(o, n)) + "</span>";
+      }).join("") : '<div class="como-parte">' + esc(semItens(o, n)) + "</div>";
       return '<div class="det-parte"><div class="det-parte-tit">' + PARTE[n] + "</div>" + conteudo + "</div>";
     }).join("");
     var extra = [
@@ -166,7 +180,7 @@
 
   function tabelaOutfits() {
     var lista = OUTFITS.filter(function (o) { return !o.loja; }).filter(outfitCasa)
-      .sort(function (a, b) { return a.nome.localeCompare(b.nome); });
+      .sort(ordemJogo);
     var corpo = lista.map(function (o, i) {
       var id = "o:" + o.nome, ab = !!abertos[id];
       return '<tr class="' + (i % 2 ? "Even" : "Odd") + (completo(o) ? " ja-tenho" : "") + (ab ? " aberta" : "") + '">' +
@@ -185,7 +199,7 @@
   // ---------- 2) Store Outfits ----------
   function tabelaStore() {
     var lista = OUTFITS.filter(function (o) { return o.loja; }).filter(outfitCasa)
-      .sort(function (a, b) { return a.nome.localeCompare(b.nome); });
+      .sort(ordemJogo);
     var corpo = lista.map(function (o, i) {
       var p = o.precos || {};
       var partes = [];
@@ -300,6 +314,7 @@
       caixa("store", "Store Outfits", tabelaStore()) +
       caixa("por-item", "Itens", tabelaItens());
     window.scrollTo(0, y);
+    if (window.TCStats) window.TCStats.atualizar();
   }
 
   // ---------- eventos ----------

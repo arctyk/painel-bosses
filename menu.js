@@ -1,5 +1,5 @@
 /* Menu lateral (estilo tibia.com) compartilhado pelas páginas do painel.
-   Cada página diz quem ela é em <body data-pagina="bosses|outfits">. */
+   Cada página diz quem ela é em <body data-pagina="bosses|outfits|bestiario|montarias">. */
 (function () {
   "use strict";
 
@@ -28,6 +28,13 @@
         ["Echo Warden Killed", "bestiario.html#echo-warden"],
         ["Soul Core Completed", "bestiario.html#soul-core"],
         ["Bestiary Completed", "bestiario.html#bestiarios-completos"]
+      ]
+    },
+    {
+      id: "montarias", rotulo: "Montarias", pagina: "montarias.html", icone: "tema/collection/icone-montarias.png",
+      sub: [
+        ["Montarias", "montarias.html#montarias"],
+        ["Store Mounts", "montarias.html#store"]
       ]
     }
   ];

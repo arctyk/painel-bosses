@@ -15,6 +15,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.23.1d12c3",
+  "ids": {
+   "m": 1936,
+   "f": 1937
+  },
   "sprite": {
    "m": "img/outfits/aerial-disciple-m.gif",
    "f": "img/outfits/aerial-disciple-f.gif"
@@ -109,6 +113,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Beak Doctor",
   "lancado": "9.10",
+  "ids": {
+   "m": 430,
+   "f": 431
+  },
   "sprite": {
    "m": "img/outfits/afflicted-m.gif",
    "f": "img/outfits/afflicted-f.gif"
@@ -177,6 +185,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Warrior of the Iks",
   "lancado": "13.10.12852",
+  "ids": {
+   "m": 1597,
+   "f": 1598
+  },
   "sprite": {
    "m": "img/outfits/ancient-aucar-m.gif",
    "f": "img/outfits/ancient-aucar-f.gif"
@@ -219,6 +231,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.71.11165",
+  "ids": {
+   "m": 1449,
+   "f": 1450
+  },
   "sprite": {
    "m": "img/outfits/arbalester-m.gif",
    "f": "img/outfits/arbalester-f.gif"
@@ -264,6 +280,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.96",
+  "ids": {
+   "m": 884,
+   "f": 885
+  },
   "sprite": {
    "m": "img/outfits/arena-champion-m.gif",
    "f": "img/outfits/arena-champion-f.gif"
@@ -306,6 +326,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.15.13186",
+  "ids": {
+   "m": 1618,
+   "f": 1619
+  },
   "sprite": {
    "m": "img/outfits/armoured-archer-m.gif",
    "f": "img/outfits/armoured-archer-f.gif"
@@ -458,6 +482,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Swift Death",
   "lancado": "7.8",
+  "ids": {
+   "m": 152,
+   "f": 156
+  },
   "sprite": {
    "m": "img/outfits/assassin-m.gif",
    "f": "img/outfits/assassin-f.gif"
@@ -558,6 +586,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Brutal Politeness",
   "lancado": "7.8",
+  "ids": {
+   "m": 143,
+   "f": 147
+  },
   "sprite": {
    "m": "img/outfits/barbarian-m.gif",
    "f": "img/outfits/barbarian-f.gif"
@@ -600,6 +632,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.10.46b862",
+  "ids": {
+   "m": 1874,
+   "f": 1875
+  },
   "sprite": {
    "m": "img/outfits/bat-knight-m.gif",
    "f": "img/outfits/bat-knight-f.gif"
@@ -665,6 +701,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Exalted Battle Mage",
   "lancado": "11.80.7048",
+  "ids": {
+   "m": 1069,
+   "f": 1070
+  },
   "sprite": {
    "m": "img/outfits/battle-mage-m.gif",
    "f": "img/outfits/battle-mage-f.gif"
@@ -710,6 +750,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.53 (2)",
+  "ids": {
+   "m": 636,
+   "f": 637
+  },
   "sprite": {
    "m": "img/outfits/beastmaster-m.gif",
    "f": "img/outfits/beastmaster-f.gif"
@@ -752,6 +796,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.37.1a37e1",
+  "ids": {
+   "m": 1776,
+   "f": 1777
+  },
   "sprite": {
    "m": "img/outfits/beekeeper-m.gif",
    "f": "img/outfits/beekeeper-f.gif"
@@ -849,6 +897,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Life on the Streets",
   "lancado": "7.8",
+  "ids": {
+   "m": 153,
+   "f": 157
+  },
   "sprite": {
    "m": "img/outfits/beggar-m.gif",
    "f": "img/outfits/beggar-f.gif"
@@ -891,6 +943,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.36.5b5f56",
+  "ids": {
+   "m": 1745,
+   "f": 1746
+  },
   "sprite": {
    "m": "img/outfits/blade-dancer-m.gif",
    "f": "img/outfits/blade-dancer-f.gif"
@@ -933,6 +989,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.15.8762",
+  "ids": {
+   "m": 1245,
+   "f": 1246
+  },
   "sprite": {
    "m": "img/outfits/breezy-garb-m.gif",
    "f": "img/outfits/breezy-garb-f.gif"
@@ -973,6 +1033,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Skull and Bones",
   "lancado": "8.10",
+  "ids": {
+   "m": 278,
+   "f": 279
+  },
   "sprite": {
    "m": "img/outfits/brotherhood-m.gif",
    "f": "img/outfits/brotherhood-f.gif"
@@ -1013,6 +1077,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Aye-aye, Captain!",
   "lancado": "15.32.fc9100",
+  "ids": {
+   "m": 1940,
+   "f": 1941
+  },
   "sprite": {
    "m": "img/outfits/captains-m.gif",
    "f": "img/outfits/captains-f.gif"
@@ -1090,6 +1158,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Cave Completionist",
   "lancado": "10.20",
+  "ids": {
+   "m": 574,
+   "f": 575
+  },
   "sprite": {
    "m": "img/outfits/cave-explorer-m.gif",
    "f": "img/outfits/cave-explorer-f.gif"
@@ -1132,6 +1204,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.34.14646",
+  "ids": {
+   "m": 1725,
+   "f": 1726
+  },
   "sprite": {
    "m": "img/outfits/celestial-avenger-m.gif",
    "f": "img/outfits/celestial-avenger-f.gif"
@@ -1177,6 +1253,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.75",
+  "ids": {
+   "m": 695,
+   "f": 694
+  },
   "sprite": {
    "m": "img/outfits/ceremonial-garb-m.gif",
    "f": "img/outfits/ceremonial-garb-f.gif"
@@ -1222,6 +1302,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.53 (2)",
+  "ids": {
+   "m": 633,
+   "f": 632
+  },
   "sprite": {
    "m": "img/outfits/champion-m.gif",
    "f": "img/outfits/champion-f.gif"
@@ -1267,6 +1351,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.59 (2)",
+  "ids": {
+   "m": 665,
+   "f": 664
+  },
   "sprite": {
    "m": "img/outfits/chaos-acolyte-m.gif",
    "f": "img/outfits/chaos-acolyte-f.gif"
@@ -1342,6 +1430,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Exemplary Citizen",
   "lancado": "7.0",
+  "ids": {
+   "m": 128,
+   "f": 136
+  },
   "sprite": {
    "m": "img/outfits/citizen-m.gif",
    "f": "img/outfits/citizen-f.gif"
@@ -1407,6 +1499,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Citizen of Issavi",
   "lancado": "12.70.10953",
+  "ids": {
+   "m": 1386,
+   "f": 1387
+  },
   "sprite": {
    "m": "img/outfits/citizen-of-issavi-m.gif",
    "f": "img/outfits/citizen-of-issavi-f.gif"
@@ -1452,6 +1548,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.53 (2)",
+  "ids": {
+   "m": 634,
+   "f": 635
+  },
   "sprite": {
    "m": "img/outfits/conjurer-m.gif",
    "f": "img/outfits/conjurer-f.gif"
@@ -1529,6 +1629,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Crystal Clear",
   "lancado": "9.60",
+  "ids": {
+   "m": 512,
+   "f": 513
+  },
   "sprite": {
    "m": "img/outfits/crystal-warlord-m.gif",
    "f": "img/outfits/crystal-warlord-f.gif"
@@ -1571,6 +1675,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.20.13560",
+  "ids": {
+   "m": 1675,
+   "f": 1676
+  },
   "sprite": {
    "m": "img/outfits/darklight-evoker-m.gif",
    "f": "img/outfits/darklight-evoker-f.gif"
@@ -1616,6 +1724,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.59 (2)",
+  "ids": {
+   "m": 667,
+   "f": 666
+  },
   "sprite": {
    "m": "img/outfits/death-herald-m.gif",
    "f": "img/outfits/death-herald-f.gif"
@@ -1656,6 +1768,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Fully Decayed",
   "lancado": "13.20.13560",
+  "ids": {
+   "m": 1662,
+   "f": 1663
+  },
   "sprite": {
    "m": "img/outfits/decaying-defender-m.gif",
    "f": "img/outfits/decaying-defender-f.gif"
@@ -1696,6 +1812,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Spolium Profundis",
   "lancado": "9.40",
+  "ids": {
+   "m": 463,
+   "f": 464
+  },
   "sprite": {
    "m": "img/outfits/deepling-m.gif",
    "f": "img/outfits/deepling-f.gif"
@@ -1736,6 +1856,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "True Dedication",
   "lancado": "9.80",
+  "ids": {
+   "m": 541,
+   "f": 542
+  },
   "sprite": {
    "m": "img/outfits/demon-m.gif",
    "f": "img/outfits/demon-f.gif"
@@ -1809,6 +1933,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Demonbane",
   "lancado": "8.20",
+  "ids": {
+   "m": 289,
+   "f": 288
+  },
   "sprite": {
    "m": "img/outfits/demon-hunter-m.gif",
    "f": "img/outfits/demon-hunter-f.gif"
@@ -1849,6 +1977,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Measuring the World",
   "lancado": "11.80.7048",
+  "ids": {
+   "m": 1094,
+   "f": 1095
+  },
   "sprite": {
    "m": "img/outfits/discoverer-m.gif",
    "f": "img/outfits/discoverer-f.gif"
@@ -1891,6 +2023,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.30.14434",
+  "ids": {
+   "m": 1713,
+   "f": 1714
+  },
   "sprite": {
    "m": "img/outfits/doom-knight-m.gif",
    "f": "img/outfits/doom-knight-f.gif"
@@ -1931,6 +2067,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "The Rule of Raccool",
   "lancado": "13.30.14423",
+  "ids": {
+   "m": 1722,
+   "f": 1723
+  },
   "sprite": {
    "m": "img/outfits/draccoon-herald-m.gif",
    "f": "img/outfits/draccoon-herald-f.gif"
@@ -1973,6 +2113,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.67.10934 (2)",
+  "ids": {
+   "m": 1444,
+   "f": 1445
+  },
   "sprite": {
    "m": "img/outfits/dragon-knight-m.gif",
    "f": "img/outfits/dragon-knight-f.gif"
@@ -2013,6 +2157,10 @@ window.OUTFITS = [
   "comoAddons": "See Dragon Slayer Outfits Quest",
   "conquista": "None",
   "lancado": "12.31.9658",
+  "ids": {
+   "m": 1288,
+   "f": 1289
+  },
   "sprite": {
    "m": "img/outfits/dragon-slayer-m.gif",
    "f": "img/outfits/dragon-slayer-f.gif"
@@ -2078,6 +2226,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Dream Warden",
   "lancado": "10.30",
+  "ids": {
+   "m": 577,
+   "f": 578
+  },
   "sprite": {
    "m": "img/outfits/dream-warden-m.gif",
    "f": "img/outfits/dream-warden-f.gif"
@@ -2143,6 +2295,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Dream Warrior",
   "lancado": "12.00.7695",
+  "ids": {
+   "m": 1146,
+   "f": 1147
+  },
   "sprite": {
    "m": "img/outfits/dream-warrior-m.gif",
    "f": "img/outfits/dream-warrior-f.gif"
@@ -2228,6 +2384,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Of Wolves and Bears",
   "lancado": "7.8",
+  "ids": {
+   "m": 144,
+   "f": 148
+  },
   "sprite": {
    "m": "img/outfits/druid-m.gif",
    "f": "img/outfits/druid-f.gif"
@@ -2293,6 +2453,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Mystic Fabric Magic",
   "lancado": "9.10",
+  "ids": {
+   "m": 432,
+   "f": 433
+  },
   "sprite": {
    "m": "img/outfits/elementalist-m.gif",
    "f": "img/outfits/elementalist-f.gif"
@@ -2338,6 +2502,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "9.44",
+  "ids": {
+   "m": 472,
+   "f": 471
+  },
   "sprite": {
    "m": "img/outfits/entrepreneur-m.gif",
    "f": "img/outfits/entrepreneur-f.gif"
@@ -2383,6 +2551,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.77",
+  "ids": {
+   "m": 725,
+   "f": 724
+  },
   "sprite": {
    "m": "img/outfits/evoker-m.gif",
    "f": "img/outfits/evoker-f.gif"
@@ -2423,6 +2595,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": "Falconer",
   "lancado": "12.30.9287",
+  "ids": {
+   "m": 1282,
+   "f": 1283
+  },
   "sprite": {
    "m": "img/outfits/falconer-m.gif",
    "f": "img/outfits/falconer-f.gif"
@@ -2465,6 +2641,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.87.12128",
+  "ids": {
+   "m": 1575,
+   "f": 1576
+  },
   "sprite": {
    "m": "img/outfits/fencer-m.gif",
    "f": "img/outfits/fencer-f.gif"
@@ -2505,6 +2685,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": "Feral Trapper",
   "lancado": "15.20.7a5cc9",
+  "ids": {
+   "m": 1907,
+   "f": 1906
+  },
   "sprite": {
    "m": "img/outfits/feral-trapper-m.gif",
    "f": "img/outfits/feral-trapper-f.gif"
@@ -2570,6 +2754,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Reason to Celebrate",
   "lancado": "11.02.4128",
+  "ids": {
+   "m": 931,
+   "f": 929
+  },
   "sprite": {
    "m": "img/outfits/festive-m.gif",
    "f": "img/outfits/festive-f.gif"
@@ -2612,6 +2800,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "14.11.0fbf6c",
+  "ids": {
+   "m": 1814,
+   "f": 1815
+  },
   "sprite": {
    "m": "img/outfits/field-surgeon-m.gif",
    "f": "img/outfits/field-surgeon-f.gif"
@@ -2652,6 +2844,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Fiend Slayer",
   "lancado": "14.10.4e0c16",
+  "ids": {
+   "m": 1809,
+   "f": 1808
+  },
   "sprite": {
    "m": "img/outfits/fiend-slayer-m.gif",
    "f": "img/outfits/fiend-slayer-f.gif"
@@ -2692,6 +2888,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Friendly Fire",
   "lancado": "12.90.12182",
+  "ids": {
+   "m": 1568,
+   "f": 1569
+  },
   "sprite": {
    "m": "img/outfits/fire-fighter-m.gif",
    "f": "img/outfits/fire-fighter-f.gif"
@@ -2734,6 +2934,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.20.13673",
+  "ids": {
+   "m": 1680,
+   "f": 1681
+  },
   "sprite": {
    "m": "img/outfits/flamefury-mage-m.gif",
    "f": "img/outfits/flamefury-mage-f.gif"
@@ -2776,6 +2980,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.66.10792 (2)",
+  "ids": {
+   "m": 1415,
+   "f": 1416
+  },
   "sprite": {
    "m": "img/outfits/forest-warden-m.gif",
    "f": "img/outfits/forest-warden-f.gif"
@@ -2816,6 +3024,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Sharp Dressed",
   "lancado": "12.85.11485",
+  "ids": {
+   "m": 1460,
+   "f": 1461
+  },
   "sprite": {
    "m": "img/outfits/formal-dress-m.gif",
    "f": "img/outfits/formal-dress-f.gif"
@@ -2858,6 +3070,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.11.12949",
+  "ids": {
+   "m": 1612,
+   "f": 1613
+  },
   "sprite": {
    "m": "img/outfits/frost-tracer-m.gif",
    "f": "img/outfits/frost-tracer-f.gif"
@@ -2900,6 +3116,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.85.11511",
+  "ids": {
+   "m": 1489,
+   "f": 1490
+  },
   "sprite": {
    "m": "img/outfits/ghost-blade-m.gif",
    "f": "img/outfits/ghost-blade-f.gif"
@@ -2940,6 +3160,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Glooth Engineer",
   "lancado": "10.50",
+  "ids": {
+   "m": 610,
+   "f": 618
+  },
   "sprite": {
    "m": "img/outfits/glooth-engineer-m.gif",
    "f": "img/outfits/glooth-engineer-f.gif"
@@ -3017,6 +3241,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.15.8659",
+  "ids": {
+   "m": 1210,
+   "f": 1211
+  },
   "sprite": {
    "m": "img/outfits/golden-m.gif",
    "f": "img/outfits/golden-f.gif"
@@ -3062,6 +3290,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.01.3987",
+  "ids": {
+   "m": 908,
+   "f": 909
+  },
   "sprite": {
    "m": "img/outfits/grove-keeper-m.gif",
    "f": "img/outfits/grove-keeper-f.gif"
@@ -3104,6 +3336,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.12.8341",
+  "ids": {
+   "m": 1186,
+   "f": 1187
+  },
   "sprite": {
    "m": "img/outfits/guidon-bearer-m.gif",
    "f": "img/outfits/guidon-bearer-f.gif"
@@ -3144,6 +3380,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Inquisition's Arm",
   "lancado": "12.20.8834",
+  "ids": {
+   "m": 1243,
+   "f": 1244
+  },
   "sprite": {
    "m": "img/outfits/hand-of-the-inquisition-m.gif",
    "f": "img/outfits/hand-of-the-inquisition-f.gif"
@@ -3189,6 +3429,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.40.5409",
+  "ids": {
+   "m": 1021,
+   "f": 1020
+  },
   "sprite": {
    "m": "img/outfits/herbalist-m.gif",
    "f": "img/outfits/herbalist-f.gif"
@@ -3231,6 +3475,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.20.9260",
+  "ids": {
+   "m": 1279,
+   "f": 1280
+  },
   "sprite": {
    "m": "img/outfits/herder-m.gif",
    "f": "img/outfits/herder-f.gif"
@@ -3326,6 +3574,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Hunting with Style",
   "lancado": "7.0",
+  "ids": {
+   "m": 129,
+   "f": 137
+  },
   "sprite": {
    "m": "img/outfits/hunter-m.gif",
    "f": "img/outfits/hunter-f.gif"
@@ -3366,6 +3618,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Enlightened, Indeed",
   "lancado": "15.30.a30dad",
+  "ids": {
+   "m": 1973,
+   "f": 1974
+  },
   "sprite": {
    "m": "img/outfits/illuminated-warrior-m.gif",
    "f": "img/outfits/illuminated-warrior-f.gif"
@@ -3406,6 +3662,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Illuminator",
   "lancado": "15.10.46b862",
+  "ids": {
+   "m": 1860,
+   "f": 1861
+  },
   "sprite": {
    "m": "img/outfits/illuminator-m.gif",
    "f": "img/outfits/illuminator-f.gif"
@@ -3446,6 +3706,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Bane of the Hive",
   "lancado": "9.40",
+  "ids": {
+   "m": 465,
+   "f": 466
+  },
   "sprite": {
    "m": "img/outfits/insectoid-m.gif",
    "f": "img/outfits/insectoid-f.gif"
@@ -3486,6 +3750,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": "None",
   "lancado": "10.41",
+  "ids": {
+   "m": 619,
+   "f": 620
+  },
   "sprite": {
    "m": "img/outfits/jersey-m.gif",
    "f": "img/outfits/jersey-f.gif"
@@ -3603,6 +3871,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Fool at Heart",
   "lancado": "8.10",
+  "ids": {
+   "m": 273,
+   "f": 270
+  },
   "sprite": {
    "m": "img/outfits/jester-m.gif",
    "f": "img/outfits/jester-f.gif"
@@ -3645,6 +3917,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.31.9888",
+  "ids": {
+   "m": 1331,
+   "f": 1332
+  },
   "sprite": {
    "m": "img/outfits/jouster-m.gif",
    "f": "img/outfits/jouster-f.gif"
@@ -3730,6 +4006,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "In Shining Armor",
   "lancado": "7.0",
+  "ids": {
+   "m": 131,
+   "f": 139
+  },
   "sprite": {
    "m": "img/outfits/knight-m.gif",
    "f": "img/outfits/knight-f.gif"
@@ -3770,6 +4050,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.15.8493",
+  "ids": {
+   "m": 1206,
+   "f": 1207
+  },
   "sprite": {
    "m": "img/outfits/lion-of-war-m.gif",
    "f": "img/outfits/lion-of-war-f.gif"
@@ -3815,6 +4099,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.97",
+  "ids": {
+   "m": 899,
+   "f": 900
+  },
   "sprite": {
    "m": "img/outfits/lupine-warden-m.gif",
    "f": "img/outfits/lupine-warden-f.gif"
@@ -3994,6 +4282,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Alumni",
   "lancado": "7.0",
+  "ids": {
+   "m": 130,
+   "f": 138
+  },
   "sprite": {
    "m": "img/outfits/mage-m.gif",
    "f": "img/outfits/mage-f.gif"
@@ -4071,6 +4363,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Cobbled and Patched",
   "lancado": "11.50.6055",
+  "ids": {
+   "m": 1042,
+   "f": 1043
+  },
   "sprite": {
    "m": "img/outfits/makeshift-warrior-m.gif",
    "f": "img/outfits/makeshift-warrior-f.gif"
@@ -4113,6 +4409,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.00.249ccc",
+  "ids": {
+   "m": 1837,
+   "f": 1838
+  },
   "sprite": {
    "m": "img/outfits/martial-artist-m.gif",
    "f": "img/outfits/martial-artist-f.gif"
@@ -4155,6 +4455,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.72.6598",
+  "ids": {
+   "m": 1056,
+   "f": 1057
+  },
   "sprite": {
    "m": "img/outfits/mercenary-m.gif",
    "f": "img/outfits/mercenary-f.gif"
@@ -4197,6 +4501,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.60.10503",
+  "ids": {
+   "m": 1382,
+   "f": 1383
+  },
   "sprite": {
    "m": "img/outfits/merry-garb-m.gif",
    "f": "img/outfits/merry-garb-f.gif"
@@ -4237,6 +4545,10 @@ window.OUTFITS = [
   "comoAddons": null,
   "conquista": null,
   "lancado": "15.00.249ccc",
+  "ids": {
+   "m": 1824,
+   "f": 1825
+  },
   "sprite": {
    "m": "img/outfits/monk-m.gif",
    "f": "img/outfits/monk-f.gif"
@@ -4279,6 +4591,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.30.a30dad",
+  "ids": {
+   "m": 1976,
+   "f": 1977
+  },
   "sprite": {
    "m": "img/outfits/moon-guardian-m.gif",
    "f": "img/outfits/moon-guardian-f.gif"
@@ -4321,6 +4637,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.50.10164",
+  "ids": {
+   "m": 1338,
+   "f": 1339
+  },
   "sprite": {
    "m": "img/outfits/moth-cape-m.gif",
    "f": "img/outfits/moth-cape-f.gif"
@@ -4363,6 +4683,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.01.13671d",
+  "ids": {
+   "m": 1845,
+   "f": 1846
+  },
   "sprite": {
    "m": "img/outfits/necromancer-m.gif",
    "f": "img/outfits/necromancer-f.gif"
@@ -4403,6 +4727,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": "None",
   "lancado": "8.50",
+  "ids": {
+   "m": 328,
+   "f": 329
+  },
   "sprite": {
    "m": "img/outfits/newly-wed-m.gif",
    "f": "img/outfits/newly-wed-f.gif"
@@ -4456,6 +4784,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Nightmare Walker",
   "lancado": "8.10",
+  "ids": {
+   "m": 268,
+   "f": 269
+  },
   "sprite": {
    "m": "img/outfits/nightmare-m.gif",
    "f": "img/outfits/nightmare-f.gif"
@@ -4545,6 +4877,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Aristocrat",
   "lancado": "7.2",
+  "ids": {
+   "m": 132,
+   "f": 140
+  },
   "sprite": {
    "m": "img/outfits/nobleman-m.gif",
    "f": "img/outfits/nobleman-f.gif"
@@ -4587,6 +4923,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.86.11818",
+  "ids": {
+   "m": 1500,
+   "f": 1501
+  },
   "sprite": {
    "m": "img/outfits/nordic-chieftain-m.gif",
    "f": "img/outfits/nordic-chieftain-f.gif"
@@ -4652,6 +4992,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Out in the Snowstorm",
   "lancado": "8.00",
+  "ids": {
+   "m": 251,
+   "f": 252
+  },
   "sprite": {
    "m": "img/outfits/norseman-m.gif",
    "f": "img/outfits/norseman-f.gif"
@@ -4692,6 +5036,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Traditionalist",
   "lancado": "12.20.9066",
+  "ids": {
+   "m": 1251,
+   "f": 1252
+  },
   "sprite": {
    "m": "img/outfits/orcsoberfest-garb-m.gif",
    "f": "img/outfits/orcsoberfest-garb-f.gif"
@@ -4799,6 +5147,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "One Thousand and One",
   "lancado": "7.8",
+  "ids": {
+   "m": 146,
+   "f": 150
+  },
   "sprite": {
    "m": "img/outfits/oriental-m.gif",
    "f": "img/outfits/oriental-f.gif"
@@ -4841,6 +5193,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.08.7995",
+  "ids": {
+   "m": 1173,
+   "f": 1174
+  },
   "sprite": {
    "m": "img/outfits/owl-keeper-m.gif",
    "f": "img/outfits/owl-keeper-f.gif"
@@ -4881,6 +5237,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Raider in the Dark",
   "lancado": "12.02.7746",
+  "ids": {
+   "m": 1161,
+   "f": 1162
+  },
   "sprite": {
    "m": "img/outfits/percht-raider-m.gif",
    "f": "img/outfits/percht-raider-f.gif"
@@ -4926,6 +5286,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.10.4427",
+  "ids": {
+   "m": 955,
+   "f": 956
+  },
   "sprite": {
    "m": "img/outfits/pharaoh-m.gif",
    "f": "img/outfits/pharaoh-f.gif"
@@ -4971,6 +5335,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.91",
+  "ids": {
+   "m": 873,
+   "f": 874
+  },
   "sprite": {
    "m": "img/outfits/philosopher-m.gif",
    "f": "img/outfits/philosopher-f.gif"
@@ -5013,6 +5381,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.20.6bd207",
+  "ids": {
+   "m": 1920,
+   "f": 1921
+  },
   "sprite": {
    "m": "img/outfits/phoenix-evoker-m.gif",
    "f": "img/outfits/phoenix-evoker-f.gif"
@@ -5103,6 +5475,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Swashbuckler",
   "lancado": "7.8",
+  "ids": {
+   "m": 151,
+   "f": 155
+  },
   "sprite": {
    "m": "img/outfits/pirate-m.gif",
    "f": "img/outfits/pirate-f.gif"
@@ -5143,6 +5519,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Mainstreet Nightmare",
   "lancado": "12.30.9287",
+  "ids": {
+   "m": 1270,
+   "f": 1271
+  },
   "sprite": {
    "m": "img/outfits/poltergeist-m.gif",
    "f": "img/outfits/poltergeist-f.gif"
@@ -5185,6 +5565,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.92.7441",
+  "ids": {
+   "m": 1127,
+   "f": 1128
+  },
   "sprite": {
    "m": "img/outfits/pumpkin-mummy-m.gif",
    "f": "img/outfits/pumpkin-mummy-f.gif"
@@ -5230,6 +5614,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.76",
+  "ids": {
+   "m": 697,
+   "f": 696
+  },
   "sprite": {
    "m": "img/outfits/puppeteer-m.gif",
    "f": "img/outfits/puppeteer-f.gif"
@@ -5275,6 +5663,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.63",
+  "ids": {
+   "m": 684,
+   "f": 683
+  },
   "sprite": {
    "m": "img/outfits/ranger-m.gif",
    "f": "img/outfits/ranger-f.gif"
@@ -5315,6 +5707,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Honorary Rascoohan",
   "lancado": "12.60.10463",
+  "ids": {
+   "m": 1371,
+   "f": 1372
+  },
   "sprite": {
    "m": "img/outfits/rascoohan-m.gif",
    "f": "img/outfits/rascoohan-f.gif"
@@ -5355,6 +5751,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.81",
+  "ids": {
+   "m": 746,
+   "f": 745
+  },
   "sprite": {
    "m": "img/outfits/recruiter-m.gif",
    "f": "img/outfits/recruiter-f.gif"
@@ -5397,6 +5797,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 974,
+   "f": 975
+  },
   "sprite": {
    "m": "img/outfits/retro-citizen-m.gif",
    "f": "img/outfits/retro-citizen-f.gif"
@@ -5439,6 +5843,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 972,
+   "f": 973
+  },
   "sprite": {
    "m": "img/outfits/retro-hunter-m.gif",
    "f": "img/outfits/retro-hunter-f.gif"
@@ -5481,6 +5889,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 970,
+   "f": 971
+  },
   "sprite": {
    "m": "img/outfits/retro-knight-m.gif",
    "f": "img/outfits/retro-knight-f.gif"
@@ -5523,6 +5935,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 968,
+   "f": 969
+  },
   "sprite": {
    "m": "img/outfits/retro-mage-m.gif",
    "f": "img/outfits/retro-mage-f.gif"
@@ -5565,6 +5981,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 966,
+   "f": 967
+  },
   "sprite": {
    "m": "img/outfits/retro-nobleman-m.gif",
    "f": "img/outfits/retro-nobleman-f.gif"
@@ -5607,6 +6027,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 964,
+   "f": 965
+  },
   "sprite": {
    "m": "img/outfits/retro-summoner-m.gif",
    "f": "img/outfits/retro-summoner-f.gif"
@@ -5649,6 +6073,10 @@ window.OUTFITS = [
   "comoAddons": "sem addons",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 962,
+   "f": 963
+  },
   "sprite": {
    "m": "img/outfits/retro-warrior-m.gif",
    "f": "img/outfits/retro-warrior-f.gif"
@@ -5689,6 +6117,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Unleash the Beast",
   "lancado": "12.40.9997",
+  "ids": {
+   "m": 1322,
+   "f": 1323
+  },
   "sprite": {
    "m": "img/outfits/revenant-m.gif",
    "f": "img/outfits/revenant-f.gif"
@@ -5754,6 +6186,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Rift Warrior",
   "lancado": "10.90",
+  "ids": {
+   "m": 846,
+   "f": 845
+  },
   "sprite": {
    "m": "img/outfits/rift-warrior-m.gif",
    "f": "img/outfits/rift-warrior-f.gif"
@@ -5794,6 +6230,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "The Rootwalker",
   "lancado": "13.40.54ea79",
+  "ids": {
+   "m": 1774,
+   "f": 1775
+  },
   "sprite": {
    "m": "img/outfits/rootwalker-m.gif",
    "f": "img/outfits/rootwalker-f.gif"
@@ -5834,6 +6274,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "King's Council",
   "lancado": "12.70.10953",
+  "ids": {
+   "m": 1436,
+   "f": 1437
+  },
   "sprite": {
    "m": "img/outfits/royal-bounacean-advisor-m.gif",
    "f": "img/outfits/royal-bounacean-advisor-f.gif"
@@ -5926,6 +6370,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.80.11430",
+  "ids": {
+   "m": 1457,
+   "f": 1456
+  },
   "sprite": {
    "m": "img/outfits/royal-costume-m.gif",
    "f": "img/outfits/royal-costume-f.gif"
@@ -5971,6 +6419,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.82",
+  "ids": {
+   "m": 760,
+   "f": 759
+  },
   "sprite": {
    "m": "img/outfits/royal-pumpkin-m.gif",
    "f": "img/outfits/royal-pumpkin-f.gif"
@@ -6013,6 +6465,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.62.10592",
+  "ids": {
+   "m": 1384,
+   "f": 1385
+  },
   "sprite": {
    "m": "img/outfits/rune-master-m.gif",
    "f": "img/outfits/rune-master-f.gif"
@@ -6058,6 +6514,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.81",
+  "ids": {
+   "m": 750,
+   "f": 749
+  },
   "sprite": {
    "m": "img/outfits/sea-dog-m.gif",
    "f": "img/outfits/sea-dog-f.gif"
@@ -6103,6 +6563,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.78",
+  "ids": {
+   "m": 733,
+   "f": 732
+  },
   "sprite": {
    "m": "img/outfits/seaweaver-m.gif",
    "f": "img/outfits/seaweaver-f.gif"
@@ -6145,6 +6609,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "13.05.12613",
+  "ids": {
+   "m": 1581,
+   "f": 1582
+  },
   "sprite": {
    "m": "img/outfits/shadowlotus-disciple-m.gif",
    "f": "img/outfits/shadowlotus-disciple-f.gif"
@@ -6225,6 +6693,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Way of the Shaman",
   "lancado": "7.8",
+  "ids": {
+   "m": 154,
+   "f": 158
+  },
   "sprite": {
    "m": "img/outfits/shaman-m.gif",
    "f": "img/outfits/shaman-f.gif"
@@ -6270,6 +6742,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.49.6030",
+  "ids": {
+   "m": 1050,
+   "f": 1051
+  },
   "sprite": {
    "m": "img/outfits/siege-master-m.gif",
    "f": "img/outfits/siege-master-f.gif"
@@ -6312,6 +6788,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.81.7107",
+  "ids": {
+   "m": 1102,
+   "f": 1103
+  },
   "sprite": {
    "m": "img/outfits/sinister-archer-m.gif",
    "f": "img/outfits/sinister-archer-f.gif"
@@ -6389,6 +6869,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Funghitastic",
   "lancado": "9.60",
+  "ids": {
+   "m": 516,
+   "f": 514
+  },
   "sprite": {
    "m": "img/outfits/soil-guardian-m.gif",
    "f": "img/outfits/soil-guardian-f.gif"
@@ -6434,6 +6918,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.76",
+  "ids": {
+   "m": 699,
+   "f": 698
+  },
   "sprite": {
    "m": "img/outfits/spirit-caller-m.gif",
    "f": "img/outfits/spirit-caller-f.gif"
@@ -6613,6 +7101,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Ritualist",
   "lancado": "7.2",
+  "ids": {
+   "m": 133,
+   "f": 141
+  },
   "sprite": {
    "m": "img/outfits/summoner-m.gif",
    "f": "img/outfits/summoner-f.gif"
@@ -6658,6 +7150,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.45.5528",
+  "ids": {
+   "m": 1023,
+   "f": 1024
+  },
   "sprite": {
    "m": "img/outfits/sun-priest-m.gif",
    "f": "img/outfits/sun-priest-f.gif"
@@ -6700,6 +7196,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.31.9593",
+  "ids": {
+   "m": 1292,
+   "f": 1293
+  },
   "sprite": {
    "m": "img/outfits/trailblazer-m.gif",
    "f": "img/outfits/trailblazer-f.gif"
@@ -6745,6 +7245,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "11.30.4868",
+  "ids": {
+   "m": 957,
+   "f": 958
+  },
   "sprite": {
    "m": "img/outfits/trophy-hunter-m.gif",
    "f": "img/outfits/trophy-hunter-f.gif"
@@ -6787,6 +7291,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "15.24.d0c720",
+  "ids": {
+   "m": 1948,
+   "f": 1949
+  },
   "sprite": {
    "m": "img/outfits/vampire-noble-m.gif",
    "f": "img/outfits/vampire-noble-f.gif"
@@ -6829,6 +7337,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.15.8493",
+  "ids": {
+   "m": 1204,
+   "f": 1205
+  },
   "sprite": {
    "m": "img/outfits/veteran-paladin-m.gif",
    "f": "img/outfits/veteran-paladin-f.gif"
@@ -6871,6 +7383,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "12.15.8493",
+  "ids": {
+   "m": 1202,
+   "f": 1203
+  },
   "sprite": {
    "m": "img/outfits/void-master-m.gif",
    "f": "img/outfits/void-master-f.gif"
@@ -6936,6 +7452,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Master of War",
   "lancado": "8.54",
+  "ids": {
+   "m": 335,
+   "f": 336
+  },
   "sprite": {
    "m": "img/outfits/warmaster-m.gif",
    "f": "img/outfits/warmaster-f.gif"
@@ -7021,6 +7541,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Wild Warrior (Achievement)",
   "lancado": "7.2",
+  "ids": {
+   "m": 134,
+   "f": 142
+  },
   "sprite": {
    "m": "img/outfits/warrior-m.gif",
    "f": "img/outfits/warrior-f.gif"
@@ -7086,6 +7610,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Peazzekeeper",
   "lancado": "8.60",
+  "ids": {
+   "m": 366,
+   "f": 367
+  },
   "sprite": {
    "m": "img/outfits/wayfarer-m.gif",
    "f": "img/outfits/wayfarer-f.gif"
@@ -7128,6 +7656,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "14.12.95abf3",
+  "ids": {
+   "m": 1831,
+   "f": 1832
+  },
   "sprite": {
    "m": "img/outfits/winged-druid-m.gif",
    "f": "img/outfits/winged-druid-f.gif"
@@ -7173,6 +7705,10 @@ window.OUTFITS = [
   "comoAddons": "Grátis",
   "conquista": null,
   "lancado": "10.90",
+  "ids": {
+   "m": 853,
+   "f": 852
+  },
   "sprite": {
    "m": "img/outfits/winter-warden-m.gif",
    "f": "img/outfits/winter-warden-f.gif"
@@ -7253,6 +7789,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "Warlock (Achievement)",
   "lancado": "7.8",
+  "ids": {
+   "m": 145,
+   "f": 149
+  },
   "sprite": {
    "m": "img/outfits/wizard-m.gif",
    "f": "img/outfits/wizard-f.gif"
@@ -7318,6 +7858,10 @@ window.OUTFITS = [
   "comoAddons": "Premium",
   "conquista": "None",
   "lancado": "8.40",
+  "ids": {
+   "m": 324,
+   "f": 325
+  },
   "sprite": {
    "m": "img/outfits/yalaharian-m.gif",
    "f": "img/outfits/yalaharian-f.gif"

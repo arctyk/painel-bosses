@@ -26,9 +26,13 @@ Os ícones de notícia e o logo vieram da página salva em `../Site Oficial/`.
 Se alguma imagem de `tema/` faltar, o painel usa cores parecidas no lugar.
 | `coletar.py` | Script que busca os dados na wiki e atualiza `bosses.js` |
 | `servidor.py` | Servidor local sem cache (`python servidor.py` → http://127.0.0.1:8765), para ver as mudanças na hora |
-| `menu.js` | Menu lateral compartilhado (Bosses / Outfits) |
+| `menu.js` | Menu lateral compartilhado (Bosses / Outfits / Bestiário / Montarias) |
+| `stats.js` | Quadro "Estatísticas" na coluna da direita de todas as páginas (outfits, montarias e bestiário marcados) |
 | `outfits.html`, `outfits.js`, `outfits-dados.js` | Página de outfits: todos os outfits (quest, básicos, premium e especiais), Store Outfits com preço em Tibia Coins e itens de drop; marcação de Outfit/Addon 1/Addon 2 já obtidos (salva no navegador) |
 | `coletar_outfits.py` | Gera `outfits-dados.js` a partir da TibiaWiki em inglês |
+| `outfits-extra.js` | Editado à mão: como conseguir cada parte (outfit/addon) que não pede itens |
+| `montarias.html`, `montarias.js`, `montarias-dados.js` | Página de montarias (na ordem do jogo), Store Mounts com preço e marcação de "tenho" |
+| `coletar_montarias.py` | Gera `montarias-dados.js` (TibiaWiki EN para lista/IDs/preços/imagens, TibiaWiki BR para o texto em português) |
 | `rotacoes.py` | Gera a rotação de ataque de cada vocação (usado pelo `coletar.py`) |
 | `img/magias/` | Ícones das magias (da tibia.fandom.com) |
 
@@ -156,7 +160,17 @@ Os Avulsos aparecem em ordem de level recomendado (`ORDENAR_POR_LEVEL` no topo d
 
 `python coletar_outfits.py` lê as seções "Required Equipment" das páginas "<Outfit> Outfits Quest/Spoiler"
 da TibiaWiki em inglês, aplica as correções da lista `CORRECOES` (no topo do script), descobre quem dropa
-cada item e baixa os sprites (outfit completo masculino/feminino e itens). Só entram outfits que pedem itens.
+cada item e baixa os sprites (outfit completo masculino/feminino e itens).
+
+A ordem da tabela é a da janela de outfits do jogo: o ID de aparência (`male_id`/`female_id` da wiki).
+Outfits do tipo Basic (vêm com a conta) e Premium (vêm com a Premium) já contam como "tenho" no outfit base.
+O texto de como conseguir as partes sem itens fica em `outfits-extra.js` (editado à mão).
+
+## Montarias (`montarias.html`)
+
+`python coletar_montarias.py` lê `Category:Mounts` da TibiaWiki em inglês (ID da montaria = ordem do jogo,
+preço na Store, imagens) e o campo "method" da TibiaWiki BR (texto em português). O Rented Horse fica de fora
+(é alugado por 24h). O ícone do menu sai de `novo-tema/*ontaria*.png` ao rodar `python gerar_tema.py`.
 
 ## Bestiário (`bestiario.html`)
 

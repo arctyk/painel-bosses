@@ -297,6 +297,7 @@
           (listaCompletasAberta ? '<span class="seta-bt aberta"></span>Recolher' : '<span class="seta-bt"></span>Expandir') + "</button>",
         !listaCompletasAberta);
     window.scrollTo(0, y);
+    if (window.TCStats) window.TCStats.atualizar();
   }
 
   /* ---------------- eventos ---------------- */

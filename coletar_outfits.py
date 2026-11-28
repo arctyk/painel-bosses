@@ -403,6 +403,8 @@ def main():
             "comoAddons": "sem addons" if sem_addons else como_obter(f.get("addons")),
             "conquista": limpa(f.get("achievement") or "") or None,
             "lancado": limpa(f.get("implemented") or "") or None,
+            # ID de aparência (looktype): a janela de outfits do jogo lista nessa ordem
+            "ids": {"m": preco(f.get("male_id")), "f": preco(f.get("female_id"))},
         })
     print(len(outfits), "outfits;", sum(1 for o in outfits if o["partes"]), "com itens;",
           sum(1 for o in outfits if o["loja"]), "da store")
